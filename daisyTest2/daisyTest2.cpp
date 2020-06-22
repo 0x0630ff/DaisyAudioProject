@@ -2,6 +2,11 @@
 
 using namespace daisy;
 
+/*
+ * This is a basic program, most of it has been copied from the examples.
+ * Now to understand most of it....
+*/
+
 DaisyPod hw;
 Parameter p_knob1, p_knob2;
 

@@ -5,6 +5,10 @@
 using namespace daisy;
 using namespace daisysp;
 
+/*
+ * This got slightly more complex, but also copied from example projects a lot.
+ */
+
 // Set max delay time to 0.75 of samplerate.
 #define MAX_DELAY static_cast<size_t>(48000 * 2.5f)
 
