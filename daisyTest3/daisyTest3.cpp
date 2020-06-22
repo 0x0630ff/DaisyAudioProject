@@ -211,10 +211,11 @@ int main(void) {
 
     // timer set up and start (mainly for blink right now)
     dsy_tim_init();
-    dsy_tim_start();
+    dsy_tim_start();  // this may need to change if anything else uses the timer...
 
     // start the audio input
     pod.StartAdc();
+
     // start sound generation with callback
     pod.StartAudio(AudioCallback);
 

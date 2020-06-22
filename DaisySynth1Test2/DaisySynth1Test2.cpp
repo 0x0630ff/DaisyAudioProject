@@ -35,6 +35,7 @@ static void callback(float* in, float* out, size_t size) {
     if (hw.encoder.RisingEdge()) {
         led_sel = 4;
     }
+    
     hw.ClearLeds();
     hw.led1.SetColor(my_colors[led_sel]);
     hw.led2.SetColor(my_colors[led_sel]);
