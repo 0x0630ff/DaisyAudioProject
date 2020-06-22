@@ -1,9 +1,6 @@
 #include "daisy_pod.h"
 #include "daisysp.h"
 #include <math.h>
-#include <cstdio>
-#include <stdio.h>
-#include <string.h>
 
 using namespace daisy;
 using namespace daisysp;
@@ -15,13 +12,11 @@ using namespace daisysp;
 // Set max delay time to 0.75 of samplerate.
 #define MAX_DELAY static_cast<size_t>(48000 * 2.5f)
 
-
 DaisyPod pod;
 DaisySeed seed;
 
 static Parameter deltime, cutoffParam;
 
-// osc is in namespace daisysp
 static Oscillator osc1;
 static Oscillator osc2;
 
@@ -216,7 +211,7 @@ int main(void) {
 
     // timer set up and start (mainly for blink right now)
     dsy_tim_init();
-    dsy_tim_start();  // this may need to change if anything else uses the timer...
+    dsy_tim_start();  // this may need to change if anything else uses the /timer...
 
     // start the audio input
     pod.StartAdc();
@@ -226,14 +221,6 @@ int main(void) {
 
     while(true) {
         blinkLED();  // blink the onboard led.
-
-        // int hello_count = 16;
-        // char buff[32];
-        // // dsy_system_delay(500);
-        // sprintf(buff, "Tick:\t%d\r\n", hello_count);
-        // seed.usb_handle.TransmitExternal((uint8_t*)buff, strlen(buff));
-        // hello_count = (hello_count + 1) % 100;
-
     }
 
 }
