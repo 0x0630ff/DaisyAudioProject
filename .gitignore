@@ -2,8 +2,9 @@
 **/.vs
 dfu-util-0.9-win64
 DaisyExamples
-**/bin/Debug/
-**/bin/Release/
+**/Debug/
+**/Release/
+**/build
 **/**.sln
 **/**.vcxproj
 **/**.vcxproj.filters
