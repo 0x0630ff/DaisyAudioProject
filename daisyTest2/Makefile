@@ -5,7 +5,7 @@ TARGET = daisyCppTest2
 CPP_SOURCES = daisyTest2.cpp
 
 # Library Locations
-ROOT_DIR = C:/Users/geoff/Documents/Electro-Smith/libs
+ROOT_DIR = ../libs
 LIBDAISY_DIR = $(ROOT_DIR)/libdaisy
 DAISYSP_DIR = $(ROOT_DIR)/DaisySP
 
