@@ -1,0 +1,10 @@
+﻿  daisyTest3.cpp
+daisyTest3.obj : error LNK2019: unresolved external symbol _dsy_tim_init referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol _dsy_tim_start referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol _dsy_tim_get_ms referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol "public: void __thiscall daisy::RgbLed::Set(float,float,float)" (?Set@RgbLed@daisy@@QAEXMMM@Z) referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol "public: void __thiscall daisy::DaisySeed::Configure(void)" (?Configure@DaisySeed@daisy@@QAEXXZ) referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol "public: void __thiscall daisy::DaisySeed::SetLed(bool)" (?SetLed@DaisySeed@daisy@@QAEX_N@Z) referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol "public: void __thiscall daisy::DaisyPod::Init(void)" (?Init@DaisyPod@daisy@@QAEXXZ) referenced in function _main
+daisyTest3.obj : error LNK2019: unresolved external symbol "public: void __thiscall daisy::DaisyPod::UpdateLeds(void)" (?UpdateLeds@DaisyPod@daisy@@QAEXXZ) referenced in function _main
+C:\Users\geoff\Documents\Electro-Smith\Projects\daisyTest3\Debug\daisyTest3.exe : fatal error LNK1120: 8 unresolved externals

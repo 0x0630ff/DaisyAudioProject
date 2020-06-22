@@ -1,0 +1,1190 @@
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"daisyTest3.cpp"
+  13              		.text
+  14              		.section	.text._ZN5daisy9ParameterD2Ev,"axG",%progbits,_ZN5daisy9ParameterD5Ev,comdat
+  15              		.align	1
+  16              		.p2align 2,,3
+  17              		.weak	_ZN5daisy9ParameterD2Ev
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu fpv5-d16
+  24              	_ZN5daisy9ParameterD2Ev:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 7047     		bx	lr
+  30              		.weak	_ZN5daisy9ParameterD1Ev
+  31              		.thumb_set _ZN5daisy9ParameterD1Ev,_ZN5daisy9ParameterD2Ev
+  32 0002 00BF     		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
+  33              		.align	1
+  34              		.p2align 2,,3
+  35              		.weak	_ZN5daisy9DaisySeedD2Ev
+  36              		.syntax unified
+  37              		.thumb
+  38              		.thumb_func
+  39              		.fpu fpv5-d16
+  41              	_ZN5daisy9DaisySeedD2Ev:
+  42              		@ args = 0, pretend = 0, frame = 0
+  43              		@ frame_needed = 0, uses_anonymous_args = 0
+  44              		@ link register save eliminated.
+  45 0000 7047     		bx	lr
+  47              		.weak	_ZN5daisy9DaisySeedD1Ev
+  48              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
+  49 0002 00BF     		.section	.text._ZN5daisy8DaisyPodD2Ev,"axG",%progbits,_ZN5daisy8DaisyPodD5Ev,comdat
+  50              		.align	1
+  51              		.p2align 2,,3
+  52              		.weak	_ZN5daisy8DaisyPodD2Ev
+  53              		.syntax unified
+  54              		.thumb
+  55              		.thumb_func
+  56              		.fpu fpv5-d16
+  58              	_ZN5daisy8DaisyPodD2Ev:
+  59              		@ args = 0, pretend = 0, frame = 0
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+  61              		@ link register save eliminated.
+  62 0000 7047     		bx	lr
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 2
+
+
+  64              		.weak	_ZN5daisy8DaisyPodD1Ev
+  65              		.thumb_set _ZN5daisy8DaisyPodD1Ev,_ZN5daisy8DaisyPodD2Ev
+  66 0002 00BF     		.section	.text._ZN7daisysp10OscillatorD2Ev,"axG",%progbits,_ZN7daisysp10OscillatorD5Ev,comdat
+  67              		.align	1
+  68              		.p2align 2,,3
+  69              		.weak	_ZN7daisysp10OscillatorD2Ev
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  73              		.fpu fpv5-d16
+  75              	_ZN7daisysp10OscillatorD2Ev:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 7047     		bx	lr
+  81              		.weak	_ZN7daisysp10OscillatorD1Ev
+  82              		.thumb_set _ZN7daisysp10OscillatorD1Ev,_ZN7daisysp10OscillatorD2Ev
+  83 0002 00BF     		.section	.text._ZN7daisysp8ReverbScD2Ev,"axG",%progbits,_ZN7daisysp8ReverbScD5Ev,comdat
+  84              		.align	1
+  85              		.p2align 2,,3
+  86              		.weak	_ZN7daisysp8ReverbScD2Ev
+  87              		.syntax unified
+  88              		.thumb
+  89              		.thumb_func
+  90              		.fpu fpv5-d16
+  92              	_ZN7daisysp8ReverbScD2Ev:
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+  96 0000 7047     		bx	lr
+  98              		.weak	_ZN7daisysp8ReverbScD1Ev
+  99              		.thumb_set _ZN7daisysp8ReverbScD1Ev,_ZN7daisysp8ReverbScD2Ev
+ 100 0002 00BF     		.section	.text._ZN7daisysp9DelayLineIfLj120000EED2Ev,"axG",%progbits,_ZN7daisysp9DelayLineIfLj1200
+ 101              		.align	1
+ 102              		.p2align 2,,3
+ 103              		.weak	_ZN7daisysp9DelayLineIfLj120000EED2Ev
+ 104              		.syntax unified
+ 105              		.thumb
+ 106              		.thumb_func
+ 107              		.fpu fpv5-d16
+ 109              	_ZN7daisysp9DelayLineIfLj120000EED2Ev:
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112              		@ link register save eliminated.
+ 113 0000 7047     		bx	lr
+ 115              		.weak	_ZN7daisysp9DelayLineIfLj120000EED1Ev
+ 116              		.thumb_set _ZN7daisysp9DelayLineIfLj120000EED1Ev,_ZN7daisysp9DelayLineIfLj120000EED2Ev
+ 117 0002 00BF     		.section	.text._Z11readButtonsRbS_,"ax",%progbits
+ 118              		.align	1
+ 119              		.p2align 2,,3
+ 120              		.global	_Z11readButtonsRbS_
+ 121              		.syntax unified
+ 122              		.thumb
+ 123              		.thumb_func
+ 124              		.fpu fpv5-d16
+ 126              	_Z11readButtonsRbS_:
+ 127              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 3
+
+
+ 128              		@ frame_needed = 0, uses_anonymous_args = 0
+ 129              		@ link register save eliminated.
+ 130 0000 7047     		bx	lr
+ 132 0002 00BF     		.section	.text._Z10checkKnobsRfS_,"ax",%progbits
+ 133              		.align	1
+ 134              		.p2align 2,,3
+ 135              		.global	_Z10checkKnobsRfS_
+ 136              		.syntax unified
+ 137              		.thumb
+ 138              		.thumb_func
+ 139              		.fpu fpv5-d16
+ 141              	_Z10checkKnobsRfS_:
+ 142              		@ args = 0, pretend = 0, frame = 0
+ 143              		@ frame_needed = 0, uses_anonymous_args = 0
+ 144              		@ link register save eliminated.
+ 145 0000 7047     		bx	lr
+ 147 0002 00BF     		.section	.text._Z8blinkLEDv,"ax",%progbits
+ 148              		.align	1
+ 149              		.p2align 2,,3
+ 150              		.global	_Z8blinkLEDv
+ 151              		.syntax unified
+ 152              		.thumb
+ 153              		.thumb_func
+ 154              		.fpu fpv5-d16
+ 156              	_Z8blinkLEDv:
+ 157              		@ args = 0, pretend = 0, frame = 0
+ 158              		@ frame_needed = 0, uses_anonymous_args = 0
+ 159 0000 08B5     		push	{r3, lr}
+ 160 0002 FFF7FEFF 		bl	dsy_tim_get_ms
+ 161 0006 094B     		ldr	r3, .L14
+ 162 0008 1B68     		ldr	r3, [r3]
+ 163 000a 9842     		cmp	r0, r3
+ 164 000c 00D8     		bhi	.L13
+ 165 000e 08BD     		pop	{r3, pc}
+ 166              	.L13:
+ 167 0010 074B     		ldr	r3, .L14+4
+ 168 0012 0848     		ldr	r0, .L14+8
+ 169 0014 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 170 0016 81F00101 		eor	r1, r1, #1
+ 171 001a 1970     		strb	r1, [r3]
+ 172 001c FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
+ 173 0020 FFF7FEFF 		bl	dsy_tim_init
+ 174 0024 BDE80840 		pop	{r3, lr}
+ 175 0028 FFF7FEBF 		b	dsy_tim_start
+ 176              	.L15:
+ 177              		.align	2
+ 178              	.L14:
+ 179 002c 00000000 		.word	.LANCHOR0
+ 180 0030 00000000 		.word	.LANCHOR1
+ 181 0034 00000000 		.word	.LANCHOR2
+ 183              		.section	.text._Z11UpdateKnobsRfS_,"ax",%progbits
+ 184              		.align	1
+ 185              		.p2align 2,,3
+ 186              		.global	_Z11UpdateKnobsRfS_
+ 187              		.syntax unified
+ 188              		.thumb
+ 189              		.thumb_func
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 4
+
+
+ 190              		.fpu fpv5-d16
+ 192              	_Z11UpdateKnobsRfS_:
+ 193              		@ args = 0, pretend = 0, frame = 0
+ 194              		@ frame_needed = 0, uses_anonymous_args = 0
+ 195 0000 38B5     		push	{r3, r4, r5, lr}
+ 196 0002 0546     		mov	r5, r0
+ 197 0004 1048     		ldr	r0, .L21
+ 198 0006 0C46     		mov	r4, r1
+ 199 0008 FFF7FEFF 		bl	_ZN5daisy13AnalogControl7ProcessEv
+ 200 000c 0F48     		ldr	r0, .L21+4
+ 201 000e 85ED000A 		vstr.32	s0, [r5]
+ 202 0012 FFF7FEFF 		bl	_ZN5daisy13AnalogControl7ProcessEv
+ 203 0016 0E4B     		ldr	r3, .L21+8
+ 204 0018 84ED000A 		vstr.32	s0, [r4]
+ 205 001c 1B68     		ldr	r3, [r3]
+ 206 001e 5BB1     		cbz	r3, .L17
+ 207 0020 012B     		cmp	r3, #1
+ 208 0022 08D1     		bne	.L16
+ 209 0024 0B48     		ldr	r0, .L21+12
+ 210 0026 FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
+ 211 002a 0B4A     		ldr	r2, .L21+16
+ 212 002c 0B4B     		ldr	r3, .L21+20
+ 213 002e 82ED000A 		vstr.32	s0, [r2]
+ 214 0032 2268     		ldr	r2, [r4]	@ float
+ 215 0034 1A60     		str	r2, [r3]	@ float
+ 216              	.L16:
+ 217 0036 38BD     		pop	{r3, r4, r5, pc}
+ 218              	.L17:
+ 219 0038 2968     		ldr	r1, [r5]	@ float
+ 220 003a 094A     		ldr	r2, .L21+24
+ 221 003c 094B     		ldr	r3, .L21+28
+ 222 003e 1160     		str	r1, [r2]	@ float
+ 223 0040 2268     		ldr	r2, [r4]	@ float
+ 224 0042 1A60     		str	r2, [r3]	@ float
+ 225 0044 38BD     		pop	{r3, r4, r5, pc}
+ 226              	.L22:
+ 227 0046 00BF     		.align	2
+ 228              	.L21:
+ 229 0048 8C000000 		.word	.LANCHOR3+140
+ 230 004c A8000000 		.word	.LANCHOR3+168
+ 231 0050 00000000 		.word	.LANCHOR4
+ 232 0054 00000000 		.word	.LANCHOR6
+ 233 0058 00000000 		.word	.LANCHOR7
+ 234 005c 00000000 		.word	.LANCHOR8
+ 235 0060 00000000 		.word	.LANCHOR5
+ 236 0064 00000000 		.word	_ZL3rev
+ 238              		.section	.text._Z13UpdateEncoderv,"ax",%progbits
+ 239              		.align	1
+ 240              		.p2align 2,,3
+ 241              		.global	_Z13UpdateEncoderv
+ 242              		.syntax unified
+ 243              		.thumb
+ 244              		.thumb_func
+ 245              		.fpu fpv5-d16
+ 247              	_Z13UpdateEncoderv:
+ 248              		@ args = 0, pretend = 0, frame = 0
+ 249              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 5
+
+
+ 250              		@ link register save eliminated.
+ 251 0000 0C48     		ldr	r0, .L24
+ 252 0002 0D4A     		ldr	r2, .L24+4
+ 253 0004 0368     		ldr	r3, [r0]
+ 254 0006 D2F88810 		ldr	r1, [r2, #136]
+ 255 000a 0C4A     		ldr	r2, .L24+8
+ 256 000c 0B44     		add	r3, r3, r1
+ 257 000e 0C49     		ldr	r1, .L24+12
+ 258 0010 82FB03C2 		smull	ip, r2, r2, r3
+ 259 0014 A2EBE372 		sub	r2, r2, r3, asr #31
+ 260 0018 02EB4202 		add	r2, r2, r2, lsl #1
+ 261 001c 9B1A     		subs	r3, r3, r2
+ 262 001e 0333     		adds	r3, r3, #3
+ 263 0020 A1FB0312 		umull	r1, r2, r1, r3
+ 264 0024 22F00101 		bic	r1, r2, #1
+ 265 0028 01EB5202 		add	r2, r1, r2, lsr #1
+ 266 002c 9B1A     		subs	r3, r3, r2
+ 267 002e 0360     		str	r3, [r0]
+ 268 0030 7047     		bx	lr
+ 269              	.L25:
+ 270 0032 00BF     		.align	2
+ 271              	.L24:
+ 272 0034 00000000 		.word	.LANCHOR4
+ 273 0038 00000000 		.word	.LANCHOR3
+ 274 003c 56555555 		.word	1431655766
+ 275 0040 ABAAAAAA 		.word	-1431655765
+ 277              		.section	.text._Z10UpdateLedsff,"ax",%progbits
+ 278              		.align	1
+ 279              		.p2align 2,,3
+ 280              		.global	_Z10UpdateLedsff
+ 281              		.syntax unified
+ 282              		.thumb
+ 283              		.thumb_func
+ 284              		.fpu fpv5-d16
+ 286              	_Z10UpdateLedsff:
+ 287              		@ args = 0, pretend = 0, frame = 0
+ 288              		@ frame_needed = 0, uses_anonymous_args = 0
+ 289 0000 10B5     		push	{r4, lr}
+ 290 0002 334C     		ldr	r4, .L34
+ 291 0004 F0EE407A 		vmov.f32	s15, s0
+ 292 0008 2368     		ldr	r3, [r4]
+ 293 000a 022B     		cmp	r3, #2
+ 294 000c 2DED028B 		vpush.64	{d8}
+ 295 0010 B0EE608A 		vmov.f32	s16, s1
+ 296 0014 48D0     		beq	.L27
+ 297 0016 9FED2F0A 		vldr.32	s0, .L34+4
+ 298 001a 012B     		cmp	r3, #1
+ 299 001c DFED2E0A 		vldr.32	s1, .L34+8
+ 300 0020 27EE800A 		vmul.f32	s0, s15, s0
+ 301 0024 20EE200A 		vmul.f32	s0, s0, s1
+ 302 0028 0CBF     		ite	eq
+ 303 002a 67EEA00A 		vmuleq.f32	s1, s15, s1
+ 304 002e F0EE400A 		vmovne.f32	s1, s0
+ 305              	.L28:
+ 306 0032 33F00203 		bics	r3, r3, #2
+ 307 0036 DFED288A 		vldr.32	s17, .L34+8
+ 308 003a 2848     		ldr	r0, .L34+12
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 6
+
+
+ 309 003c 0CBF     		ite	eq
+ 310 003e 0123     		moveq	r3, #1
+ 311 0040 0023     		movne	r3, #0
+ 312 0042 07EE103A 		vmov	s14, r3	@ int
+ 313 0046 B8EEC77A 		vcvt.f32.s32	s14, s14
+ 314 004a 67EE277A 		vmul.f32	s15, s14, s15
+ 315 004e 27EEA81A 		vmul.f32	s2, s15, s17
+ 316 0052 FFF7FEFF 		bl	_ZN5daisy6RgbLed3SetEfff
+ 317 0056 2368     		ldr	r3, [r4]
+ 318 0058 022B     		cmp	r3, #2
+ 319 005a 30D0     		beq	.L29
+ 320 005c 9FED1D0A 		vldr.32	s0, .L34+4
+ 321 0060 012B     		cmp	r3, #1
+ 322 0062 28EE000A 		vmul.f32	s0, s16, s0
+ 323 0066 08BF     		it	eq
+ 324 0068 68EE280A 		vmuleq.f32	s1, s16, s17
+ 325 006c 20EE280A 		vmul.f32	s0, s0, s17
+ 326 0070 18BF     		it	ne
+ 327 0072 F0EE400A 		vmovne.f32	s1, s0
+ 328              	.L30:
+ 329 0076 33F00203 		bics	r3, r3, #2
+ 330 007a 9FED177A 		vldr.32	s14, .L34+8
+ 331 007e 1848     		ldr	r0, .L34+16
+ 332 0080 0CBF     		ite	eq
+ 333 0082 0123     		moveq	r3, #1
+ 334 0084 0023     		movne	r3, #0
+ 335 0086 01EE103A 		vmov	s2, r3	@ int
+ 336 008a F8EEC17A 		vcvt.f32.s32	s15, s2
+ 337 008e 27EE881A 		vmul.f32	s2, s15, s16
+ 338 0092 21EE071A 		vmul.f32	s2, s2, s14
+ 339 0096 FFF7FEFF 		bl	_ZN5daisy6RgbLed3SetEfff
+ 340 009a 1248     		ldr	r0, .L34+20
+ 341 009c BDEC028B 		vldm	sp!, {d8}
+ 342 00a0 BDE81040 		pop	{r4, lr}
+ 343 00a4 FFF7FEBF 		b	_ZN5daisy8DaisyPod10UpdateLedsEv
+ 344              	.L27:
+ 345 00a8 DFED0A0A 		vldr.32	s1, .L34+4
+ 346 00ac 9FED0A7A 		vldr.32	s14, .L34+8
+ 347 00b0 60EE200A 		vmul.f32	s1, s0, s1
+ 348 00b4 20EE070A 		vmul.f32	s0, s0, s14
+ 349 00b8 60EE870A 		vmul.f32	s1, s1, s14
+ 350 00bc B9E7     		b	.L28
+ 351              	.L29:
+ 352 00be DFED050A 		vldr.32	s1, .L34+4
+ 353 00c2 28EE280A 		vmul.f32	s0, s16, s17
+ 354 00c6 68EE200A 		vmul.f32	s1, s16, s1
+ 355 00ca 60EEA80A 		vmul.f32	s1, s1, s17
+ 356 00ce D2E7     		b	.L30
+ 357              	.L35:
+ 358              		.align	2
+ 359              	.L34:
+ 360 00d0 00000000 		.word	.LANCHOR4
+ 361 00d4 00000000 		.word	0
+ 362 00d8 CDCC4C3F 		.word	1061997773
+ 363 00dc F4000000 		.word	.LANCHOR3+244
+ 364 00e0 48010000 		.word	.LANCHOR3+328
+ 365 00e4 00000000 		.word	.LANCHOR3
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 7
+
+
+ 367              		.section	.text._Z8Controlsv,"ax",%progbits
+ 368              		.align	1
+ 369              		.p2align 2,,3
+ 370              		.global	_Z8Controlsv
+ 371              		.syntax unified
+ 372              		.thumb
+ 373              		.thumb_func
+ 374              		.fpu fpv5-d16
+ 376              	_Z8Controlsv:
+ 377              		@ args = 0, pretend = 0, frame = 8
+ 378              		@ frame_needed = 0, uses_anonymous_args = 0
+ 379 0000 30B5     		push	{r4, r5, lr}
+ 380 0002 194C     		ldr	r4, .L38
+ 381 0004 0023     		movs	r3, #0
+ 382 0006 194A     		ldr	r2, .L38+4
+ 383 0008 83B0     		sub	sp, sp, #12
+ 384 000a 1949     		ldr	r1, .L38+8
+ 385 000c 2046     		mov	r0, r4
+ 386 000e 194D     		ldr	r5, .L38+12
+ 387 0010 0B60     		str	r3, [r1]	@ float
+ 388 0012 2B60     		str	r3, [r5]	@ float
+ 389 0014 1360     		str	r3, [r2]	@ float
+ 390 0016 FFF7FEFF 		bl	_ZN5daisy8DaisyPod20UpdateAnalogControlsEv
+ 391 001a 2046     		mov	r0, r4
+ 392 001c FFF7FEFF 		bl	_ZN5daisy8DaisyPod16DebounceControlsEv
+ 393 0020 01A9     		add	r1, sp, #4
+ 394 0022 6846     		mov	r0, sp
+ 395 0024 FFF7FEFF 		bl	_Z11UpdateKnobsRfS_
+ 396 0028 1348     		ldr	r0, .L38+16
+ 397 002a D4F88830 		ldr	r3, [r4, #136]
+ 398 002e 0168     		ldr	r1, [r0]
+ 399 0030 124A     		ldr	r2, .L38+20
+ 400 0032 0B44     		add	r3, r3, r1
+ 401 0034 1249     		ldr	r1, .L38+24
+ 402 0036 DDED010A 		vldr.32	s1, [sp, #4]
+ 403 003a 82FB0342 		smull	r4, r2, r2, r3
+ 404 003e 9DED000A 		vldr.32	s0, [sp]
+ 405 0042 A2EBE372 		sub	r2, r2, r3, asr #31
+ 406 0046 02EB4202 		add	r2, r2, r2, lsl #1
+ 407 004a 9B1A     		subs	r3, r3, r2
+ 408 004c 0333     		adds	r3, r3, #3
+ 409 004e A1FB0312 		umull	r1, r2, r1, r3
+ 410 0052 22F00101 		bic	r1, r2, #1
+ 411 0056 01EB5202 		add	r2, r1, r2, lsr #1
+ 412 005a 9B1A     		subs	r3, r3, r2
+ 413 005c 0360     		str	r3, [r0]
+ 414 005e FFF7FEFF 		bl	_Z10UpdateLedsff
+ 415 0062 03B0     		add	sp, sp, #12
+ 416              		@ sp needed
+ 417 0064 30BD     		pop	{r4, r5, pc}
+ 418              	.L39:
+ 419 0066 00BF     		.align	2
+ 420              	.L38:
+ 421 0068 00000000 		.word	.LANCHOR3
+ 422 006c 00000000 		.word	.LANCHOR7
+ 423 0070 00000000 		.word	.LANCHOR8
+ 424 0074 00000000 		.word	.LANCHOR5
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 8
+
+
+ 425 0078 00000000 		.word	.LANCHOR4
+ 426 007c 56555555 		.word	1431655766
+ 427 0080 ABAAAAAA 		.word	-1431655765
+ 429              		.section	.text._Z15GetReverbSampleRfS_ff,"ax",%progbits
+ 430              		.align	1
+ 431              		.p2align 2,,3
+ 432              		.global	_Z15GetReverbSampleRfS_ff
+ 433              		.syntax unified
+ 434              		.thumb
+ 435              		.thumb_func
+ 436              		.fpu fpv5-d16
+ 438              	_Z15GetReverbSampleRfS_ff:
+ 439              		@ args = 0, pretend = 0, frame = 8
+ 440              		@ frame_needed = 0, uses_anonymous_args = 0
+ 441 0000 30B5     		push	{r4, r5, lr}
+ 442 0002 0C46     		mov	r4, r1
+ 443 0004 85B0     		sub	sp, sp, #20
+ 444 0006 0546     		mov	r5, r0
+ 445 0008 1548     		ldr	r0, .L42
+ 446 000a 02AA     		add	r2, sp, #8
+ 447 000c 03A9     		add	r1, sp, #12
+ 448 000e 2B46     		mov	r3, r5
+ 449 0010 0094     		str	r4, [sp]
+ 450 0012 8DED030A 		vstr.32	s0, [sp, #12]
+ 451 0016 CDED020A 		vstr.32	s1, [sp, #8]
+ 452 001a FFF7FEFF 		bl	_ZN7daisysp8ReverbSc7ProcessERKfS2_PfS3_
+ 453 001e 114B     		ldr	r3, .L42+4
+ 454 0020 F7EE007A 		vmov.f32	s15, #1.0e+0
+ 455 0024 9DED035A 		vldr.32	s10, [sp, #12]
+ 456 0028 D3ED006A 		vldr.32	s13, [r3]
+ 457 002c D5ED005A 		vldr.32	s11, [r5]
+ 458 0030 37EEE67A 		vsub.f32	s14, s15, s13
+ 459 0034 9DED026A 		vldr.32	s12, [sp, #8]
+ 460 0038 27EE057A 		vmul.f32	s14, s14, s10
+ 461 003c A5EEA67A 		vfma.f32	s14, s11, s13
+ 462 0040 85ED007A 		vstr.32	s14, [r5]
+ 463 0044 93ED007A 		vldr.32	s14, [r3]
+ 464 0048 D4ED006A 		vldr.32	s13, [r4]
+ 465 004c 77EEC77A 		vsub.f32	s15, s15, s14
+ 466 0050 67EE867A 		vmul.f32	s15, s15, s12
+ 467 0054 E6EE877A 		vfma.f32	s15, s13, s14
+ 468 0058 C4ED007A 		vstr.32	s15, [r4]
+ 469 005c 05B0     		add	sp, sp, #20
+ 470              		@ sp needed
+ 471 005e 30BD     		pop	{r4, r5, pc}
+ 472              	.L43:
+ 473              		.align	2
+ 474              	.L42:
+ 475 0060 00000000 		.word	_ZL3rev
+ 476 0064 00000000 		.word	.LANCHOR5
+ 478              		.section	.text._Z14GetDelaySampleRfS_ff,"ax",%progbits
+ 479              		.align	1
+ 480              		.p2align 2,,3
+ 481              		.global	_Z14GetDelaySampleRfS_ff
+ 482              		.syntax unified
+ 483              		.thumb
+ 484              		.thumb_func
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 9
+
+
+ 485              		.fpu fpv5-d16
+ 487              	_Z14GetDelaySampleRfS_ff:
+ 488              		@ args = 0, pretend = 0, frame = 8
+ 489              		@ frame_needed = 0, uses_anonymous_args = 0
+ 490 0000 2DE9F04F 		push	{r4, r5, r6, r7, r8, r9, r10, fp, lr}
+ 491 0004 524B     		ldr	r3, .L46
+ 492 0006 83B0     		sub	sp, sp, #12
+ 493 0008 524C     		ldr	r4, .L46+4
+ 494 000a B7EE007A 		vmov.f32	s14, #1.0e+0
+ 495 000e D3ED006A 		vldr.32	s13, [r3]
+ 496 0012 D4ED007A 		vldr.32	s15, [r4]
+ 497 0016 9FED506A 		vldr.32	s12, .L46+8
+ 498 001a 76EEE76A 		vsub.f32	s13, s13, s15
+ 499 001e DFF84CE1 		ldr	lr, .L46+28
+ 500 0022 4E4D     		ldr	r5, .L46+12
+ 501 0024 4E4B     		ldr	r3, .L46+16
+ 502 0026 E6EE867A 		vfma.f32	s15, s13, s12
+ 503 002a 6E68     		ldr	r6, [r5, #4]
+ 504 002c DFF840C1 		ldr	ip, .L46+32
+ 505 0030 05EB8607 		add	r7, r5, r6, lsl #2
+ 506 0034 06EB0E08 		add	r8, r6, lr
+ 507 0038 4A4A     		ldr	r2, .L46+20
+ 508 003a 0197     		str	r7, [sp, #4]
+ 509 003c FDEEE76A 		vcvt.s32.f32	s13, s15
+ 510 0040 C4ED007A 		vstr.32	s15, [r4]
+ 511 0044 16EE904A 		vmov	r4, s13	@ int
+ 512 0048 F8EEE66A 		vcvt.f32.s32	s13, s13
+ 513 004c 7445     		cmp	r4, lr
+ 514 004e 77EEE67A 		vsub.f32	s15, s15, s13
+ 515 0052 28BF     		it	cs
+ 516 0054 7446     		movcs	r4, lr
+ 517 0056 06EB0409 		add	r9, r6, r4
+ 518 005a AC60     		str	r4, [r5, #8]
+ 519 005c 9460     		str	r4, [r2, #8]
+ 520 005e 09F1010B 		add	fp, r9, #1
+ 521 0062 C2ED007A 		vstr.32	s15, [r2]
+ 522 0066 C5ED007A 		vstr.32	s15, [r5]
+ 523 006a A3FB0B67 		umull	r6, r7, r3, fp
+ 524 006e A3FB09A6 		umull	r10, r6, r3, r9
+ 525 0072 FF0B     		lsrs	r7, r7, #15
+ 526 0074 F60B     		lsrs	r6, r6, #15
+ 527 0076 0CFB17B7 		mls	r7, ip, r7, fp
+ 528 007a 0CFB1696 		mls	r6, ip, r6, r9
+ 529 007e D2F80490 		ldr	r9, [r2, #4]
+ 530 0082 05EB8707 		add	r7, r5, r7, lsl #2
+ 531 0086 05EB8606 		add	r6, r5, r6, lsl #2
+ 532 008a 4C44     		add	r4, r4, r9
+ 533 008c 97ED036A 		vldr.32	s12, [r7, #12]
+ 534 0090 CE44     		add	lr, lr, r9
+ 535 0092 D6ED036A 		vldr.32	s13, [r6, #12]
+ 536 0096 04F1010B 		add	fp, r4, #1
+ 537 009a A3FB0467 		umull	r6, r7, r3, r4
+ 538 009e 02EB8909 		add	r9, r2, r9, lsl #2
+ 539 00a2 36EE666A 		vsub.f32	s12, s12, s13
+ 540 00a6 A3FB0BA6 		umull	r10, r6, r3, fp
+ 541 00aa FF0B     		lsrs	r7, r7, #15
+ 542 00ac F60B     		lsrs	r6, r6, #15
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 10
+
+
+ 543 00ae E6EE276A 		vfma.f32	s13, s12, s15
+ 544 00b2 0CFB1744 		mls	r4, ip, r7, r4
+ 545 00b6 0CFB16B6 		mls	r6, ip, r6, fp
+ 546 00ba 019F     		ldr	r7, [sp, #4]
+ 547 00bc 02EB8404 		add	r4, r2, r4, lsl #2
+ 548 00c0 02EB8606 		add	r6, r2, r6, lsl #2
+ 549 00c4 C0ED006A 		vstr.32	s13, [r0]
+ 550 00c8 D6ED036A 		vldr.32	s13, [r6, #12]
+ 551 00cc D4ED037A 		vldr.32	s15, [r4, #12]
+ 552 00d0 A3FB0864 		umull	r6, r4, r3, r8
+ 553 00d4 92ED006A 		vldr.32	s12, [r2]
+ 554 00d8 A3FB0E63 		umull	r6, r3, r3, lr
+ 555 00dc 76EEE76A 		vsub.f32	s13, s13, s15
+ 556 00e0 214E     		ldr	r6, .L46+24
+ 557 00e2 E40B     		lsrs	r4, r4, #15
+ 558 00e4 DB0B     		lsrs	r3, r3, #15
+ 559 00e6 E6EE867A 		vfma.f32	s15, s13, s12
+ 560 00ea 0CFB1484 		mls	r4, ip, r4, r8
+ 561 00ee B0EE406A 		vmov.f32	s12, s0
+ 562 00f2 0CFB13E3 		mls	r3, ip, r3, lr
+ 563 00f6 C1ED007A 		vstr.32	s15, [r1]
+ 564 00fa D0ED007A 		vldr.32	s15, [r0]
+ 565 00fe D6ED006A 		vldr.32	s13, [r6]
+ 566 0102 6C60     		str	r4, [r5, #4]
+ 567 0104 A7EEA66A 		vfma.f32	s12, s15, s13
+ 568 0108 77EE667A 		vsub.f32	s15, s14, s13
+ 569 010c 27EE800A 		vmul.f32	s0, s15, s0
+ 570 0110 87ED036A 		vstr.32	s12, [r7, #12]
+ 571 0114 B0EE606A 		vmov.f32	s12, s1
+ 572 0118 D0ED007A 		vldr.32	s15, [r0]
+ 573 011c A6EEA70A 		vfma.f32	s0, s13, s15
+ 574 0120 80ED000A 		vstr.32	s0, [r0]
+ 575 0124 D1ED007A 		vldr.32	s15, [r1]
+ 576 0128 D6ED006A 		vldr.32	s13, [r6]
+ 577 012c 5360     		str	r3, [r2, #4]
+ 578 012e A7EEA66A 		vfma.f32	s12, s15, s13
+ 579 0132 77EE667A 		vsub.f32	s15, s14, s13
+ 580 0136 27EEA07A 		vmul.f32	s14, s15, s1
+ 581 013a 89ED036A 		vstr.32	s12, [r9, #12]
+ 582 013e D1ED007A 		vldr.32	s15, [r1]
+ 583 0142 A6EEA77A 		vfma.f32	s14, s13, s15
+ 584 0146 81ED007A 		vstr.32	s14, [r1]
+ 585 014a 03B0     		add	sp, sp, #12
+ 586              		@ sp needed
+ 587 014c BDE8F08F 		pop	{r4, r5, r6, r7, r8, r9, r10, fp, pc}
+ 588              	.L47:
+ 589              		.align	2
+ 590              	.L46:
+ 591 0150 00000000 		.word	.LANCHOR7
+ 592 0154 00000000 		.word	.LANCHOR9
+ 593 0158 F7CC9238 		.word	949144823
+ 594 015c 0C530700 		.word	_ZL4dell
+ 595 0160 73B2E745 		.word	1172812403
+ 596 0164 00000000 		.word	_ZL4delr
+ 597 0168 00000000 		.word	.LANCHOR8
+ 598 016c BFD40100 		.word	119999
+ 599 0170 C0D40100 		.word	120000
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 11
+
+
+ 601              		.section	.text._Z13AudioCallbackPfS_j,"ax",%progbits
+ 602              		.align	1
+ 603              		.p2align 2,,3
+ 604              		.global	_Z13AudioCallbackPfS_j
+ 605              		.syntax unified
+ 606              		.thumb
+ 607              		.thumb_func
+ 608              		.fpu fpv5-d16
+ 610              	_Z13AudioCallbackPfS_j:
+ 611              		@ args = 0, pretend = 0, frame = 8
+ 612              		@ frame_needed = 0, uses_anonymous_args = 0
+ 613 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 614 0002 1646     		mov	r6, r2
+ 615 0004 83B0     		sub	sp, sp, #12
+ 616 0006 0446     		mov	r4, r0
+ 617 0008 0D46     		mov	r5, r1
+ 618 000a FFF7FEFF 		bl	_Z8Controlsv
+ 619 000e 3EB3     		cbz	r6, .L48
+ 620 0010 013E     		subs	r6, r6, #1
+ 621 0012 144F     		ldr	r7, .L59
+ 622 0014 7308     		lsrs	r3, r6, #1
+ 623 0016 04F10806 		add	r6, r4, #8
+ 624 001a 06EBC306 		add	r6, r6, r3, lsl #3
+ 625 001e 09E0     		b	.L55
+ 626              	.L58:
+ 627 0020 0022     		movs	r2, #0
+ 628 0022 1346     		mov	r3, r2	@ float
+ 629 0024 0192     		str	r2, [sp, #4]	@ float
+ 630 0026 0092     		str	r2, [sp]	@ float
+ 631              	.L53:
+ 632 0028 0834     		adds	r4, r4, #8
+ 633 002a 6B60     		str	r3, [r5, #4]	@ float
+ 634 002c 2A60     		str	r2, [r5]	@ float
+ 635 002e 0835     		adds	r5, r5, #8
+ 636 0030 A642     		cmp	r6, r4
+ 637 0032 15D0     		beq	.L48
+ 638              	.L55:
+ 639 0034 3B68     		ldr	r3, [r7]
+ 640 0036 94ED000A 		vldr.32	s0, [r4]
+ 641 003a D4ED010A 		vldr.32	s1, [r4, #4]
+ 642 003e 43B1     		cbz	r3, .L50
+ 643 0040 012B     		cmp	r3, #1
+ 644 0042 01A9     		add	r1, sp, #4
+ 645 0044 6846     		mov	r0, sp
+ 646 0046 EBD1     		bne	.L58
+ 647 0048 FFF7FEFF 		bl	_Z14GetDelaySampleRfS_ff
+ 648 004c 009A     		ldr	r2, [sp]	@ float
+ 649 004e 019B     		ldr	r3, [sp, #4]	@ float
+ 650 0050 EAE7     		b	.L53
+ 651              	.L50:
+ 652 0052 01A9     		add	r1, sp, #4
+ 653 0054 6846     		mov	r0, sp
+ 654 0056 FFF7FEFF 		bl	_Z15GetReverbSampleRfS_ff
+ 655 005a 009A     		ldr	r2, [sp]	@ float
+ 656 005c 019B     		ldr	r3, [sp, #4]	@ float
+ 657 005e E3E7     		b	.L53
+ 658              	.L48:
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 12
+
+
+ 659 0060 03B0     		add	sp, sp, #12
+ 660              		@ sp needed
+ 661 0062 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 662              	.L60:
+ 663              		.align	2
+ 664              	.L59:
+ 665 0064 00000000 		.word	.LANCHOR4
+ 667              		.section	.text.startup.main,"ax",%progbits
+ 668              		.align	1
+ 669              		.p2align 2,,3
+ 670              		.global	main
+ 671              		.syntax unified
+ 672              		.thumb
+ 673              		.thumb_func
+ 674              		.fpu fpv5-d16
+ 676              	main:
+ 677              		@ args = 0, pretend = 0, frame = 32
+ 678              		@ frame_needed = 0, uses_anonymous_args = 0
+ 679 0000 2DE9F043 		push	{r4, r5, r6, r7, r8, r9, lr}
+ 680 0004 6C48     		ldr	r0, .L68+8
+ 681 0006 4FF07C58 		mov	r8, #1056964608
+ 682 000a 6C4D     		ldr	r5, .L68+12
+ 683 000c 0027     		movs	r7, #0
+ 684 000e 6C4C     		ldr	r4, .L68+16
+ 685 0010 0026     		movs	r6, #0
+ 686 0012 2DED048B 		vpush.64	{d8, d9}
+ 687 0016 89B0     		sub	sp, sp, #36
+ 688 0018 9FED6A8A 		vldr.32	s16, .L68+20
+ 689 001c FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
+ 690 0020 6948     		ldr	r0, .L68+24
+ 691 0022 FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
+ 692 0026 6848     		ldr	r0, .L68+24
+ 693 0028 FFF7FEFF 		bl	_ZN5daisy8DaisyPod15AudioSampleRateEv
+ 694 002c F7EE007A 		vmov.f32	s15, #1.0e+0
+ 695 0030 F0EE408A 		vmov.f32	s17, s0
+ 696 0034 2846     		mov	r0, r5
+ 697 0036 85ED028A 		vstr.32	s16, [r5, #8]
+ 698 003a 87EE809A 		vdiv.f32	s18, s15, s0
+ 699 003e C5F80480 		str	r8, [r5, #4]	@ float
+ 700 0042 C5ED038A 		vstr.32	s17, [r5, #12]
+ 701 0046 6F61     		str	r7, [r5, #20]	@ float
+ 702 0048 B0EE480A 		vmov.f32	s0, s16
+ 703 004c 85ED049A 		vstr.32	s18, [r5, #16]
+ 704 0050 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 705 0054 F0EE407A 		vmov.f32	s15, s0
+ 706 0058 2046     		mov	r0, r4
+ 707 005a B0EE480A 		vmov.f32	s0, s16
+ 708 005e 84ED049A 		vstr.32	s18, [r4, #16]
+ 709 0062 C4ED038A 		vstr.32	s17, [r4, #12]
+ 710 0066 C5ED067A 		vstr.32	s15, [r5, #24]
+ 711 006a 84ED028A 		vstr.32	s16, [r4, #8]
+ 712 006e C4F80480 		str	r8, [r4, #4]	@ float
+ 713 0072 6761     		str	r7, [r4, #20]	@ float
+ 714 0074 2E70     		strb	r6, [r5]
+ 715 0076 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 716 007a F0EE407A 		vmov.f32	s15, s0
+ 717 007e 5348     		ldr	r0, .L68+28
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 13
+
+
+ 718 0080 B0EE680A 		vmov.f32	s0, s17
+ 719 0084 2670     		strb	r6, [r4]
+ 720 0086 C4ED067A 		vstr.32	s15, [r4, #24]
+ 721 008a FFF7FEFF 		bl	_ZN7daisysp8ReverbSc4InitEf
+ 722 008e 504B     		ldr	r3, .L68+32
+ 723 0090 5049     		ldr	r1, .L68+36
+ 724              	.L62:
+ 725 0092 0022     		movs	r2, #0
+ 726 0094 43F8042B 		str	r2, [r3], #4	@ float
+ 727 0098 8B42     		cmp	r3, r1
+ 728 009a FAD1     		bne	.L62
+ 729 009c DFF87481 		ldr	r8, .L68+100
+ 730 00a0 0020     		movs	r0, #0
+ 731 00a2 0121     		movs	r1, #1
+ 732 00a4 4C4B     		ldr	r3, .L68+40
+ 733 00a6 4D4A     		ldr	r2, .L68+44
+ 734 00a8 C8E90101 		strd	r0, r1, [r8, #4]
+ 735              	.L63:
+ 736 00ac 9FED4C8A 		vldr.32	s16, .L68+48
+ 737 00b0 A3EC018A 		vstmia.32	r3!, {s16}
+ 738 00b4 9342     		cmp	r3, r2
+ 739 00b6 F9D1     		bne	.L63
+ 740 00b8 9FED3D6B 		vldr.64	d6, .L68
+ 741 00bc B7EEE87A 		vcvt.f64.f32	d7, s17
+ 742 00c0 DFF85491 		ldr	r9, .L68+104
+ 743 00c4 0022     		movs	r2, #0
+ 744 00c6 0123     		movs	r3, #1
+ 745 00c8 464C     		ldr	r4, .L68+52
+ 746 00ca 01AD     		add	r5, sp, #4
+ 747 00cc 27EE067B 		vmul.f64	d7, d7, d6
+ 748 00d0 DFED450A 		vldr.32	s1, .L68+56
+ 749 00d4 01AE     		add	r6, sp, #4
+ 750 00d6 C9E90123 		strd	r2, r3, [r9, #4]
+ 751 00da 0FCC     		ldmia	r4!, {r0, r1, r2, r3}
+ 752 00dc 0FC5     		stmia	r5!, {r0, r1, r2, r3}
+ 753 00de 94E80700 		ldm	r4, {r0, r1, r2}
+ 754 00e2 A4F11007 		sub	r7, r4, #16
+ 755 00e6 B7EEC70B 		vcvt.f32.f64	s0, d7
+ 756 00ea 85E80700 		stm	r5, {r0, r1, r2}
+ 757 00ee 01A9     		add	r1, sp, #4
+ 758 00f0 0222     		movs	r2, #2
+ 759 00f2 3E48     		ldr	r0, .L68+60
+ 760 00f4 FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 761 00f8 DFED3D0A 		vldr.32	s1, .L68+64
+ 762 00fc 9FED3D0A 		vldr.32	s0, .L68+68
+ 763 0100 0FCF     		ldmia	r7!, {r0, r1, r2, r3}
+ 764 0102 0FC6     		stmia	r6!, {r0, r1, r2, r3}
+ 765 0104 94E80700 		ldm	r4, {r0, r1, r2}
+ 766 0108 85E80700 		stm	r5, {r0, r1, r2}
+ 767 010c 01A9     		add	r1, sp, #4
+ 768 010e 0222     		movs	r2, #2
+ 769 0110 3948     		ldr	r0, .L68+72
+ 770 0112 FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 771 0116 F6EE087A 		vmov.f32	s15, #7.5e-1
+ 772 011a 384E     		ldr	r6, .L68+76
+ 773 011c B0EE481A 		vmov.f32	s2, s16
+ 774 0120 374B     		ldr	r3, .L68+80
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 14
+
+
+ 775 0122 F0EE480A 		vmov.f32	s1, s16
+ 776 0126 68EEA78A 		vmul.f32	s17, s17, s15
+ 777 012a 364F     		ldr	r7, .L68+84
+ 778 012c 274A     		ldr	r2, .L68+28
+ 779 012e B0EE480A 		vmov.f32	s0, s16
+ 780 0132 3549     		ldr	r1, .L68+88
+ 781 0134 04F15800 		add	r0, r4, #88
+ 782 0138 FDEEE87A 		vcvt.s32.f32	s15, s17
+ 783 013c C6ED008A 		vstr.32	s17, [r6]
+ 784 0140 C7ED008A 		vstr.32	s17, [r7]
+ 785 0144 314D     		ldr	r5, .L68+92
+ 786 0146 17EE906A 		vmov	r6, s15	@ int
+ 787 014a B8EEE77A 		vcvt.f32.s32	s14, s15
+ 788 014e 1160     		str	r1, [r2]	@ float
+ 789 0150 9E42     		cmp	r6, r3
+ 790 0152 5560     		str	r5, [r2, #4]	@ float
+ 791 0154 78EEC78A 		vsub.f32	s17, s17, s14
+ 792 0158 28BF     		it	cs
+ 793 015a 1E46     		movcs	r6, r3
+ 794 015c C8ED008A 		vstr.32	s17, [r8]
+ 795 0160 C8F80860 		str	r6, [r8, #8]
+ 796 0164 C9F80860 		str	r6, [r9, #8]
+ 797 0168 C9ED008A 		vstr.32	s17, [r9]
+ 798 016c FFF7FEFF 		bl	_ZN5daisy6RgbLed3SetEfff
+ 799 0170 B0EE481A 		vmov.f32	s2, s16
+ 800 0174 04F1AC00 		add	r0, r4, #172
+ 801 0178 F0EE480A 		vmov.f32	s1, s16
+ 802 017c B0EE480A 		vmov.f32	s0, s16
+ 803 0180 FFF7FEFF 		bl	_ZN5daisy6RgbLed3SetEfff
+ 804 0184 A4F19C00 		sub	r0, r4, #156
+ 805 0188 FFF7FEFF 		bl	_ZN5daisy8DaisyPod10UpdateLedsEv
+ 806 018c FFF7FEFF 		bl	dsy_tim_init
+ 807 0190 FFF7FEFF 		bl	dsy_tim_start
+ 808 0194 A4F19C00 		sub	r0, r4, #156
+ 809 0198 FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
+ 810 019c A4F19C00 		sub	r0, r4, #156
+ 811 01a0 1B49     		ldr	r1, .L68+96
+ 812 01a2 FFF7FEFF 		bl	_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+ 813              	.L64:
+ 814 01a6 FFF7FEFF 		bl	_Z8blinkLEDv
+ 815 01aa FCE7     		b	.L64
+ 816              	.L69:
+ 817 01ac AFF30080 		.align	3
+ 818              	.L68:
+ 819 01b0 9A999999 		.word	-1717986918
+ 820 01b4 9999A93F 		.word	1068079513
+ 821 01b8 00000000 		.word	.LANCHOR2
+ 822 01bc 00000000 		.word	.LANCHOR10
+ 823 01c0 00000000 		.word	.LANCHOR11
+ 824 01c4 0000C842 		.word	1120403456
+ 825 01c8 00000000 		.word	.LANCHOR3
+ 826 01cc 00000000 		.word	_ZL3rev
+ 827 01d0 18530700 		.word	_ZL4dell+12
+ 828 01d4 18A60E00 		.word	_ZL4dell+480012
+ 829 01d8 0C000000 		.word	_ZL4delr+12
+ 830 01dc 0C530700 		.word	_ZL4delr+480012
+ 831 01e0 00000000 		.word	0
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 15
+
+
+ 832 01e4 8C000000 		.word	.LANCHOR3+140
+ 833 01e8 0060EA47 		.word	1206542336
+ 834 01ec 00000000 		.word	.LANCHOR6
+ 835 01f0 00409C46 		.word	1184645120
+ 836 01f4 0000FA43 		.word	1140457472
+ 837 01f8 00000000 		.word	.LANCHOR12
+ 838 01fc 00000000 		.word	.LANCHOR9
+ 839 0200 BFD40100 		.word	119999
+ 840 0204 00000000 		.word	.LANCHOR7
+ 841 0208 9A99593F 		.word	1062836634
+ 842 020c 00A08C46 		.word	1183621120
+ 843 0210 00000000 		.word	_Z13AudioCallbackPfS_j
+ 844 0214 0C530700 		.word	_ZL4dell
+ 845 0218 00000000 		.word	_ZL4delr
+ 847              		.section	.text.startup._GLOBAL__sub_I_pod,"ax",%progbits
+ 848              		.align	1
+ 849              		.p2align 2,,3
+ 850              		.syntax unified
+ 851              		.thumb
+ 852              		.thumb_func
+ 853              		.fpu fpv5-d16
+ 855              	_GLOBAL__sub_I_pod:
+ 856              		@ args = 0, pretend = 0, frame = 0
+ 857              		@ frame_needed = 0, uses_anonymous_args = 0
+ 858 0000 70B5     		push	{r4, r5, r6, lr}
+ 859 0002 194C     		ldr	r4, .L72
+ 860 0004 194E     		ldr	r6, .L72+4
+ 861 0006 2246     		mov	r2, r4
+ 862 0008 1949     		ldr	r1, .L72+8
+ 863 000a 1A48     		ldr	r0, .L72+12
+ 864 000c FFF7FEFF 		bl	__aeabi_atexit
+ 865 0010 2246     		mov	r2, r4
+ 866 0012 1949     		ldr	r1, .L72+16
+ 867 0014 1948     		ldr	r0, .L72+20
+ 868 0016 FFF7FEFF 		bl	__aeabi_atexit
+ 869 001a 194D     		ldr	r5, .L72+24
+ 870 001c 2246     		mov	r2, r4
+ 871 001e 3146     		mov	r1, r6
+ 872 0020 1848     		ldr	r0, .L72+28
+ 873 0022 FFF7FEFF 		bl	__aeabi_atexit
+ 874 0026 2246     		mov	r2, r4
+ 875 0028 3146     		mov	r1, r6
+ 876 002a 1748     		ldr	r0, .L72+32
+ 877 002c FFF7FEFF 		bl	__aeabi_atexit
+ 878 0030 2246     		mov	r2, r4
+ 879 0032 2946     		mov	r1, r5
+ 880 0034 1548     		ldr	r0, .L72+36
+ 881 0036 FFF7FEFF 		bl	__aeabi_atexit
+ 882 003a 2246     		mov	r2, r4
+ 883 003c 2946     		mov	r1, r5
+ 884 003e 1448     		ldr	r0, .L72+40
+ 885 0040 144D     		ldr	r5, .L72+44
+ 886 0042 FFF7FEFF 		bl	__aeabi_atexit
+ 887 0046 2246     		mov	r2, r4
+ 888 0048 1349     		ldr	r1, .L72+48
+ 889 004a 1448     		ldr	r0, .L72+52
+ 890 004c FFF7FEFF 		bl	__aeabi_atexit
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 16
+
+
+ 891 0050 2246     		mov	r2, r4
+ 892 0052 2946     		mov	r1, r5
+ 893 0054 1248     		ldr	r0, .L72+56
+ 894 0056 FFF7FEFF 		bl	__aeabi_atexit
+ 895 005a 2246     		mov	r2, r4
+ 896 005c 2946     		mov	r1, r5
+ 897 005e 1148     		ldr	r0, .L72+60
+ 898 0060 BDE87040 		pop	{r4, r5, r6, lr}
+ 899 0064 FFF7FEBF 		b	__aeabi_atexit
+ 900              	.L73:
+ 901              		.align	2
+ 902              	.L72:
+ 903 0068 00000000 		.word	__dso_handle
+ 904 006c 00000000 		.word	_ZN5daisy9ParameterD1Ev
+ 905 0070 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 906 0074 00000000 		.word	.LANCHOR3
+ 907 0078 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 908 007c 00000000 		.word	.LANCHOR2
+ 909 0080 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
+ 910 0084 00000000 		.word	.LANCHOR6
+ 911 0088 00000000 		.word	.LANCHOR12
+ 912 008c 00000000 		.word	.LANCHOR10
+ 913 0090 00000000 		.word	.LANCHOR11
+ 914 0094 00000000 		.word	_ZN7daisysp9DelayLineIfLj120000EED1Ev
+ 915 0098 00000000 		.word	_ZN7daisysp8ReverbScD1Ev
+ 916 009c 00000000 		.word	_ZL3rev
+ 917 00a0 0C530700 		.word	_ZL4dell
+ 918 00a4 00000000 		.word	_ZL4delr
+ 920              		.section	.init_array,"aw",%init_array
+ 921              		.align	2
+ 922 0000 00000000 		.word	_GLOBAL__sub_I_pod(target1)
+ 923              		.global	mode
+ 924              		.global	drywet
+ 925              		.global	cutoff
+ 926              		.global	delayTarget
+ 927              		.global	feedback
+ 928              		.global	currentDelay
+ 929              		.global	BLINK_TIME
+ 930              		.global	seed
+ 931              		.global	pod
+ 932              		.section	.bss._ZL11cutoffParam,"aw",%nobits
+ 933              		.align	2
+ 934              		.set	.LANCHOR12,. + 0
+ 937              	_ZL11cutoffParam:
+ 938 0000 00000000 		.space	52
+ 938      00000000 
+ 938      00000000 
+ 938      00000000 
+ 938      00000000 
+ 939              		.section	.bss._ZL3rev,"aw",%nobits
+ 940              		.align	2
+ 943              	_ZL3rev:
+ 944 0000 00000000 		.space	396100
+ 944      00000000 
+ 944      00000000 
+ 944      00000000 
+ 944      00000000 
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 17
+
+
+ 945              		.section	.bss._ZL4osc1,"aw",%nobits
+ 946              		.align	2
+ 947              		.set	.LANCHOR10,. + 0
+ 950              	_ZL4osc1:
+ 951 0000 00000000 		.space	36
+ 951      00000000 
+ 951      00000000 
+ 951      00000000 
+ 951      00000000 
+ 952              		.section	.bss._ZL4osc2,"aw",%nobits
+ 953              		.align	2
+ 954              		.set	.LANCHOR11,. + 0
+ 957              	_ZL4osc2:
+ 958 0000 00000000 		.space	36
+ 958      00000000 
+ 958      00000000 
+ 958      00000000 
+ 958      00000000 
+ 959              		.section	.bss._ZL7deltime,"aw",%nobits
+ 960              		.align	2
+ 961              		.set	.LANCHOR6,. + 0
+ 964              	_ZL7deltime:
+ 965 0000 00000000 		.space	52
+ 965      00000000 
+ 965      00000000 
+ 965      00000000 
+ 965      00000000 
+ 966              		.section	.bss.currentDelay,"aw",%nobits
+ 967              		.align	2
+ 968              		.set	.LANCHOR9,. + 0
+ 971              	currentDelay:
+ 972 0000 00000000 		.space	4
+ 973              		.section	.bss.cutoff,"aw",%nobits
+ 974              		.align	2
+ 977              	cutoff:
+ 978 0000 00000000 		.space	4
+ 979              		.section	.bss.delayTarget,"aw",%nobits
+ 980              		.align	2
+ 981              		.set	.LANCHOR7,. + 0
+ 984              	delayTarget:
+ 985 0000 00000000 		.space	4
+ 986              		.section	.bss.drywet,"aw",%nobits
+ 987              		.align	2
+ 988              		.set	.LANCHOR5,. + 0
+ 991              	drywet:
+ 992 0000 00000000 		.space	4
+ 993              		.section	.bss.feedback,"aw",%nobits
+ 994              		.align	2
+ 995              		.set	.LANCHOR8,. + 0
+ 998              	feedback:
+ 999 0000 00000000 		.space	4
+ 1000              		.section	.bss.mode,"aw",%nobits
+ 1001              		.align	2
+ 1002              		.set	.LANCHOR4,. + 0
+ 1005              	mode:
+ 1006 0000 00000000 		.space	4
+ 1007              		.section	.bss.pod,"aw",%nobits
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 18
+
+
+ 1008              		.align	2
+ 1009              		.set	.LANCHOR3,. + 0
+ 1012              	pod:
+ 1013 0000 00000000 		.space	424
+ 1013      00000000 
+ 1013      00000000 
+ 1013      00000000 
+ 1013      00000000 
+ 1014              		.section	.bss.seed,"aw",%nobits
+ 1015              		.align	2
+ 1016              		.set	.LANCHOR2,. + 0
+ 1019              	seed:
+ 1020 0000 00000000 		.space	108
+ 1020      00000000 
+ 1020      00000000 
+ 1020      00000000 
+ 1020      00000000 
+ 1021              		.section	.data.BLINK_TIME,"aw"
+ 1022              		.align	2
+ 1023              		.set	.LANCHOR0,. + 0
+ 1026              	BLINK_TIME:
+ 1027 0000 FA000000 		.word	250
+ 1028              		.section	.data._ZL9led_state,"aw"
+ 1029              		.set	.LANCHOR1,. + 0
+ 1032              	_ZL9led_state:
+ 1033 0000 01       		.byte	1
+ 1034              		.section	.sdram_bss,"aw"
+ 1035              		.align	2
+ 1038              	_ZL4delr:
+ 1039 0000 00000000 		.space	480012
+ 1039      00000000 
+ 1039      00000000 
+ 1039      00000000 
+ 1039      00000000 
+ 1042              	_ZL4dell:
+ 1043 7530c 00000000 		.space	480012
+ 1043      00000000 
+ 1043      00000000 
+ 1043      00000000 
+ 1043      00000000 
+ 1044              		.hidden	__dso_handle
+ 1045              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 19
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 daisyTest3.cpp
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:15     .text._ZN5daisy9ParameterD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:24     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:24     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:33     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:41     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:41     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:50     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:58     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:58     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:67     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:75     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:75     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:84     .text._ZN7daisysp8ReverbScD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:92     .text._ZN7daisysp8ReverbScD2Ev:00000000 _ZN7daisysp8ReverbScD2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:92     .text._ZN7daisysp8ReverbScD2Ev:00000000 _ZN7daisysp8ReverbScD1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:101    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:109    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 _ZN7daisysp9DelayLineIfLj120000EED2Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:109    .text._ZN7daisysp9DelayLineIfLj120000EED2Ev:00000000 _ZN7daisysp9DelayLineIfLj120000EED1Ev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:118    .text._Z11readButtonsRbS_:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:126    .text._Z11readButtonsRbS_:00000000 _Z11readButtonsRbS_
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:133    .text._Z10checkKnobsRfS_:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:141    .text._Z10checkKnobsRfS_:00000000 _Z10checkKnobsRfS_
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:148    .text._Z8blinkLEDv:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:156    .text._Z8blinkLEDv:00000000 _Z8blinkLEDv
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:179    .text._Z8blinkLEDv:0000002c $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:184    .text._Z11UpdateKnobsRfS_:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:192    .text._Z11UpdateKnobsRfS_:00000000 _Z11UpdateKnobsRfS_
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:229    .text._Z11UpdateKnobsRfS_:00000048 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:943    .bss._ZL3rev:00000000 _ZL3rev
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:239    .text._Z13UpdateEncoderv:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:247    .text._Z13UpdateEncoderv:00000000 _Z13UpdateEncoderv
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:272    .text._Z13UpdateEncoderv:00000034 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:278    .text._Z10UpdateLedsff:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:286    .text._Z10UpdateLedsff:00000000 _Z10UpdateLedsff
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:360    .text._Z10UpdateLedsff:000000d0 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:368    .text._Z8Controlsv:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:376    .text._Z8Controlsv:00000000 _Z8Controlsv
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:421    .text._Z8Controlsv:00000068 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:430    .text._Z15GetReverbSampleRfS_ff:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:438    .text._Z15GetReverbSampleRfS_ff:00000000 _Z15GetReverbSampleRfS_ff
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:475    .text._Z15GetReverbSampleRfS_ff:00000060 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:479    .text._Z14GetDelaySampleRfS_ff:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:487    .text._Z14GetDelaySampleRfS_ff:00000000 _Z14GetDelaySampleRfS_ff
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:591    .text._Z14GetDelaySampleRfS_ff:00000150 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1042   .sdram_bss:0007530c _ZL4dell
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1038   .sdram_bss:00000000 _ZL4delr
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:602    .text._Z13AudioCallbackPfS_j:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:610    .text._Z13AudioCallbackPfS_j:00000000 _Z13AudioCallbackPfS_j
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:665    .text._Z13AudioCallbackPfS_j:00000064 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:668    .text.startup.main:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:676    .text.startup.main:00000000 main
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:819    .text.startup.main:000001b0 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:848    .text.startup._GLOBAL__sub_I_pod:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:855    .text.startup._GLOBAL__sub_I_pod:00000000 _GLOBAL__sub_I_pod
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:903    .text.startup._GLOBAL__sub_I_pod:00000068 $d
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 20
+
+
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:921    .init_array:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1005   .bss.mode:00000000 mode
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:991    .bss.drywet:00000000 drywet
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:977    .bss.cutoff:00000000 cutoff
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:984    .bss.delayTarget:00000000 delayTarget
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:998    .bss.feedback:00000000 feedback
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:971    .bss.currentDelay:00000000 currentDelay
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1026   .data.BLINK_TIME:00000000 BLINK_TIME
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1019   .bss.seed:00000000 seed
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1012   .bss.pod:00000000 pod
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:933    .bss._ZL11cutoffParam:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:937    .bss._ZL11cutoffParam:00000000 _ZL11cutoffParam
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:940    .bss._ZL3rev:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:946    .bss._ZL4osc1:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:950    .bss._ZL4osc1:00000000 _ZL4osc1
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:953    .bss._ZL4osc2:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:957    .bss._ZL4osc2:00000000 _ZL4osc2
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:960    .bss._ZL7deltime:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:964    .bss._ZL7deltime:00000000 _ZL7deltime
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:967    .bss.currentDelay:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:974    .bss.cutoff:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:980    .bss.delayTarget:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:987    .bss.drywet:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:994    .bss.feedback:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1001   .bss.mode:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1008   .bss.pod:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1015   .bss.seed:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1022   .data.BLINK_TIME:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1032   .data._ZL9led_state:00000000 _ZL9led_state
+C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s:1035   .sdram_bss:00000000 $d
+                           .group:00000000 _ZN5daisy9ParameterD5Ev
+                           .group:00000000 _ZN5daisy9DaisySeedD5Ev
+                           .group:00000000 _ZN5daisy8DaisyPodD5Ev
+                           .group:00000000 _ZN7daisysp10OscillatorD5Ev
+                           .group:00000000 _ZN7daisysp8ReverbScD5Ev
+                           .group:00000000 _ZN7daisysp9DelayLineIfLj120000EED5Ev
+
+UNDEFINED SYMBOLS
+dsy_tim_get_ms
+_ZN5daisy9DaisySeed6SetLedEb
+dsy_tim_init
+dsy_tim_start
+_ZN5daisy13AnalogControl7ProcessEv
+_ZN5daisy9Parameter7ProcessEv
+_ZN5daisy6RgbLed3SetEfff
+_ZN5daisy8DaisyPod10UpdateLedsEv
+_ZN5daisy8DaisyPod20UpdateAnalogControlsEv
+_ZN5daisy8DaisyPod16DebounceControlsEv
+_ZN7daisysp8ReverbSc7ProcessERKfS2_PfS3_
+_ZN5daisy9DaisySeed9ConfigureEv
+_ZN5daisy8DaisyPod4InitEv
+_ZN5daisy8DaisyPod15AudioSampleRateEv
+_ZN7daisysp10Oscillator12CalcPhaseIncEf
+_ZN7daisysp8ReverbSc4InitEf
+_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+_ZN5daisy8DaisyPod8StartAdcEv
+_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccp53rm5.s 			page 21
+
+
+__aeabi_atexit
+__dso_handle

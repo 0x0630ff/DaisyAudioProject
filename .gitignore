@@ -1,0 +1,10 @@
+#ignore these 
+**/.vs
+dfu-util-0.9-win64
+DaisyExamples
+**/bin/Debug/
+**/bin/Release/
+**/**.sln
+**/**.vcxproj
+**/**.vcxproj.filters
+**/**.vcxproj.user
