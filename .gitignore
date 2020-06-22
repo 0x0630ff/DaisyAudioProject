@@ -4,7 +4,7 @@ dfu-util-0.9-win64
 DaisyExamples
 **/Debug/
 **/Release/
-**/build
+**/build/
 **/**.sln
 **/**.vcxproj
 **/**.vcxproj.filters
