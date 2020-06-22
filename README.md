@@ -1,2 +1,3 @@
 # DaisyAudioProject
-c++ code for the daisy audio pod platform from Electro Smith. These are my amateur attempts at coding without the Arduino IDE.
+C++ code for the Daisy Seed Audio and Daisy Pod platforms from Electro Smith. 
+These are my amateur attempts at coding without the Arduino IDE.
