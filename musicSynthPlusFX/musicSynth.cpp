@@ -49,8 +49,6 @@ int main(void) {
     seed.usb_handle.Init(UsbHandle::FS_INTERNAL);
     seed.usb_handle.SetReceiveCallback(PrintOut::UsbCallback);
 
-    seed.SetLed(1);
-
     while (true) {
         printer.out("WTF!!!! %d\r\n", 8);
         counter++;
