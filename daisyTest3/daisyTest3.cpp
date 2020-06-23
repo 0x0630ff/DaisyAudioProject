@@ -26,9 +26,9 @@ static Oscillator osc1;
 static Oscillator osc2;
 
 
-static float   freq;
+// static float   freq;
 float          sig;
-static int     waveform, octave;
+// static int     waveform, octave;
 
 const int NUM_WAVEFORMS = 4;
 

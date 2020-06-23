@@ -1,0 +1,775 @@
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"SimpleOscillator.cpp"
+  13              		.text
+  14              		.section	.text._ZN5daisy9ParameterD2Ev,"axG",%progbits,_ZN5daisy9ParameterD5Ev,comdat
+  15              		.align	1
+  16              		.p2align 2,,3
+  17              		.weak	_ZN5daisy9ParameterD2Ev
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu fpv5-d16
+  24              	_ZN5daisy9ParameterD2Ev:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 7047     		bx	lr
+  30              		.weak	_ZN5daisy9ParameterD1Ev
+  31              		.thumb_set _ZN5daisy9ParameterD1Ev,_ZN5daisy9ParameterD2Ev
+  32 0002 00BF     		.section	.text._ZN5daisy9DaisySeedD2Ev,"axG",%progbits,_ZN5daisy9DaisySeedD5Ev,comdat
+  33              		.align	1
+  34              		.p2align 2,,3
+  35              		.weak	_ZN5daisy9DaisySeedD2Ev
+  36              		.syntax unified
+  37              		.thumb
+  38              		.thumb_func
+  39              		.fpu fpv5-d16
+  41              	_ZN5daisy9DaisySeedD2Ev:
+  42              		@ args = 0, pretend = 0, frame = 0
+  43              		@ frame_needed = 0, uses_anonymous_args = 0
+  44              		@ link register save eliminated.
+  45 0000 7047     		bx	lr
+  47              		.weak	_ZN5daisy9DaisySeedD1Ev
+  48              		.thumb_set _ZN5daisy9DaisySeedD1Ev,_ZN5daisy9DaisySeedD2Ev
+  49 0002 00BF     		.section	.text._ZN5daisy8DaisyPodD2Ev,"axG",%progbits,_ZN5daisy8DaisyPodD5Ev,comdat
+  50              		.align	1
+  51              		.p2align 2,,3
+  52              		.weak	_ZN5daisy8DaisyPodD2Ev
+  53              		.syntax unified
+  54              		.thumb
+  55              		.thumb_func
+  56              		.fpu fpv5-d16
+  58              	_ZN5daisy8DaisyPodD2Ev:
+  59              		@ args = 0, pretend = 0, frame = 0
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+  61              		@ link register save eliminated.
+  62 0000 7047     		bx	lr
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 2
+
+
+  64              		.weak	_ZN5daisy8DaisyPodD1Ev
+  65              		.thumb_set _ZN5daisy8DaisyPodD1Ev,_ZN5daisy8DaisyPodD2Ev
+  66 0002 00BF     		.section	.text._ZN7daisysp9CrossFadeD2Ev,"axG",%progbits,_ZN7daisysp9CrossFadeD5Ev,comdat
+  67              		.align	1
+  68              		.p2align 2,,3
+  69              		.weak	_ZN7daisysp9CrossFadeD2Ev
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  73              		.fpu fpv5-d16
+  75              	_ZN7daisysp9CrossFadeD2Ev:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 7047     		bx	lr
+  81              		.weak	_ZN7daisysp9CrossFadeD1Ev
+  82              		.thumb_set _ZN7daisysp9CrossFadeD1Ev,_ZN7daisysp9CrossFadeD2Ev
+  83 0002 00BF     		.section	.text._ZN7daisysp10MoogLadderD2Ev,"axG",%progbits,_ZN7daisysp10MoogLadderD5Ev,comdat
+  84              		.align	1
+  85              		.p2align 2,,3
+  86              		.weak	_ZN7daisysp10MoogLadderD2Ev
+  87              		.syntax unified
+  88              		.thumb
+  89              		.thumb_func
+  90              		.fpu fpv5-d16
+  92              	_ZN7daisysp10MoogLadderD2Ev:
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95              		@ link register save eliminated.
+  96 0000 7047     		bx	lr
+  98              		.weak	_ZN7daisysp10MoogLadderD1Ev
+  99              		.thumb_set _ZN7daisysp10MoogLadderD1Ev,_ZN7daisysp10MoogLadderD2Ev
+ 100 0002 00BF     		.section	.text._ZN7daisysp10OscillatorD2Ev,"axG",%progbits,_ZN7daisysp10OscillatorD5Ev,comdat
+ 101              		.align	1
+ 102              		.p2align 2,,3
+ 103              		.weak	_ZN7daisysp10OscillatorD2Ev
+ 104              		.syntax unified
+ 105              		.thumb
+ 106              		.thumb_func
+ 107              		.fpu fpv5-d16
+ 109              	_ZN7daisysp10OscillatorD2Ev:
+ 110              		@ args = 0, pretend = 0, frame = 0
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112              		@ link register save eliminated.
+ 113 0000 7047     		bx	lr
+ 115              		.weak	_ZN7daisysp10OscillatorD1Ev
+ 116              		.thumb_set _ZN7daisysp10OscillatorD1Ev,_ZN7daisysp10OscillatorD2Ev
+ 117 0002 00BF     		.section	.text._Z8blinkLEDf.part.0,"ax",%progbits
+ 118              		.align	1
+ 119              		.p2align 2,,3
+ 120              		.syntax unified
+ 121              		.thumb
+ 122              		.thumb_func
+ 123              		.fpu fpv5-d16
+ 125              	_Z8blinkLEDf.part.0:
+ 126              		@ args = 0, pretend = 0, frame = 0
+ 127              		@ frame_needed = 0, uses_anonymous_args = 0
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 3
+
+
+ 128 0000 08B5     		push	{r3, lr}
+ 129 0002 074B     		ldr	r3, .L10
+ 130 0004 0748     		ldr	r0, .L10+4
+ 131 0006 1978     		ldrb	r1, [r3]	@ zero_extendqisi2
+ 132 0008 81F00101 		eor	r1, r1, #1
+ 133 000c 1970     		strb	r1, [r3]
+ 134 000e FFF7FEFF 		bl	_ZN5daisy9DaisySeed6SetLedEb
+ 135 0012 FFF7FEFF 		bl	dsy_tim_init
+ 136 0016 BDE80840 		pop	{r3, lr}
+ 137 001a FFF7FEBF 		b	dsy_tim_start
+ 138              	.L11:
+ 139 001e 00BF     		.align	2
+ 140              	.L10:
+ 141 0020 00000000 		.word	.LANCHOR0
+ 142 0024 00000000 		.word	.LANCHOR1
+ 144              		.section	.text._ZL13AudioCallbackPfS_j,"ax",%progbits
+ 145              		.align	1
+ 146              		.p2align 2,,3
+ 147              		.syntax unified
+ 148              		.thumb
+ 149              		.thumb_func
+ 150              		.fpu fpv5-d16
+ 152              	_ZL13AudioCallbackPfS_j:
+ 153              		@ args = 0, pretend = 0, frame = 8
+ 154              		@ frame_needed = 0, uses_anonymous_args = 0
+ 155 0000 714B     		ldr	r3, .L26
+ 156 0002 2DE9F047 		push	{r4, r5, r6, r7, r8, r9, r10, lr}
+ 157 0006 2DED048B 		vpush.64	{d8, d9}
+ 158 000a 82B0     		sub	sp, sp, #8
+ 159 000c 93ED008A 		vldr.32	s16, [r3]
+ 160 0010 0C46     		mov	r4, r1
+ 161 0012 1646     		mov	r6, r2
+ 162 0014 FFF7FEFF 		bl	dsy_tim_get_ms
+ 163 0018 07EE900A 		vmov	s15, r0	@ int
+ 164 001c F8EE677A 		vcvt.f32.u32	s15, s15
+ 165 0020 B4EEE78A 		vcmpe.f32	s16, s15
+ 166 0024 F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 167 0028 00F1CB80 		bmi	.L25
+ 168              	.L13:
+ 169 002c DFF8CC81 		ldr	r8, .L26+52
+ 170 0030 F2EE088A 		vmov.f32	s17, #1.2e+1
+ 171 0034 DFF8C8A1 		ldr	r10, .L26+56
+ 172 0038 4046     		mov	r0, r8
+ 173 003a 644D     		ldr	r5, .L26+4
+ 174 003c FFF7FEFF 		bl	_ZN5daisy8DaisyPod16DebounceControlsEv
+ 175 0040 6348     		ldr	r0, .L26+8
+ 176 0042 D8F88820 		ldr	r2, [r8, #136]
+ 177 0046 0368     		ldr	r3, [r0]
+ 178 0048 6249     		ldr	r1, .L26+12
+ 179 004a 1344     		add	r3, r3, r2
+ 180 004c 98F8E1C0 		ldrb	ip, [r8, #225]	@ zero_extendqisi2
+ 181 0050 614F     		ldr	r7, .L26+16
+ 182 0052 23EAE373 		bic	r3, r3, r3, asr #31
+ 183 0056 9FED619A 		vldr.32	s18, .L26+20
+ 184 005a 9FED618A 		vldr.32	s16, .L26+24
+ 185 005e 082B     		cmp	r3, #8
+ 186 0060 DFF8A091 		ldr	r9, .L26+60
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 4
+
+
+ 187 0064 A8BF     		it	ge
+ 188 0066 0823     		movge	r3, #8
+ 189 0068 CA5C     		ldrb	r2, [r1, r3]	@ zero_extendqisi2
+ 190 006a 1944     		add	r1, r1, r3
+ 191 006c 0360     		str	r3, [r0]
+ 192 006e 082A     		cmp	r2, #8
+ 193 0070 4B78     		ldrb	r3, [r1, #1]	@ zero_extendqisi2
+ 194 0072 5C48     		ldr	r0, .L26+28
+ 195 0074 28BF     		it	cs
+ 196 0076 0022     		movcs	r2, #0
+ 197 0078 082B     		cmp	r3, #8
+ 198 007a 28BF     		it	cs
+ 199 007c 0023     		movcs	r3, #0
+ 200 007e 3A70     		strb	r2, [r7]
+ 201 0080 BCF17F0F 		cmp	ip, #127
+ 202 0084 98F8D120 		ldrb	r2, [r8, #209]	@ zero_extendqisi2
+ 203 0088 2B70     		strb	r3, [r5]
+ 204 008a DAF80030 		ldr	r3, [r10]
+ 205 008e DFF87881 		ldr	r8, .L26+64
+ 206 0092 08BF     		it	eq
+ 207 0094 0133     		addeq	r3, r3, #1
+ 208 0096 7F2A     		cmp	r2, #127
+ 209 0098 08BF     		it	eq
+ 210 009a 03F1FF33 		addeq	r3, r3, #-1
+ 211 009e 022B     		cmp	r3, #2
+ 212 00a0 B8BF     		it	lt
+ 213 00a2 0223     		movlt	r3, #2
+ 214 00a4 052B     		cmp	r3, #5
+ 215 00a6 A8BF     		it	ge
+ 216 00a8 0523     		movge	r3, #5
+ 217 00aa CAF80030 		str	r3, [r10]
+ 218 00ae FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
+ 219 00b2 DAF80030 		ldr	r3, [r10]
+ 220 00b6 F0EE400A 		vmov.f32	s1, s0
+ 221 00ba B0EE000A 		vmov.f32	s0, #2.0e+0
+ 222 00be 03EB4303 		add	r3, r3, r3, lsl #1
+ 223 00c2 9B00     		lsls	r3, r3, #2
+ 224 00c4 07EE903A 		vmov	s15, r3	@ int
+ 225 00c8 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 226 00cc 77EEA00A 		vadd.f32	s1, s15, s1
+ 227 00d0 70EEC90A 		vsub.f32	s1, s1, s18
+ 228 00d4 C0EEA80A 		vdiv.f32	s1, s1, s17
+ 229 00d8 FFF7FEFF 		bl	powf
+ 230 00dc 4148     		ldr	r0, .L26+28
+ 231 00de 20EE080A 		vmul.f32	s0, s0, s16
+ 232 00e2 88ED000A 		vstr.32	s0, [r8]
+ 233 00e6 FFF7FEFF 		bl	_ZN5daisy9Parameter7ProcessEv
+ 234 00ea DAF80030 		ldr	r3, [r10]
+ 235 00ee F0EE400A 		vmov.f32	s1, s0
+ 236 00f2 B1EE047A 		vmov.f32	s14, #5.0e+0
+ 237 00f6 03EB4303 		add	r3, r3, r3, lsl #1
+ 238 00fa B0EE000A 		vmov.f32	s0, #2.0e+0
+ 239 00fe 9B00     		lsls	r3, r3, #2
+ 240 0100 07EE903A 		vmov	s15, r3	@ int
+ 241 0104 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 242 0108 77EEA00A 		vadd.f32	s1, s15, s1
+ 243 010c 70EE870A 		vadd.f32	s1, s1, s14
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 5
+
+
+ 244 0110 70EEC90A 		vsub.f32	s1, s1, s18
+ 245 0114 C0EEA80A 		vdiv.f32	s1, s1, s17
+ 246 0118 FFF7FEFF 		bl	powf
+ 247 011c 2E48     		ldr	r0, .L26+16
+ 248 011e F0EE407A 		vmov.f32	s15, s0
+ 249 0122 98ED000A 		vldr.32	s0, [r8]
+ 250 0126 87ED020A 		vstr.32	s0, [r7, #8]
+ 251 012a 67EE887A 		vmul.f32	s15, s15, s16
+ 252 012e C9ED007A 		vstr.32	s15, [r9]
+ 253 0132 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 254 0136 F0EE407A 		vmov.f32	s15, s0
+ 255 013a 99ED000A 		vldr.32	s0, [r9]
+ 256 013e 2348     		ldr	r0, .L26+4
+ 257 0140 85ED020A 		vstr.32	s0, [r5, #8]
+ 258 0144 C7ED067A 		vstr.32	s15, [r7, #24]
+ 259 0148 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 260 014c 2648     		ldr	r0, .L26+32
+ 261 014e 85ED060A 		vstr.32	s0, [r5, #24]
+ 262 0152 FFF7FEFF 		bl	_ZN5daisy13AnalogControl7ProcessEv
+ 263 0156 DFED257A 		vldr.32	s15, .L26+36
+ 264 015a 254B     		ldr	r3, .L26+40
+ 265 015c 20EE270A 		vmul.f32	s0, s0, s15
+ 266 0160 1D48     		ldr	r0, .L26+16
+ 267 0162 83ED020A 		vstr.32	s0, [r3, #8]
+ 268 0166 FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 269 016a 1848     		ldr	r0, .L26+4
+ 270 016c 8DED000A 		vstr.32	s0, [sp]
+ 271 0170 FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 272 0174 1F48     		ldr	r0, .L26+44
+ 273 0176 0023     		movs	r3, #0
+ 274 0178 01AA     		add	r2, sp, #4
+ 275 017a 6946     		mov	r1, sp
+ 276 017c 0360     		str	r3, [r0]	@ float
+ 277 017e 8DED010A 		vstr.32	s0, [sp, #4]
+ 278 0182 FFF7FEFF 		bl	_ZN7daisysp9CrossFade7ProcessERfS1_
+ 279 0186 B0EE408A 		vmov.f32	s16, s0
+ 280 018a AEB1     		cbz	r6, .L12
+ 281 018c 013E     		subs	r6, r6, #1
+ 282 018e 0025     		movs	r5, #0
+ 283 0190 194F     		ldr	r7, .L26+48
+ 284 0192 26F00106 		bic	r6, r6, #1
+ 285              	.L22:
+ 286 0196 B0EE480A 		vmov.f32	s0, s16
+ 287 019a 1548     		ldr	r0, .L26+40
+ 288 019c FFF7FEFF 		bl	_ZN7daisysp10MoogLadder7ProcessEf
+ 289 01a0 AE42     		cmp	r6, r5
+ 290 01a2 87ED000A 		vstr.32	s0, [r7]
+ 291 01a6 04F10804 		add	r4, r4, #8
+ 292 01aa 04ED020A 		vstr.32	s0, [r4, #-8]
+ 293 01ae 05F10205 		add	r5, r5, #2
+ 294 01b2 04ED010A 		vstr.32	s0, [r4, #-4]
+ 295 01b6 EED1     		bne	.L22
+ 296              	.L12:
+ 297 01b8 02B0     		add	sp, sp, #8
+ 298              		@ sp needed
+ 299 01ba BDEC048B 		vldm	sp!, {d8-d9}
+ 300 01be BDE8F087 		pop	{r4, r5, r6, r7, r8, r9, r10, pc}
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 6
+
+
+ 301              	.L25:
+ 302 01c2 FFF7FEFF 		bl	_Z8blinkLEDf.part.0
+ 303 01c6 31E7     		b	.L13
+ 304              	.L27:
+ 305              		.align	2
+ 306              	.L26:
+ 307 01c8 00000000 		.word	.LANCHOR2
+ 308 01cc 00000000 		.word	.LANCHOR7
+ 309 01d0 00000000 		.word	.LANCHOR4
+ 310 01d4 00000000 		.word	.LANCHOR5
+ 311 01d8 00000000 		.word	.LANCHOR6
+ 312 01dc 00008A42 		.word	1116340224
+ 313 01e0 0000DC43 		.word	1138491392
+ 314 01e4 00000000 		.word	.LANCHOR9
+ 315 01e8 A8000000 		.word	.LANCHOR3+168
+ 316 01ec 00800945 		.word	1158250496
+ 317 01f0 00000000 		.word	.LANCHOR12
+ 318 01f4 00000000 		.word	.LANCHOR13
+ 319 01f8 00000000 		.word	.LANCHOR14
+ 320 01fc 00000000 		.word	.LANCHOR3
+ 321 0200 00000000 		.word	.LANCHOR8
+ 322 0204 00000000 		.word	.LANCHOR11
+ 323 0208 00000000 		.word	.LANCHOR10
+ 325              		.section	.text._Z8blinkLEDf,"ax",%progbits
+ 326              		.align	1
+ 327              		.p2align 2,,3
+ 328              		.global	_Z8blinkLEDf
+ 329              		.syntax unified
+ 330              		.thumb
+ 331              		.thumb_func
+ 332              		.fpu fpv5-d16
+ 334              	_Z8blinkLEDf:
+ 335              		@ args = 0, pretend = 0, frame = 0
+ 336              		@ frame_needed = 0, uses_anonymous_args = 0
+ 337 0000 08B5     		push	{r3, lr}
+ 338 0002 2DED028B 		vpush.64	{d8}
+ 339 0006 B0EE408A 		vmov.f32	s16, s0
+ 340 000a FFF7FEFF 		bl	dsy_tim_get_ms
+ 341 000e 07EE900A 		vmov	s15, r0	@ int
+ 342 0012 F8EE677A 		vcvt.f32.u32	s15, s15
+ 343 0016 F4EEC87A 		vcmpe.f32	s15, s16
+ 344 001a F1EE10FA 		vmrs	APSR_nzcv, FPSCR
+ 345 001e 02DC     		bgt	.L34
+ 346 0020 BDEC028B 		vldm	sp!, {d8}
+ 347 0024 08BD     		pop	{r3, pc}
+ 348              	.L34:
+ 349 0026 BDEC028B 		vldm	sp!, {d8}
+ 350 002a BDE80840 		pop	{r3, lr}
+ 351 002e FFF7FEBF 		b	_Z8blinkLEDf.part.0
+ 353 0032 00BF     		.section	.text._Z9InitSynthf,"ax",%progbits
+ 354              		.align	1
+ 355              		.p2align 2,,3
+ 356              		.global	_Z9InitSynthf
+ 357              		.syntax unified
+ 358              		.thumb
+ 359              		.thumb_func
+ 360              		.fpu fpv5-d16
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 7
+
+
+ 362              	_Z9InitSynthf:
+ 363              		@ args = 0, pretend = 0, frame = 32
+ 364              		@ frame_needed = 0, uses_anonymous_args = 0
+ 365 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 366 0004 2F4D     		ldr	r5, .L37
+ 367 0006 0027     		movs	r7, #0
+ 368 0008 2F4E     		ldr	r6, .L37+4
+ 369 000a 4FF07C58 		mov	r8, #1056964608
+ 370 000e DFED2F0A 		vldr.32	s1, .L37+8
+ 371 0012 2DED048B 		vpush.64	{d8, d9}
+ 372 0016 88B0     		sub	sp, sp, #32
+ 373 0018 B0EE408A 		vmov.f32	s16, s0
+ 374 001c 9FED2C9A 		vldr.32	s18, .L37+12
+ 375 0020 01AC     		add	r4, sp, #4
+ 376 0022 DFED2C8A 		vldr.32	s17, .L37+16
+ 377 0026 B0EE490A 		vmov.f32	s0, s18
+ 378 002a 0FCD     		ldmia	r5!, {r0, r1, r2, r3}
+ 379 002c 0FC4     		stmia	r4!, {r0, r1, r2, r3}
+ 380 002e 95E80700 		ldm	r5, {r0, r1, r2}
+ 381 0032 84E80700 		stm	r4, {r0, r1, r2}
+ 382 0036 3A46     		mov	r2, r7
+ 383 0038 01A9     		add	r1, sp, #4
+ 384 003a 2748     		ldr	r0, .L37+20
+ 385 003c FFF7FEFF 		bl	_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+ 386 0040 B0EE480A 		vmov.f32	s0, s16
+ 387 0044 3046     		mov	r0, r6
+ 388 0046 254D     		ldr	r5, .L37+24
+ 389 0048 FFF7FEFF 		bl	_ZN7daisysp10MoogLadder4InitEf
+ 390 004c F7EE007A 		vmov.f32	s15, #1.0e+0
+ 391 0050 234B     		ldr	r3, .L37+28
+ 392 0052 2846     		mov	r0, r5
+ 393 0054 B0EE680A 		vmov.f32	s0, s17
+ 394 0058 224C     		ldr	r4, .L37+32
+ 395 005a C7EE889A 		vdiv.f32	s19, s15, s16
+ 396 005e 7360     		str	r3, [r6, #4]	@ float
+ 397 0060 85ED038A 		vstr.32	s16, [r5, #12]
+ 398 0064 204E     		ldr	r6, .L37+36
+ 399 0066 85ED059A 		vstr.32	s18, [r5, #20]
+ 400 006a C5ED028A 		vstr.32	s17, [r5, #8]
+ 401 006e C5F80480 		str	r8, [r5, #4]	@ float
+ 402 0072 C5ED049A 		vstr.32	s19, [r5, #16]
+ 403 0076 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 404 007a F0EE407A 		vmov.f32	s15, s0
+ 405 007e 2046     		mov	r0, r4
+ 406 0080 B0EE680A 		vmov.f32	s0, s17
+ 407 0084 6E60     		str	r6, [r5, #4]	@ float
+ 408 0086 C4ED049A 		vstr.32	s19, [r4, #16]
+ 409 008a 84ED038A 		vstr.32	s16, [r4, #12]
+ 410 008e C4ED028A 		vstr.32	s17, [r4, #8]
+ 411 0092 C4F80480 		str	r8, [r4, #4]	@ float
+ 412 0096 84ED059A 		vstr.32	s18, [r4, #20]
+ 413 009a C5ED067A 		vstr.32	s15, [r5, #24]
+ 414 009e 2F70     		strb	r7, [r5]
+ 415 00a0 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 416 00a4 1149     		ldr	r1, .L37+40
+ 417 00a6 0120     		movs	r0, #1
+ 418 00a8 114B     		ldr	r3, .L37+44
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 8
+
+
+ 419 00aa 0222     		movs	r2, #2
+ 420 00ac 2770     		strb	r7, [r4]
+ 421 00ae 6660     		str	r6, [r4, #4]	@ float
+ 422 00b0 84ED060A 		vstr.32	s0, [r4, #24]
+ 423 00b4 0860     		str	r0, [r1]
+ 424 00b6 1A60     		str	r2, [r3]
+ 425 00b8 08B0     		add	sp, sp, #32
+ 426              		@ sp needed
+ 427 00ba BDEC048B 		vldm	sp!, {d8-d9}
+ 428 00be BDE8F081 		pop	{r4, r5, r6, r7, r8, pc}
+ 429              	.L38:
+ 430 00c2 00BF     		.align	2
+ 431              	.L37:
+ 432 00c4 8C000000 		.word	.LANCHOR3+140
+ 433 00c8 00000000 		.word	.LANCHOR12
+ 434 00cc 0000FE42 		.word	1123942400
+ 435 00d0 00000000 		.word	0
+ 436 00d4 0000C842 		.word	1120403456
+ 437 00d8 00000000 		.word	.LANCHOR9
+ 438 00dc 00000000 		.word	.LANCHOR6
+ 439 00e0 CDCCCC3D 		.word	1036831949
+ 440 00e4 00000000 		.word	.LANCHOR7
+ 441 00e8 A4707D3F 		.word	1065185444
+ 442 00ec 00000000 		.word	.LANCHOR4
+ 443 00f0 00000000 		.word	.LANCHOR8
+ 445              		.section	.text.startup.main,"ax",%progbits
+ 446              		.align	1
+ 447              		.p2align 2,,3
+ 448              		.global	main
+ 449              		.syntax unified
+ 450              		.thumb
+ 451              		.thumb_func
+ 452              		.fpu fpv5-d16
+ 454              	main:
+ 455              		@ args = 0, pretend = 0, frame = 0
+ 456              		@ frame_needed = 0, uses_anonymous_args = 0
+ 457 0000 08B5     		push	{r3, lr}
+ 458 0002 0D48     		ldr	r0, .L42
+ 459 0004 FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
+ 460 0008 FFF7FEFF 		bl	dsy_tim_init
+ 461 000c FFF7FEFF 		bl	dsy_tim_start
+ 462 0010 0A48     		ldr	r0, .L42+4
+ 463 0012 FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
+ 464 0016 0948     		ldr	r0, .L42+4
+ 465 0018 FFF7FEFF 		bl	_ZN5daisy8DaisyPod15AudioSampleRateEv
+ 466 001c FFF7FEFF 		bl	_Z9InitSynthf
+ 467 0020 074B     		ldr	r3, .L42+8
+ 468 0022 0022     		movs	r2, #0
+ 469 0024 0548     		ldr	r0, .L42+4
+ 470 0026 9A60     		str	r2, [r3, #8]	@ float
+ 471 0028 FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
+ 472 002c 0549     		ldr	r1, .L42+12
+ 473 002e 0348     		ldr	r0, .L42+4
+ 474 0030 FFF7FEFF 		bl	_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+ 475              	.L40:
+ 476 0034 FEE7     		b	.L40
+ 477              	.L43:
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 9
+
+
+ 478 0036 00BF     		.align	2
+ 479              	.L42:
+ 480 0038 00000000 		.word	.LANCHOR1
+ 481 003c 00000000 		.word	.LANCHOR3
+ 482 0040 00000000 		.word	.LANCHOR12
+ 483 0044 00000000 		.word	_ZL13AudioCallbackPfS_j
+ 485              		.section	.text.startup._GLOBAL__sub_I_seed,"ax",%progbits
+ 486              		.align	1
+ 487              		.p2align 2,,3
+ 488              		.syntax unified
+ 489              		.thumb
+ 490              		.thumb_func
+ 491              		.fpu fpv5-d16
+ 493              	_GLOBAL__sub_I_seed:
+ 494              		@ args = 0, pretend = 0, frame = 0
+ 495              		@ frame_needed = 0, uses_anonymous_args = 0
+ 496 0000 10B5     		push	{r4, lr}
+ 497 0002 134A     		ldr	r2, .L46
+ 498 0004 134C     		ldr	r4, .L46+4
+ 499 0006 1449     		ldr	r1, .L46+8
+ 500 0008 1448     		ldr	r0, .L46+12
+ 501 000a FFF7FEFF 		bl	__aeabi_atexit
+ 502 000e 104A     		ldr	r2, .L46
+ 503 0010 1349     		ldr	r1, .L46+16
+ 504 0012 1448     		ldr	r0, .L46+20
+ 505 0014 FFF7FEFF 		bl	__aeabi_atexit
+ 506 0018 2146     		mov	r1, r4
+ 507 001a 0D4A     		ldr	r2, .L46
+ 508 001c 1248     		ldr	r0, .L46+24
+ 509 001e FFF7FEFF 		bl	__aeabi_atexit
+ 510 0022 2146     		mov	r1, r4
+ 511 0024 0A4A     		ldr	r2, .L46
+ 512 0026 1148     		ldr	r0, .L46+28
+ 513 0028 FFF7FEFF 		bl	__aeabi_atexit
+ 514 002c 084A     		ldr	r2, .L46
+ 515 002e 1049     		ldr	r1, .L46+32
+ 516 0030 1048     		ldr	r0, .L46+36
+ 517 0032 FFF7FEFF 		bl	__aeabi_atexit
+ 518 0036 064A     		ldr	r2, .L46
+ 519 0038 0F49     		ldr	r1, .L46+40
+ 520 003a 1048     		ldr	r0, .L46+44
+ 521 003c FFF7FEFF 		bl	__aeabi_atexit
+ 522 0040 034A     		ldr	r2, .L46
+ 523 0042 0F49     		ldr	r1, .L46+48
+ 524 0044 0F48     		ldr	r0, .L46+52
+ 525 0046 BDE81040 		pop	{r4, lr}
+ 526 004a FFF7FEBF 		b	__aeabi_atexit
+ 527              	.L47:
+ 528 004e 00BF     		.align	2
+ 529              	.L46:
+ 530 0050 00000000 		.word	__dso_handle
+ 531 0054 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
+ 532 0058 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 533 005c 00000000 		.word	.LANCHOR1
+ 534 0060 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 535 0064 00000000 		.word	.LANCHOR3
+ 536 0068 00000000 		.word	.LANCHOR6
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 10
+
+
+ 537 006c 00000000 		.word	.LANCHOR7
+ 538 0070 00000000 		.word	_ZN5daisy9ParameterD1Ev
+ 539 0074 00000000 		.word	.LANCHOR9
+ 540 0078 00000000 		.word	_ZN7daisysp10MoogLadderD1Ev
+ 541 007c 00000000 		.word	.LANCHOR12
+ 542 0080 00000000 		.word	_ZN7daisysp9CrossFadeD1Ev
+ 543 0084 00000000 		.word	.LANCHOR13
+ 545              		.section	.init_array,"aw",%init_array
+ 546              		.align	2
+ 547 0000 00000000 		.word	_GLOBAL__sub_I_seed(target1)
+ 548              		.global	sig
+ 549              		.global	waveforms
+ 550              		.global	cf_Mixer
+ 551              		.global	moogflt
+ 552              		.global	p_freq
+ 553              		.global	osc2
+ 554              		.global	osc
+ 555              		.global	BLINK_DELAY
+ 556              		.global	led_state
+ 557              		.global	hw
+ 558              		.global	seed
+ 559              		.section	.bss._ZL4freq,"aw",%nobits
+ 560              		.align	2
+ 561              		.set	.LANCHOR10,. + 0
+ 564              	_ZL4freq:
+ 565 0000 00000000 		.space	4
+ 566              		.section	.bss._ZL5freq2,"aw",%nobits
+ 567              		.align	2
+ 568              		.set	.LANCHOR11,. + 0
+ 571              	_ZL5freq2:
+ 572 0000 00000000 		.space	4
+ 573              		.section	.bss._ZL6octave,"aw",%nobits
+ 574              		.align	2
+ 575              		.set	.LANCHOR8,. + 0
+ 578              	_ZL6octave:
+ 579 0000 00000000 		.space	4
+ 580              		.section	.bss._ZL8waveform,"aw",%nobits
+ 581              		.align	2
+ 582              		.set	.LANCHOR4,. + 0
+ 585              	_ZL8waveform:
+ 586 0000 00000000 		.space	4
+ 587              		.section	.bss.cf_Mixer,"aw",%nobits
+ 588              		.align	2
+ 589              		.set	.LANCHOR13,. + 0
+ 592              	cf_Mixer:
+ 593 0000 00000000 		.space	8
+ 593      00000000 
+ 594              		.section	.bss.hw,"aw",%nobits
+ 595              		.align	2
+ 596              		.set	.LANCHOR3,. + 0
+ 599              	hw:
+ 600 0000 00000000 		.space	424
+ 600      00000000 
+ 600      00000000 
+ 600      00000000 
+ 600      00000000 
+ 601              		.section	.bss.led_state,"aw",%nobits
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 11
+
+
+ 602              		.set	.LANCHOR0,. + 0
+ 605              	led_state:
+ 606 0000 00       		.space	1
+ 607              		.section	.bss.moogflt,"aw",%nobits
+ 608              		.align	2
+ 609              		.set	.LANCHOR12,. + 0
+ 612              	moogflt:
+ 613 0000 00000000 		.space	68
+ 613      00000000 
+ 613      00000000 
+ 613      00000000 
+ 613      00000000 
+ 614              		.section	.bss.osc,"aw",%nobits
+ 615              		.align	2
+ 616              		.set	.LANCHOR6,. + 0
+ 619              	osc:
+ 620 0000 00000000 		.space	36
+ 620      00000000 
+ 620      00000000 
+ 620      00000000 
+ 620      00000000 
+ 621              		.section	.bss.osc2,"aw",%nobits
+ 622              		.align	2
+ 623              		.set	.LANCHOR7,. + 0
+ 626              	osc2:
+ 627 0000 00000000 		.space	36
+ 627      00000000 
+ 627      00000000 
+ 627      00000000 
+ 627      00000000 
+ 628              		.section	.bss.p_freq,"aw",%nobits
+ 629              		.align	2
+ 630              		.set	.LANCHOR9,. + 0
+ 633              	p_freq:
+ 634 0000 00000000 		.space	52
+ 634      00000000 
+ 634      00000000 
+ 634      00000000 
+ 634      00000000 
+ 635              		.section	.bss.seed,"aw",%nobits
+ 636              		.align	2
+ 637              		.set	.LANCHOR1,. + 0
+ 640              	seed:
+ 641 0000 00000000 		.space	108
+ 641      00000000 
+ 641      00000000 
+ 641      00000000 
+ 641      00000000 
+ 642              		.section	.bss.sig,"aw",%nobits
+ 643              		.align	2
+ 644              		.set	.LANCHOR14,. + 0
+ 647              	sig:
+ 648 0000 00000000 		.space	4
+ 649              		.section	.data.BLINK_DELAY,"aw"
+ 650              		.align	2
+ 651              		.set	.LANCHOR2,. + 0
+ 654              	BLINK_DELAY:
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 12
+
+
+ 655 0000 00007A43 		.word	1132068864
+ 656              		.section	.data.waveforms,"aw"
+ 657              		.align	2
+ 658              		.set	.LANCHOR5,. + 0
+ 661              	waveforms:
+ 662 0000 00010607 		.ascii	"\000\001\006\007\000\001\006\007"
+ 662      00010607 
+ 663              		.hidden	__dso_handle
+ 664              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 13
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 SimpleOscillator.cpp
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:15     .text._ZN5daisy9ParameterD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:24     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:24     .text._ZN5daisy9ParameterD2Ev:00000000 _ZN5daisy9ParameterD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:33     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:41     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:41     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:50     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:58     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:58     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:67     .text._ZN7daisysp9CrossFadeD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:75     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:75     .text._ZN7daisysp9CrossFadeD2Ev:00000000 _ZN7daisysp9CrossFadeD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:84     .text._ZN7daisysp10MoogLadderD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:92     .text._ZN7daisysp10MoogLadderD2Ev:00000000 _ZN7daisysp10MoogLadderD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:92     .text._ZN7daisysp10MoogLadderD2Ev:00000000 _ZN7daisysp10MoogLadderD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:101    .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:109    .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:109    .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:118    .text._Z8blinkLEDf.part.0:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:125    .text._Z8blinkLEDf.part.0:00000000 _Z8blinkLEDf.part.0
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:141    .text._Z8blinkLEDf.part.0:00000020 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:145    .text._ZL13AudioCallbackPfS_j:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:152    .text._ZL13AudioCallbackPfS_j:00000000 _ZL13AudioCallbackPfS_j
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:307    .text._ZL13AudioCallbackPfS_j:000001c8 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:326    .text._Z8blinkLEDf:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:334    .text._Z8blinkLEDf:00000000 _Z8blinkLEDf
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:354    .text._Z9InitSynthf:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:362    .text._Z9InitSynthf:00000000 _Z9InitSynthf
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:432    .text._Z9InitSynthf:000000c4 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:446    .text.startup.main:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:454    .text.startup.main:00000000 main
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:480    .text.startup.main:00000038 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:486    .text.startup._GLOBAL__sub_I_seed:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:493    .text.startup._GLOBAL__sub_I_seed:00000000 _GLOBAL__sub_I_seed
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:530    .text.startup._GLOBAL__sub_I_seed:00000050 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:546    .init_array:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:647    .bss.sig:00000000 sig
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:661    .data.waveforms:00000000 waveforms
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:592    .bss.cf_Mixer:00000000 cf_Mixer
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:612    .bss.moogflt:00000000 moogflt
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:633    .bss.p_freq:00000000 p_freq
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:626    .bss.osc2:00000000 osc2
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:619    .bss.osc:00000000 osc
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:654    .data.BLINK_DELAY:00000000 BLINK_DELAY
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:605    .bss.led_state:00000000 led_state
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:599    .bss.hw:00000000 hw
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:640    .bss.seed:00000000 seed
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:560    .bss._ZL4freq:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:564    .bss._ZL4freq:00000000 _ZL4freq
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:567    .bss._ZL5freq2:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:571    .bss._ZL5freq2:00000000 _ZL5freq2
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:574    .bss._ZL6octave:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:578    .bss._ZL6octave:00000000 _ZL6octave
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:581    .bss._ZL8waveform:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:585    .bss._ZL8waveform:00000000 _ZL8waveform
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s 			page 14
+
+
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:588    .bss.cf_Mixer:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:595    .bss.hw:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:606    .bss.led_state:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:608    .bss.moogflt:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:615    .bss.osc:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:622    .bss.osc2:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:629    .bss.p_freq:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:636    .bss.seed:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:643    .bss.sig:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:650    .data.BLINK_DELAY:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccngAPdh.s:657    .data.waveforms:00000000 $d
+                           .group:00000000 _ZN5daisy9ParameterD5Ev
+                           .group:00000000 _ZN5daisy9DaisySeedD5Ev
+                           .group:00000000 _ZN5daisy8DaisyPodD5Ev
+                           .group:00000000 _ZN7daisysp9CrossFadeD5Ev
+                           .group:00000000 _ZN7daisysp10MoogLadderD5Ev
+                           .group:00000000 _ZN7daisysp10OscillatorD5Ev
+
+UNDEFINED SYMBOLS
+_ZN5daisy9DaisySeed6SetLedEb
+dsy_tim_init
+dsy_tim_start
+dsy_tim_get_ms
+_ZN5daisy8DaisyPod16DebounceControlsEv
+_ZN5daisy9Parameter7ProcessEv
+powf
+_ZN7daisysp10Oscillator12CalcPhaseIncEf
+_ZN5daisy13AnalogControl7ProcessEv
+_ZN7daisysp10Oscillator7ProcessEv
+_ZN7daisysp9CrossFade7ProcessERfS1_
+_ZN7daisysp10MoogLadder7ProcessEf
+_ZN5daisy9Parameter4InitENS_13AnalogControlEffNS0_5CurveE
+_ZN7daisysp10MoogLadder4InitEf
+_ZN5daisy9DaisySeed9ConfigureEv
+_ZN5daisy8DaisyPod4InitEv
+_ZN5daisy8DaisyPod15AudioSampleRateEv
+_ZN5daisy8DaisyPod8StartAdcEv
+_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+__aeabi_atexit
+__dso_handle
