@@ -1,9 +1,9 @@
 #include "daisy_pod.h"
 #include "daisysp.h"
 #include <math.h>
-#include <cstdio>
-#include <stdio.h>
-#include <string.h>
+// #include <cstdio>
+// #include <stdio.h>
+// #include <string.h>
 
 using namespace daisy;
 using namespace daisysp;
