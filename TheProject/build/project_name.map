@@ -1,0 +1,721 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o (exit)
+c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o) (_global_impure_ptr)
+c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o (__libc_init_array)
+c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o (memset)
+c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o) (_exit)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .text          0x00000000       0x7c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .ARM.extab     0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .ARM.exidx     0x00000000       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .ARM.attributes
+                0x00000000       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+ .text          0x00000000        0x0 build/system_stm32h7xx.o
+ .data          0x00000000        0x0 build/system_stm32h7xx.o
+ .bss           0x00000000        0x0 build/system_stm32h7xx.o
+ .text.SystemCoreClockUpdate
+                0x00000000      0x150 build/system_stm32h7xx.o
+ .data.SystemCoreClock
+                0x00000000        0x4 build/system_stm32h7xx.o
+ .data.SystemD2Clock
+                0x00000000        0x4 build/system_stm32h7xx.o
+ .rodata.D1CorePrescTable
+                0x00000000       0x10 build/system_stm32h7xx.o
+ .text          0x00000000        0x0 build/theSynthProj.o
+ .data          0x00000000        0x0 build/theSynthProj.o
+ .bss           0x00000000        0x0 build/theSynthProj.o
+ .text          0x00000000       0x14 build/startup_stm32h750xx.o
+ .data          0x00000000        0x0 build/startup_stm32h750xx.o
+ .bss           0x00000000        0x0 build/startup_stm32h750xx.o
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .text.exit     0x00000000       0x28 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .debug_frame   0x00000000       0x28 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .ARM.attributes
+                0x00000000       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .data._impure_ptr
+                0x00000000        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .data.impure_data
+                0x00000000       0x60 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .rodata._global_impure_ptr
+                0x00000000        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .ARM.attributes
+                0x00000000       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .text.memset   0x00000000       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000000       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .text._exit    0x00000000        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .debug_frame   0x00000000       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .ARM.attributes
+                0x00000000       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .eh_frame      0x00000000        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .ARM.attributes
+                0x00000000       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+FLASH            0x08000000         0x00020000         xr
+DTCMRAM          0x20000000         0x00020000         xrw
+SRAM             0x24000000         0x00080000         xrw
+RAM_D2           0x30000000         0x00048000         xrw
+RAM_D3           0x38000000         0x00010000         xrw
+ITCMRAM          0x00000000         0x00010000         xrw
+SDRAM            0xc0000000         0x04000000         xrw
+QSPIFLASH        0x90000000         0x00800000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+LOAD build/system_stm32h7xx.o
+LOAD build/theSynthProj.o
+LOAD build/startup_stm32h750xx.o
+LOAD ../libs/libdaisy/build\libdaisy.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a
+LOAD ../libs/DaisySP/build\libdaisysp.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libstdc++_nano.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libm.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a
+START GROUP
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard\libgcc.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard\libgcc.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a
+END GROUP
+START GROUP
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard\libgcc.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a
+END GROUP
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtend.o
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x20020000                _estack = 0x20020000
+
+.isr_vector     0x08000000      0x298
+                0x08000000                . = ALIGN (0x4)
+ *(.isr_vector)
+ .isr_vector    0x08000000      0x298 build/startup_stm32h750xx.o
+                0x08000000                g_pfnVectors
+                0x08000298                . = ALIGN (0x4)
+
+.eh_frame       0x08000298        0x0
+ .eh_frame      0x08000298        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+
+.text           0x08000298      0x178
+                0x08000298                . = ALIGN (0x4)
+                0x08000298                _stext = .
+ *(.text)
+ .text          0x08000298       0x40 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ *(.text*)
+ .text.SystemInit
+                0x080002d8       0x80 build/system_stm32h7xx.o
+                0x080002d8                SystemInit
+ .text.startup.main
+                0x08000358        0x4 build/theSynthProj.o
+                0x08000358                main
+ .text.Reset_Handler
+                0x0800035c       0x50 build/startup_stm32h750xx.o
+                0x0800035c                Reset_Handler
+ .text.Default_Handler
+                0x080003ac        0x2 build/startup_stm32h750xx.o
+                0x080003ac                RTC_Alarm_IRQHandler
+                0x080003ac                HASH_RNG_IRQHandler
+                0x080003ac                EXTI2_IRQHandler
+                0x080003ac                TIM8_CC_IRQHandler
+                0x080003ac                HRTIM1_Master_IRQHandler
+                0x080003ac                DebugMon_Handler
+                0x080003ac                UART8_IRQHandler
+                0x080003ac                SPI4_IRQHandler
+                0x080003ac                TIM1_CC_IRQHandler
+                0x080003ac                BDMA_Channel6_IRQHandler
+                0x080003ac                DMA2_Stream5_IRQHandler
+                0x080003ac                HardFault_Handler
+                0x080003ac                HRTIM1_FLT_IRQHandler
+                0x080003ac                JPEG_IRQHandler
+                0x080003ac                DMA1_Stream5_IRQHandler
+                0x080003ac                SysTick_Handler
+                0x080003ac                BDMA_Channel1_IRQHandler
+                0x080003ac                HRTIM1_TIMD_IRQHandler
+                0x080003ac                TAMP_STAMP_IRQHandler
+                0x080003ac                PendSV_Handler
+                0x080003ac                NMI_Handler
+                0x080003ac                EXTI3_IRQHandler
+                0x080003ac                LPTIM4_IRQHandler
+                0x080003ac                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080003ac                LPTIM2_IRQHandler
+                0x080003ac                DFSDM1_FLT1_IRQHandler
+                0x080003ac                DMAMUX2_OVR_IRQHandler
+                0x080003ac                TIM8_UP_TIM13_IRQHandler
+                0x080003ac                I2C3_ER_IRQHandler
+                0x080003ac                DFSDM1_FLT2_IRQHandler
+                0x080003ac                MDMA_IRQHandler
+                0x080003ac                LPTIM3_IRQHandler
+                0x080003ac                HSEM1_IRQHandler
+                0x080003ac                EXTI0_IRQHandler
+                0x080003ac                I2C2_EV_IRQHandler
+                0x080003ac                DMA1_Stream2_IRQHandler
+                0x080003ac                FPU_IRQHandler
+                0x080003ac                OTG_HS_WKUP_IRQHandler
+                0x080003ac                FDCAN1_IT1_IRQHandler
+                0x080003ac                UsageFault_Handler
+                0x080003ac                LTDC_ER_IRQHandler
+                0x080003ac                DMA2_Stream2_IRQHandler
+                0x080003ac                HRTIM1_TIME_IRQHandler
+                0x080003ac                SPI1_IRQHandler
+                0x080003ac                TIM6_DAC_IRQHandler
+                0x080003ac                DCMI_IRQHandler
+                0x080003ac                HRTIM1_TIMC_IRQHandler
+                0x080003ac                DMA2_Stream3_IRQHandler
+                0x080003ac                SAI2_IRQHandler
+                0x080003ac                DFSDM1_FLT3_IRQHandler
+                0x080003ac                USART6_IRQHandler
+                0x080003ac                TIM17_IRQHandler
+                0x080003ac                USART3_IRQHandler
+                0x080003ac                BDMA_Channel7_IRQHandler
+                0x080003ac                CRYP_IRQHandler
+                0x080003ac                LPTIM5_IRQHandler
+                0x080003ac                UART5_IRQHandler
+                0x080003ac                ADC3_IRQHandler
+                0x080003ac                DMA2_Stream0_IRQHandler
+                0x080003ac                TIM4_IRQHandler
+                0x080003ac                BDMA_Channel2_IRQHandler
+                0x080003ac                QUADSPI_IRQHandler
+                0x080003ac                I2C1_EV_IRQHandler
+                0x080003ac                DMA1_Stream6_IRQHandler
+                0x080003ac                DMAMUX1_OVR_IRQHandler
+                0x080003ac                DMA1_Stream1_IRQHandler
+                0x080003ac                TIM16_IRQHandler
+                0x080003ac                UART4_IRQHandler
+                0x080003ac                BDMA_Channel5_IRQHandler
+                0x080003ac                TIM3_IRQHandler
+                0x080003ac                RCC_IRQHandler
+                0x080003ac                TIM8_BRK_TIM12_IRQHandler
+                0x080003ac                TIM1_TRG_COM_IRQHandler
+                0x080003ac                Default_Handler
+                0x080003ac                ECC_IRQHandler
+                0x080003ac                CEC_IRQHandler
+                0x080003ac                EXTI15_10_IRQHandler
+                0x080003ac                BDMA_Channel0_IRQHandler
+                0x080003ac                ADC_IRQHandler
+                0x080003ac                DMA1_Stream7_IRQHandler
+                0x080003ac                HRTIM1_TIMA_IRQHandler
+                0x080003ac                SPI5_IRQHandler
+                0x080003ac                TIM7_IRQHandler
+                0x080003ac                SDMMC1_IRQHandler
+                0x080003ac                TIM5_IRQHandler
+                0x080003ac                DMA2_Stream7_IRQHandler
+                0x080003ac                TIM15_IRQHandler
+                0x080003ac                PVD_AVD_IRQHandler
+                0x080003ac                I2C3_EV_IRQHandler
+                0x080003ac                EXTI9_5_IRQHandler
+                0x080003ac                RTC_WKUP_IRQHandler
+                0x080003ac                LTDC_IRQHandler
+                0x080003ac                SAI3_IRQHandler
+                0x080003ac                ETH_WKUP_IRQHandler
+                0x080003ac                SPDIF_RX_IRQHandler
+                0x080003ac                SPI2_IRQHandler
+                0x080003ac                OTG_HS_EP1_IN_IRQHandler
+                0x080003ac                MemManage_Handler
+                0x080003ac                DMA1_Stream0_IRQHandler
+                0x080003ac                SVC_Handler
+                0x080003ac                CRS_IRQHandler
+                0x080003ac                EXTI4_IRQHandler
+                0x080003ac                HRTIM1_TIMB_IRQHandler
+                0x080003ac                FDCAN2_IT1_IRQHandler
+                0x080003ac                ETH_IRQHandler
+                0x080003ac                TIM1_UP_IRQHandler
+                0x080003ac                BDMA_Channel4_IRQHandler
+                0x080003ac                OTG_HS_EP1_OUT_IRQHandler
+                0x080003ac                WWDG_IRQHandler
+                0x080003ac                SPI6_IRQHandler
+                0x080003ac                MDIOS_IRQHandler
+                0x080003ac                I2C4_EV_IRQHandler
+                0x080003ac                FDCAN2_IT0_IRQHandler
+                0x080003ac                LPUART1_IRQHandler
+                0x080003ac                FDCAN1_IT0_IRQHandler
+                0x080003ac                TIM2_IRQHandler
+                0x080003ac                OTG_FS_WKUP_IRQHandler
+                0x080003ac                OTG_HS_IRQHandler
+                0x080003ac                DMA2D_IRQHandler
+                0x080003ac                TIM1_BRK_IRQHandler
+                0x080003ac                EXTI1_IRQHandler
+                0x080003ac                SDMMC2_IRQHandler
+                0x080003ac                OTG_FS_EP1_OUT_IRQHandler
+                0x080003ac                BDMA_Channel3_IRQHandler
+                0x080003ac                UART7_IRQHandler
+                0x080003ac                MDIOS_WKUP_IRQHandler
+                0x080003ac                USART2_IRQHandler
+                0x080003ac                DFSDM1_FLT0_IRQHandler
+                0x080003ac                SAI4_IRQHandler
+                0x080003ac                I2C2_ER_IRQHandler
+                0x080003ac                DMA2_Stream1_IRQHandler
+                0x080003ac                FLASH_IRQHandler
+                0x080003ac                DMA2_Stream4_IRQHandler
+                0x080003ac                BusFault_Handler
+                0x080003ac                USART1_IRQHandler
+                0x080003ac                OTG_FS_IRQHandler
+                0x080003ac                SPI3_IRQHandler
+                0x080003ac                WAKEUP_PIN_IRQHandler
+                0x080003ac                DMA1_Stream4_IRQHandler
+                0x080003ac                OTG_FS_EP1_IN_IRQHandler
+                0x080003ac                I2C1_ER_IRQHandler
+                0x080003ac                FMC_IRQHandler
+                0x080003ac                FDCAN_CAL_IRQHandler
+                0x080003ac                SWPMI1_IRQHandler
+                0x080003ac                COMP1_IRQHandler
+                0x080003ac                LPTIM1_IRQHandler
+                0x080003ac                I2C4_ER_IRQHandler
+                0x080003ac                DMA2_Stream6_IRQHandler
+                0x080003ac                SAI1_IRQHandler
+                0x080003ac                DMA1_Stream3_IRQHandler
+ *fill*         0x080003ae        0x2 
+ .text.__libc_init_array
+                0x080003b0       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+                0x080003b0                __libc_init_array
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x080003f8        0x0 linker stubs
+ *(.glue_7t)
+ .glue_7t       0x080003f8        0x0 linker stubs
+ *(.init)
+ .init          0x080003f8        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x080003f8                _init
+ .init          0x080003fc        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+ *(.fini)
+ .fini          0x08000404        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x08000404                _fini
+ .fini          0x08000408        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x08000410                . = ALIGN (0x4)
+                0x08000410                _etext = .
+
+.vfp11_veneer   0x08000410        0x0
+ .vfp11_veneer  0x08000410        0x0 linker stubs
+
+.v4_bx          0x08000410        0x0
+ .v4_bx         0x08000410        0x0 linker stubs
+
+.iplt           0x08000410        0x0
+ .iplt          0x08000410        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+
+.rel.dyn        0x08000410        0x0
+ .rel.iplt      0x08000410        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+
+.ARM.extab      0x08000410        0x0
+                0x08000410                . = ALIGN (0x4)
+ *(.ARM.extab)
+ *(.gnu.linkonce.armextab.*)
+                0x08000410                . = ALIGN (0x4)
+
+.exidx          0x08000410        0x0
+                0x08000410                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__exidx_start = .)
+ *(.ARM.exidx*)
+                0x08000410                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__exidx_end = .)
+
+.ARM.attributes
+                0x08000410       0x2e
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x08000410       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+ .ARM.attributes
+                0x0800042e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .ARM.attributes
+                0x08000460       0x32 build/system_stm32h7xx.o
+ .ARM.attributes
+                0x08000492       0x32 build/theSynthProj.o
+ .ARM.attributes
+                0x080004c4       0x21 build/startup_stm32h750xx.o
+ .ARM.attributes
+                0x080004e5       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+ .ARM.attributes
+                0x08000517       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+
+.preinit_array  0x08000410        0x0
+                0x08000410                PROVIDE (__preinit_array_start = .)
+ *(.preinit_array*)
+                0x08000410                PROVIDE (__preinit_array_end = .)
+
+.init_array     0x08000410        0x4
+                0x08000410                PROVIDE (__init_array_start = .)
+ *(SORT_BY_NAME(.init_array.*))
+ *(.init_array*)
+ .init_array    0x08000410        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x08000414                PROVIDE (__init_array_end = .)
+
+.fini_array     0x08000414        0x4
+                [!provide]                PROVIDE (__fini_array_start = .)
+ *(.fini_array*)
+ .fini_array    0x08000414        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ *(SORT_BY_NAME(.fini_array.*))
+                [!provide]                PROVIDE (__fini_array_end = .)
+
+.data           0x24000000        0x0 load address 0x08000418
+                0x24000000                . = ALIGN (0x4)
+                0x24000000                _sdata = .
+                [!provide]                PROVIDE (__data_start__ = _sdata)
+ *(.data)
+ *(.data*)
+                0x24000000                . = ALIGN (0x4)
+                0x24000000                _edata = .
+                [!provide]                PROVIDE (__data_end__ = _edata)
+                0x08000418                _sidata = LOADADDR (.data)
+
+.igot.plt       0x24000000        0x0 load address 0x08000418
+ .igot.plt      0x24000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+
+.bss            0x24000000       0x1c load address 0x08000418
+                0x24000000                . = ALIGN (0x4)
+                0x24000000                _sbss = .
+                0x24000000                PROVIDE (__bss_start__ = _sbss)
+ *(.bss)
+ .bss           0x24000000       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ *(.bss*)
+ *(COMMON)
+                0x2400001c                . = ALIGN (0x4)
+                0x2400001c                _ebss = .
+                0x2400001c                PROVIDE (__bss_end__ = _ebss)
+                [!provide]                PROVIDE (end = .)
+
+.dtcmram_bss    0x20000000        0x0
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _sdtcmram_bss = .
+                [!provide]                PROVIDE (__dtcmram_bss_start__ = _sdtcmram_bss)
+ *(.dtcmram_bss)
+ *(.dtcmram_bss*)
+                0x20000000                . = ALIGN (0x4)
+                0x20000000                _edtcmram_bss = .
+                [!provide]                PROVIDE (__dtcmram_bss_end__ = _edtcmram_bss)
+
+.sram1_bss      0x30000000        0x0
+                0x30000000                . = ALIGN (0x4)
+                0x30000000                _ssram1_bss = .
+                [!provide]                PROVIDE (__sram1_bss_start__ = _sram1_bss)
+ *(.sram1_bss)
+ *(.sram1_bss*)
+                0x30000000                . = ALIGN (0x4)
+                0x30000000                _esram1_bss = .
+                [!provide]                PROVIDE (__sram1_bss_end__ = _esram1_bss)
+
+.sdram_bss      0xc0000000        0x0
+                0xc0000000                . = ALIGN (0x4)
+                0xc0000000                _ssdram_bss = .
+                [!provide]                PROVIDE (__sdram_bss_start = _ssdram_bss)
+ *(.sdram_bss)
+ *(.sdram_bss*)
+                0xc0000000                . = ALIGN (0x4)
+                0xc0000000                _esdram_bss = .
+                [!provide]                PROVIDE (__sdram_bss_end = _esdram_bss)
+
+.qspiflash_text
+                0x90000000        0x0
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _sqspiflash_text = .
+                [!provide]                PROVIDE (__qspiflash_text_start = _sqspiflash_text)
+ *(.qspiflash_text)
+ *(.qspiflash_text*)
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _eqspiflash_text = .
+                [!provide]                PROVIDE (__qspiflash_text_end = _eqspiflash_text)
+
+.qspiflash_data
+                0x90000000        0x0
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _sqspiflash_data = .
+                [!provide]                PROVIDE (__qspiflash_data_start = _sqspiflash_data)
+ *(.qspiflash_data)
+ *(.qspiflash_data*)
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _eqspiflash_data = .
+                [!provide]                PROVIDE (__qspiflash_data_end = _eqspiflash_data)
+
+.qspiflash_bss  0x90000000        0x0
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _sqspiflash_bss = .
+                [!provide]                PROVIDE (__qspiflash_bss_start = _sqspiflash_bss)
+ *(.qspiflash_bss)
+ *(.qspiflash_bss*)
+                0x90000000                . = ALIGN (0x4)
+                0x90000000                _eqspiflash_bss = .
+                [!provide]                PROVIDE (__qspiflash_bss_end = _eqspiflash_bss)
+
+.heap           0x2400001c        0x0
+                0x2400001c                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__heap_start__ = .)
+ *(.heap)
+                0x2400001c                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__heap_end__ = .)
+
+.reserved_for_stack
+                0x2400001c        0x0
+                0x2400001c                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__reserved_for_stack_start__ = .)
+ *(.reserved_for_stack)
+                0x2400001c                . = ALIGN (0x4)
+                [!provide]                PROVIDE (__reserved_for_stack_end__ = .)
+
+DISCARD
+ libc.a(*)
+ libm.a(*)
+ libgcc.a(*)
+OUTPUT(build/project_name.elf elf32-littlearm)
+LOAD linker stubs
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libm.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard\libgcc.a
+
+.comment        0x00000000       0x4c
+ .comment       0x00000000       0x4c build/system_stm32h7xx.o
+                                 0x4d (size before relaxing)
+ .comment       0x0000004c       0x4d build/theSynthProj.o
+
+.debug_frame    0x00000000       0x2c
+ .debug_frame   0x00000000       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+
+Cross Reference Table
+
+Symbol                                            File
+ADC3_IRQHandler                                   build/startup_stm32h750xx.o
+ADC_IRQHandler                                    build/startup_stm32h750xx.o
+BDMA_Channel0_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel1_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel2_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel3_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel4_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel5_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel6_IRQHandler                          build/startup_stm32h750xx.o
+BDMA_Channel7_IRQHandler                          build/startup_stm32h750xx.o
+BusFault_Handler                                  build/startup_stm32h750xx.o
+CEC_IRQHandler                                    build/startup_stm32h750xx.o
+COMP1_IRQHandler                                  build/startup_stm32h750xx.o
+CRS_IRQHandler                                    build/startup_stm32h750xx.o
+CRYP_IRQHandler                                   build/startup_stm32h750xx.o
+D1CorePrescTable                                  build/system_stm32h7xx.o
+DCMI_IRQHandler                                   build/startup_stm32h750xx.o
+DFSDM1_FLT0_IRQHandler                            build/startup_stm32h750xx.o
+DFSDM1_FLT1_IRQHandler                            build/startup_stm32h750xx.o
+DFSDM1_FLT2_IRQHandler                            build/startup_stm32h750xx.o
+DFSDM1_FLT3_IRQHandler                            build/startup_stm32h750xx.o
+DMA1_Stream0_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream1_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream2_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream3_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream4_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream5_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream6_IRQHandler                           build/startup_stm32h750xx.o
+DMA1_Stream7_IRQHandler                           build/startup_stm32h750xx.o
+DMA2D_IRQHandler                                  build/startup_stm32h750xx.o
+DMA2_Stream0_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream1_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream2_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream3_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream4_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream5_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream6_IRQHandler                           build/startup_stm32h750xx.o
+DMA2_Stream7_IRQHandler                           build/startup_stm32h750xx.o
+DMAMUX1_OVR_IRQHandler                            build/startup_stm32h750xx.o
+DMAMUX2_OVR_IRQHandler                            build/startup_stm32h750xx.o
+DebugMon_Handler                                  build/startup_stm32h750xx.o
+Default_Handler                                   build/startup_stm32h750xx.o
+ECC_IRQHandler                                    build/startup_stm32h750xx.o
+ETH_IRQHandler                                    build/startup_stm32h750xx.o
+ETH_WKUP_IRQHandler                               build/startup_stm32h750xx.o
+EXTI0_IRQHandler                                  build/startup_stm32h750xx.o
+EXTI15_10_IRQHandler                              build/startup_stm32h750xx.o
+EXTI1_IRQHandler                                  build/startup_stm32h750xx.o
+EXTI2_IRQHandler                                  build/startup_stm32h750xx.o
+EXTI3_IRQHandler                                  build/startup_stm32h750xx.o
+EXTI4_IRQHandler                                  build/startup_stm32h750xx.o
+EXTI9_5_IRQHandler                                build/startup_stm32h750xx.o
+FDCAN1_IT0_IRQHandler                             build/startup_stm32h750xx.o
+FDCAN1_IT1_IRQHandler                             build/startup_stm32h750xx.o
+FDCAN2_IT0_IRQHandler                             build/startup_stm32h750xx.o
+FDCAN2_IT1_IRQHandler                             build/startup_stm32h750xx.o
+FDCAN_CAL_IRQHandler                              build/startup_stm32h750xx.o
+FLASH_IRQHandler                                  build/startup_stm32h750xx.o
+FMC_IRQHandler                                    build/startup_stm32h750xx.o
+FPU_IRQHandler                                    build/startup_stm32h750xx.o
+HASH_RNG_IRQHandler                               build/startup_stm32h750xx.o
+HRTIM1_FLT_IRQHandler                             build/startup_stm32h750xx.o
+HRTIM1_Master_IRQHandler                          build/startup_stm32h750xx.o
+HRTIM1_TIMA_IRQHandler                            build/startup_stm32h750xx.o
+HRTIM1_TIMB_IRQHandler                            build/startup_stm32h750xx.o
+HRTIM1_TIMC_IRQHandler                            build/startup_stm32h750xx.o
+HRTIM1_TIMD_IRQHandler                            build/startup_stm32h750xx.o
+HRTIM1_TIME_IRQHandler                            build/startup_stm32h750xx.o
+HSEM1_IRQHandler                                  build/startup_stm32h750xx.o
+HardFault_Handler                                 build/startup_stm32h750xx.o
+I2C1_ER_IRQHandler                                build/startup_stm32h750xx.o
+I2C1_EV_IRQHandler                                build/startup_stm32h750xx.o
+I2C2_ER_IRQHandler                                build/startup_stm32h750xx.o
+I2C2_EV_IRQHandler                                build/startup_stm32h750xx.o
+I2C3_ER_IRQHandler                                build/startup_stm32h750xx.o
+I2C3_EV_IRQHandler                                build/startup_stm32h750xx.o
+I2C4_ER_IRQHandler                                build/startup_stm32h750xx.o
+I2C4_EV_IRQHandler                                build/startup_stm32h750xx.o
+JPEG_IRQHandler                                   build/startup_stm32h750xx.o
+LPTIM1_IRQHandler                                 build/startup_stm32h750xx.o
+LPTIM2_IRQHandler                                 build/startup_stm32h750xx.o
+LPTIM3_IRQHandler                                 build/startup_stm32h750xx.o
+LPTIM4_IRQHandler                                 build/startup_stm32h750xx.o
+LPTIM5_IRQHandler                                 build/startup_stm32h750xx.o
+LPUART1_IRQHandler                                build/startup_stm32h750xx.o
+LTDC_ER_IRQHandler                                build/startup_stm32h750xx.o
+LTDC_IRQHandler                                   build/startup_stm32h750xx.o
+MDIOS_IRQHandler                                  build/startup_stm32h750xx.o
+MDIOS_WKUP_IRQHandler                             build/startup_stm32h750xx.o
+MDMA_IRQHandler                                   build/startup_stm32h750xx.o
+MemManage_Handler                                 build/startup_stm32h750xx.o
+NMI_Handler                                       build/startup_stm32h750xx.o
+OTG_FS_EP1_IN_IRQHandler                          build/startup_stm32h750xx.o
+OTG_FS_EP1_OUT_IRQHandler                         build/startup_stm32h750xx.o
+OTG_FS_IRQHandler                                 build/startup_stm32h750xx.o
+OTG_FS_WKUP_IRQHandler                            build/startup_stm32h750xx.o
+OTG_HS_EP1_IN_IRQHandler                          build/startup_stm32h750xx.o
+OTG_HS_EP1_OUT_IRQHandler                         build/startup_stm32h750xx.o
+OTG_HS_IRQHandler                                 build/startup_stm32h750xx.o
+OTG_HS_WKUP_IRQHandler                            build/startup_stm32h750xx.o
+PVD_AVD_IRQHandler                                build/startup_stm32h750xx.o
+PendSV_Handler                                    build/startup_stm32h750xx.o
+QUADSPI_IRQHandler                                build/startup_stm32h750xx.o
+RCC_IRQHandler                                    build/startup_stm32h750xx.o
+RTC_Alarm_IRQHandler                              build/startup_stm32h750xx.o
+RTC_WKUP_IRQHandler                               build/startup_stm32h750xx.o
+Reset_Handler                                     build/startup_stm32h750xx.o
+SAI1_IRQHandler                                   build/startup_stm32h750xx.o
+SAI2_IRQHandler                                   build/startup_stm32h750xx.o
+SAI3_IRQHandler                                   build/startup_stm32h750xx.o
+SAI4_IRQHandler                                   build/startup_stm32h750xx.o
+SDMMC1_IRQHandler                                 build/startup_stm32h750xx.o
+SDMMC2_IRQHandler                                 build/startup_stm32h750xx.o
+SPDIF_RX_IRQHandler                               build/startup_stm32h750xx.o
+SPI1_IRQHandler                                   build/startup_stm32h750xx.o
+SPI2_IRQHandler                                   build/startup_stm32h750xx.o
+SPI3_IRQHandler                                   build/startup_stm32h750xx.o
+SPI4_IRQHandler                                   build/startup_stm32h750xx.o
+SPI5_IRQHandler                                   build/startup_stm32h750xx.o
+SPI6_IRQHandler                                   build/startup_stm32h750xx.o
+SVC_Handler                                       build/startup_stm32h750xx.o
+SWPMI1_IRQHandler                                 build/startup_stm32h750xx.o
+SysTick_Handler                                   build/startup_stm32h750xx.o
+SystemCoreClock                                   build/system_stm32h7xx.o
+SystemCoreClockUpdate                             build/system_stm32h7xx.o
+SystemD2Clock                                     build/system_stm32h7xx.o
+SystemInit                                        build/system_stm32h7xx.o
+                                                  build/startup_stm32h750xx.o
+TAMP_STAMP_IRQHandler                             build/startup_stm32h750xx.o
+TIM15_IRQHandler                                  build/startup_stm32h750xx.o
+TIM16_IRQHandler                                  build/startup_stm32h750xx.o
+TIM17_IRQHandler                                  build/startup_stm32h750xx.o
+TIM1_BRK_IRQHandler                               build/startup_stm32h750xx.o
+TIM1_CC_IRQHandler                                build/startup_stm32h750xx.o
+TIM1_TRG_COM_IRQHandler                           build/startup_stm32h750xx.o
+TIM1_UP_IRQHandler                                build/startup_stm32h750xx.o
+TIM2_IRQHandler                                   build/startup_stm32h750xx.o
+TIM3_IRQHandler                                   build/startup_stm32h750xx.o
+TIM4_IRQHandler                                   build/startup_stm32h750xx.o
+TIM5_IRQHandler                                   build/startup_stm32h750xx.o
+TIM6_DAC_IRQHandler                               build/startup_stm32h750xx.o
+TIM7_IRQHandler                                   build/startup_stm32h750xx.o
+TIM8_BRK_TIM12_IRQHandler                         build/startup_stm32h750xx.o
+TIM8_CC_IRQHandler                                build/startup_stm32h750xx.o
+TIM8_TRG_COM_TIM14_IRQHandler                     build/startup_stm32h750xx.o
+TIM8_UP_TIM13_IRQHandler                          build/startup_stm32h750xx.o
+UART4_IRQHandler                                  build/startup_stm32h750xx.o
+UART5_IRQHandler                                  build/startup_stm32h750xx.o
+UART7_IRQHandler                                  build/startup_stm32h750xx.o
+UART8_IRQHandler                                  build/startup_stm32h750xx.o
+USART1_IRQHandler                                 build/startup_stm32h750xx.o
+USART2_IRQHandler                                 build/startup_stm32h750xx.o
+USART3_IRQHandler                                 build/startup_stm32h750xx.o
+USART6_IRQHandler                                 build/startup_stm32h750xx.o
+UsageFault_Handler                                build/startup_stm32h750xx.o
+WAKEUP_PIN_IRQHandler                             build/startup_stm32h750xx.o
+WWDG_IRQHandler                                   build/startup_stm32h750xx.o
+__bss_end__                                       c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+__bss_start__                                     c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+__call_exitprocs                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+__deregister_frame_info                           c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+__dso_handle                                      c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+__init_array_end                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+__init_array_start                                c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+__libc_fini_array                                 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+__libc_init_array                                 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+                                                  build/startup_stm32h750xx.o
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+__preinit_array_end                               c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+__preinit_array_start                             c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+__register_frame_info                             c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+__sf_fake_stderr                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+__sf_fake_stdin                                   c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+__sf_fake_stdout                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+__stack                                           c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+_ebss                                             build/startup_stm32h750xx.o
+_edata                                            build/startup_stm32h750xx.o
+_estack                                           build/startup_stm32h750xx.o
+_exit                                             c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(_exit.o)
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+_fini                                             c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+_global_impure_ptr                                c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+_impure_ptr                                       c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+_init                                             c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+_mainCRTStartup                                   c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+_sbss                                             build/startup_stm32h750xx.o
+_sdata                                            build/startup_stm32h750xx.o
+_sidata                                           build/startup_stm32h750xx.o
+_stack_init                                       c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+_start                                            c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+atexit                                            c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+exit                                              c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-exit.o)
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+g_pfnVectors                                      build/startup_stm32h750xx.o
+hardware_init_hook                                c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+main                                              build/theSynthProj.o
+                                                  build/startup_stm32h750xx.o
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+memset                                            c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+                                                  c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
+software_init_hook                                c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o

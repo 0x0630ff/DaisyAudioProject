@@ -32,6 +32,7 @@ using namespace std;
 using namespace daisy;
 using namespace daisysp;
 
+// lasy class for printing char strings out...
 #include "PrintOut.h"
 using namespace PrintOut;
 
@@ -42,30 +43,9 @@ Printer printer;
 Oscillator osc1;
 Oscillator osc2;
 
-// static float NOTE_FREQ;
-
-// static char buff[512];
-// uint8_t sumbuff[1024];
-
-// void UsbCallback(uint8_t* buf, uint32_t* len) {
-//     for(size_t i = 0; i < *len; i++)     {
-//         sumbuff[i] = buf[i];
-//     }
-// }
-
-// void print(char *buff) {
-//     seed.usb_handle.TransmitInternal((uint8_t*)buff, strlen(buff));
-// }
-
-// void printo(char *buff, const char* text) {
-//     sprintf(buff, "%s", text);
-//     seed.usb_handle.TransmitInternal((uint8_t*)buff, strlen(buff));
-// }
-
 char makeString();
 
 int main(void) {
-    // main function here
     seed.Configure();
     seed.Init();
     seed.usb_handle.Init(UsbHandle::FS_INTERNAL);
@@ -73,18 +53,27 @@ int main(void) {
 
     int numbers = 0;
 
-    printer.out("TESTING!!!!! NO VARIABLES!!!!");
-    
-    // loop it
-    while (1) {
+    // char buffer[512];
 
-        // sprintf(buff, "print this shiiiiit %d %x\r\n", numbers, numbers++);
-        // print(buff);
-        printer.out("testing testing %d\r\n");
+    printer.out("TESTING!!!!! NO VARIABLES!!!!");
+
+    char charstring[] = "HOW BIG IS THIS SENTENCE?";
+    
+    int textSize = printer.checkSize(charstring);
+
+    // loop it
+    while (true) {
+        
+        printer.out("testing testing %d\r\n", numbers);
+
+        printer.out("The sentence is %d char long.\r\n", textSize);
+
         numbers++;
+
         if (numbers == 100) {
             numbers = 0;
         }
+
         dsy_system_delay(1000);
     }
 

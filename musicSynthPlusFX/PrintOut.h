@@ -3,8 +3,11 @@
 #ifndef __PRINTOUT_H_
 #define __PRINTOUT_H_
 
-#include <stdio.h>
-#include <string.h>
+// #include <stdio.h>
+// #include <string.h>
+// #include <cstddef>
+// #include <cstring>
+#include <stdarg.h>
 
 #include "daisy_seed.h"
 using namespace daisy;
@@ -27,12 +30,26 @@ namespace PrintOut {
 
         public:
             Printer() {  //DaisySeed& seed
-                out("Printing: \r\n");
+            }
+            
+            unsigned int checkSize(const char* texttocheck) {
+                return strlen(texttocheck);
             }
 
-            void out(const char* textout) {
-                sprintf(this->buffer, textout);
-                seed.usb_handle.TransmitInternal((uint8_t*)buffer, strlen(buffer));
+            void out(const char* textout, ...) {
+                
+                unsigned int sizeCheck = checkSize(textout) + 2;  // adding 2 chars for padding...
+                if (sizeCheck > sizeof(buffer)) {
+                    return;
+                }
+                else {
+                    va_list va;
+                    va_start (va, textout);
+                    vsprintf (buffer, textout, va);
+                    seed.usb_handle.TransmitInternal((uint8_t*)buffer, strlen(buffer));
+                    va_end (va);
+                    return;
+                }  // end else for sizeCheck
             }
 
     };

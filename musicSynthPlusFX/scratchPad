@@ -1,0 +1,31 @@
+/* scratch pad */
+/*
+
+
+
+// static float NOTE_FREQ;
+
+// static char buff[512];
+// uint8_t sumbuff[1024];
+
+// void UsbCallback(uint8_t* buf, uint32_t* len) {
+//     for(size_t i = 0; i < *len; i++)     {
+//         sumbuff[i] = buf[i];
+//     }
+// }
+
+// void print(char *buff) {
+//     seed.usb_handle.TransmitInternal((uint8_t*)buff, strlen(buff));
+// }
+
+// void printo(char *buff, const char* text) {
+//     sprintf(buff, "%s", text);
+//     seed.usb_handle.TransmitInternal((uint8_t*)buff, strlen(buff));
+// }
+
+        // sprintf(buff, "print this shiiiiit %d %x\r\n", numbers, numbers++);
+        // print(buff);
+
+
+
+*/
