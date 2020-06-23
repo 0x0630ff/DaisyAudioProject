@@ -22,7 +22,6 @@ namespace PrintOut {
 
     class Printer: public DaisySeed {
         private:
-            int id = 1;
             char buffer[512];
             DaisySeed seed;
 
@@ -35,20 +34,16 @@ namespace PrintOut {
             }
 
             void out(const char* textout, ...) {
+                // char buffer[128];
                 memset(buffer, 0, sizeof(buffer));
+                va_list va;
+                va_start (va, textout);
+                vsprintf (buffer, textout, va);
+                va_end (va);
+                seed.usb_handle.TransmitInternal((uint8_t*)buffer, strlen(buffer));
+                // return;
 
-                unsigned int sizeCheck = checkSize(textout) + 2;  // adding 2 chars for padding...
-                if (sizeCheck > sizeof(buffer)) {
-                    return;
-                }
-                else {
-                    va_list va;
-                    va_start (va, textout);
-                    vsprintf (buffer, textout, va);
-                    seed.usb_handle.TransmitInternal((uint8_t*)buffer, strlen(buffer));
-                    va_end (va);
-                    return;
-                }  // end else for sizeCheck
+                // }  // end else for sizeCheck
                 
             }  // end out 'out()' method
 

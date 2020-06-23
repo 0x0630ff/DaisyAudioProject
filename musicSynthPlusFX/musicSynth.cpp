@@ -24,9 +24,12 @@
 // #include "daisy_seed.h"
 #include "daisy_pod.h"
 #include "daisysp.h"
-
+#include "PrintOut.h"
+#include "Timer.h"
 using namespace daisy;
 using namespace daisysp;
+using namespace PrintOut;
+using namespace ClockTimer;
 
 DaisySeed seed;
 DaisyPod pod;
@@ -34,27 +37,29 @@ DaisyPod pod;
 Oscillator osc1;
 Oscillator osc2;
 
-// lasy class for printing char strings out...
-#include "PrintOut.h"
-// using namespace PrintOut;
-PrintOut::Printer printer;
+// my Custom Classes
+Printer print;
+cTimer timer;
 
-bool led_state = false;
+int counter = 0;
 
-static int counter = 0;
+void setup() {
+    seed.Configure();
+    pod.Init();
+    dsy_tim_init();
+    dsy_tim_start();
+    seed.usb_handle.Init(UsbHandle::FS_INTERNAL);
+    seed.usb_handle.SetReceiveCallback(UsbCallback);
+}
 
 int main(void) {
-    seed.Configure();
-    seed.Init();
-    seed.usb_handle.Init(UsbHandle::FS_INTERNAL);
-    seed.usb_handle.SetReceiveCallback(PrintOut::UsbCallback);
-
+    setup();
     while (true) {
-        printer.out("WTF!!!! %d\r\n", 8);
-        counter++;
-
-        dsy_tim_delay_ms(250);
-
+        uint32_t ts = timer.getMS();
+        print.out("Counter:   %10d \r\n", counter++);
+        dsy_tim_delay_ms(5);
+        print.out("TimeStamp: %10u \r\n", ts);
+        dsy_tim_delay_ms(495);
     }
 
 }

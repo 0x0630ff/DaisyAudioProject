@@ -35,7 +35,7 @@ build/musicSynth.o: musicSynth.cpp ../libs/libdaisy/src/daisy_pod.h \
  ../libs/DaisySP/modules/PolyPluck.h ../libs/DaisySP/modules/pluck.h \
  ../libs/DaisySP/modules/reverbsc.h ../libs/DaisySP/modules/svf.h \
  ../libs/DaisySP/modules/tone.h ../libs/DaisySP/modules/whitenoise.h \
- PrintOut.h
+ PrintOut.h Timer.h
 
 ../libs/libdaisy/src/daisy_pod.h:
 
@@ -176,3 +176,5 @@ build/musicSynth.o: musicSynth.cpp ../libs/libdaisy/src/daisy_pod.h \
 ../libs/DaisySP/modules/whitenoise.h:
 
 PrintOut.h:
+
+Timer.h:

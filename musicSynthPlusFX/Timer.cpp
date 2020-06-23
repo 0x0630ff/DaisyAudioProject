@@ -1,20 +1,13 @@
-#include "Timer.h"
+// #include "Timer.h"
 
-namespace ClockTimer {
-    
-    cTimer::cTimer(): timeStamp(0) { }
-    
-    bool cTimer::Init() {
-        return true;
-    }
+// namespace ClockTimer {
 
-    void cTimer::setTimeStamp() {
-        timeStamp = dsy_tim_get_ms();
-        // printer.out("%d", timeStamp);
-    }
+//     void cTimer::setTimeStamp();
 
-    uint32_t cTimer::getTimeStamp() {
-        return cTimer::timeStamp;
-    }
+//     uint32_t cTimer::getTimeStamp() {
+//         return cTimer::timeStamp;
+//     }
 
-}
+// }
+
+//// not sure why i cant make this when funcs are defined in cpp....
