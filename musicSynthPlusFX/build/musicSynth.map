@@ -251,6 +251,8 @@ Discarded input sections
  .text          0x00000000        0x0 build/musicSynth.o
  .data          0x00000000        0x0 build/musicSynth.o
  .bss           0x00000000        0x0 build/musicSynth.o
+ .bss.led_state
+                0x00000000        0x1 build/musicSynth.o
  .text          0x00000000       0x14 build/startup_stm32h750xx.o
  .data          0x00000000        0x0 build/startup_stm32h750xx.o
  .bss           0x00000000        0x0 build/startup_stm32h750xx.o
@@ -264,8 +266,6 @@ Discarded input sections
  .text._ZN5daisy9DaisySeed15AudioSampleRateEv
                 0x00000000        0xc ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
  .text._ZN5daisy9DaisySeed17SetAudioBlockSizeEj
-                0x00000000        0x8 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
- .text._ZN5daisy9DaisySeed6SetLedEb
                 0x00000000        0x8 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
  .text._ZN5daisy9DaisySeed12SetTestPointEb
                 0x00000000        0x8 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
@@ -371,8 +371,6 @@ Discarded input sections
                 0x00000000       0x14 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
  .text.dsy_tim_get_ms
                 0x00000000       0x14 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
- .text.dsy_tim_delay_ms
-                0x00000000       0x1c ../libs/libdaisy/build\libdaisy.a(per_tim.o)
  .text.dsy_tim_get_us
                 0x00000000       0x14 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
  .text.dsy_tim_delay_us
@@ -1851,7 +1849,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../l
 .eh_frame       0x08000298        0x0
  .eh_frame      0x08000298        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.text           0x080002a0     0xa890
+.text           0x080002a0     0xa864
                 0x080002a0                . = ALIGN (0x4)
                 0x080002a0                _stext = .
  *(.text)
@@ -1884,162 +1882,165 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../l
                 0x08000444                PrintOut::Printer::~Printer()
                 0x08000444                PrintOut::Printer::~Printer()
  .text._ZN8PrintOut7Printer3outEPKcz
-                0x08000448       0x50 build/musicSynth.o
+                0x08000448       0x5c build/musicSynth.o
                 0x08000448                PrintOut::Printer::out(char const*, ...)
  .text.startup.main
-                0x08000498       0x6c build/musicSynth.o
-                0x08000498                main
- .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE
-                0x08000504       0x68 build/musicSynth.o
+                0x080004a4       0x58 build/musicSynth.o
+                0x080004a4                main
+ .text.startup._GLOBAL__sub_I_seed
+                0x080004fc       0x68 build/musicSynth.o
  .text.Reset_Handler
-                0x0800056c       0x50 build/startup_stm32h750xx.o
-                0x0800056c                Reset_Handler
+                0x08000564       0x50 build/startup_stm32h750xx.o
+                0x08000564                Reset_Handler
  .text.Default_Handler
-                0x080005bc        0x2 build/startup_stm32h750xx.o
-                0x080005bc                RTC_Alarm_IRQHandler
-                0x080005bc                HASH_RNG_IRQHandler
-                0x080005bc                EXTI2_IRQHandler
-                0x080005bc                TIM8_CC_IRQHandler
-                0x080005bc                HRTIM1_Master_IRQHandler
-                0x080005bc                DebugMon_Handler
-                0x080005bc                UART8_IRQHandler
-                0x080005bc                SPI4_IRQHandler
-                0x080005bc                TIM1_CC_IRQHandler
-                0x080005bc                BDMA_Channel6_IRQHandler
-                0x080005bc                DMA2_Stream5_IRQHandler
-                0x080005bc                HRTIM1_FLT_IRQHandler
-                0x080005bc                JPEG_IRQHandler
-                0x080005bc                DMA1_Stream5_IRQHandler
-                0x080005bc                BDMA_Channel1_IRQHandler
-                0x080005bc                HRTIM1_TIMD_IRQHandler
-                0x080005bc                TAMP_STAMP_IRQHandler
-                0x080005bc                PendSV_Handler
-                0x080005bc                NMI_Handler
-                0x080005bc                EXTI3_IRQHandler
-                0x080005bc                LPTIM4_IRQHandler
-                0x080005bc                TIM8_TRG_COM_TIM14_IRQHandler
-                0x080005bc                LPTIM2_IRQHandler
-                0x080005bc                DFSDM1_FLT1_IRQHandler
-                0x080005bc                DMAMUX2_OVR_IRQHandler
-                0x080005bc                TIM8_UP_TIM13_IRQHandler
-                0x080005bc                I2C3_ER_IRQHandler
-                0x080005bc                DFSDM1_FLT2_IRQHandler
-                0x080005bc                MDMA_IRQHandler
-                0x080005bc                LPTIM3_IRQHandler
-                0x080005bc                HSEM1_IRQHandler
-                0x080005bc                EXTI0_IRQHandler
-                0x080005bc                I2C2_EV_IRQHandler
-                0x080005bc                DMA1_Stream2_IRQHandler
-                0x080005bc                FPU_IRQHandler
-                0x080005bc                OTG_HS_WKUP_IRQHandler
-                0x080005bc                FDCAN1_IT1_IRQHandler
-                0x080005bc                UsageFault_Handler
-                0x080005bc                LTDC_ER_IRQHandler
-                0x080005bc                DMA2_Stream2_IRQHandler
-                0x080005bc                HRTIM1_TIME_IRQHandler
-                0x080005bc                SPI1_IRQHandler
-                0x080005bc                TIM6_DAC_IRQHandler
-                0x080005bc                DCMI_IRQHandler
-                0x080005bc                HRTIM1_TIMC_IRQHandler
-                0x080005bc                DMA2_Stream3_IRQHandler
-                0x080005bc                SAI2_IRQHandler
-                0x080005bc                DFSDM1_FLT3_IRQHandler
-                0x080005bc                USART6_IRQHandler
-                0x080005bc                TIM17_IRQHandler
-                0x080005bc                USART3_IRQHandler
-                0x080005bc                BDMA_Channel7_IRQHandler
-                0x080005bc                CRYP_IRQHandler
-                0x080005bc                LPTIM5_IRQHandler
-                0x080005bc                UART5_IRQHandler
-                0x080005bc                ADC3_IRQHandler
-                0x080005bc                DMA2_Stream0_IRQHandler
-                0x080005bc                TIM4_IRQHandler
-                0x080005bc                BDMA_Channel2_IRQHandler
-                0x080005bc                I2C1_EV_IRQHandler
-                0x080005bc                DMA1_Stream6_IRQHandler
-                0x080005bc                DMAMUX1_OVR_IRQHandler
-                0x080005bc                TIM16_IRQHandler
-                0x080005bc                UART4_IRQHandler
-                0x080005bc                BDMA_Channel5_IRQHandler
-                0x080005bc                TIM3_IRQHandler
-                0x080005bc                RCC_IRQHandler
-                0x080005bc                TIM8_BRK_TIM12_IRQHandler
-                0x080005bc                TIM1_TRG_COM_IRQHandler
-                0x080005bc                Default_Handler
-                0x080005bc                ECC_IRQHandler
-                0x080005bc                CEC_IRQHandler
-                0x080005bc                EXTI15_10_IRQHandler
-                0x080005bc                BDMA_Channel0_IRQHandler
-                0x080005bc                ADC_IRQHandler
-                0x080005bc                DMA1_Stream7_IRQHandler
-                0x080005bc                HRTIM1_TIMA_IRQHandler
-                0x080005bc                SPI5_IRQHandler
-                0x080005bc                TIM7_IRQHandler
-                0x080005bc                SDMMC1_IRQHandler
-                0x080005bc                TIM5_IRQHandler
-                0x080005bc                DMA2_Stream7_IRQHandler
-                0x080005bc                TIM15_IRQHandler
-                0x080005bc                PVD_AVD_IRQHandler
-                0x080005bc                I2C3_EV_IRQHandler
-                0x080005bc                EXTI9_5_IRQHandler
-                0x080005bc                RTC_WKUP_IRQHandler
-                0x080005bc                LTDC_IRQHandler
-                0x080005bc                SAI3_IRQHandler
-                0x080005bc                ETH_WKUP_IRQHandler
-                0x080005bc                SPDIF_RX_IRQHandler
-                0x080005bc                SPI2_IRQHandler
-                0x080005bc                MemManage_Handler
-                0x080005bc                SVC_Handler
-                0x080005bc                CRS_IRQHandler
-                0x080005bc                EXTI4_IRQHandler
-                0x080005bc                HRTIM1_TIMB_IRQHandler
-                0x080005bc                FDCAN2_IT1_IRQHandler
-                0x080005bc                ETH_IRQHandler
-                0x080005bc                TIM1_UP_IRQHandler
-                0x080005bc                BDMA_Channel4_IRQHandler
-                0x080005bc                WWDG_IRQHandler
-                0x080005bc                SPI6_IRQHandler
-                0x080005bc                MDIOS_IRQHandler
-                0x080005bc                I2C4_EV_IRQHandler
-                0x080005bc                FDCAN2_IT0_IRQHandler
-                0x080005bc                LPUART1_IRQHandler
-                0x080005bc                FDCAN1_IT0_IRQHandler
-                0x080005bc                TIM2_IRQHandler
-                0x080005bc                OTG_FS_WKUP_IRQHandler
-                0x080005bc                DMA2D_IRQHandler
-                0x080005bc                TIM1_BRK_IRQHandler
-                0x080005bc                EXTI1_IRQHandler
-                0x080005bc                SDMMC2_IRQHandler
-                0x080005bc                BDMA_Channel3_IRQHandler
-                0x080005bc                UART7_IRQHandler
-                0x080005bc                MDIOS_WKUP_IRQHandler
-                0x080005bc                USART2_IRQHandler
-                0x080005bc                DFSDM1_FLT0_IRQHandler
-                0x080005bc                SAI4_IRQHandler
-                0x080005bc                I2C2_ER_IRQHandler
-                0x080005bc                DMA2_Stream1_IRQHandler
-                0x080005bc                FLASH_IRQHandler
-                0x080005bc                DMA2_Stream4_IRQHandler
-                0x080005bc                BusFault_Handler
-                0x080005bc                USART1_IRQHandler
-                0x080005bc                SPI3_IRQHandler
-                0x080005bc                WAKEUP_PIN_IRQHandler
-                0x080005bc                I2C1_ER_IRQHandler
-                0x080005bc                FMC_IRQHandler
-                0x080005bc                FDCAN_CAL_IRQHandler
-                0x080005bc                SWPMI1_IRQHandler
-                0x080005bc                COMP1_IRQHandler
-                0x080005bc                LPTIM1_IRQHandler
-                0x080005bc                I2C4_ER_IRQHandler
-                0x080005bc                DMA2_Stream6_IRQHandler
-                0x080005bc                SAI1_IRQHandler
- *fill*         0x080005be        0x2 
+                0x080005b4        0x2 build/startup_stm32h750xx.o
+                0x080005b4                RTC_Alarm_IRQHandler
+                0x080005b4                HASH_RNG_IRQHandler
+                0x080005b4                EXTI2_IRQHandler
+                0x080005b4                TIM8_CC_IRQHandler
+                0x080005b4                HRTIM1_Master_IRQHandler
+                0x080005b4                DebugMon_Handler
+                0x080005b4                UART8_IRQHandler
+                0x080005b4                SPI4_IRQHandler
+                0x080005b4                TIM1_CC_IRQHandler
+                0x080005b4                BDMA_Channel6_IRQHandler
+                0x080005b4                DMA2_Stream5_IRQHandler
+                0x080005b4                HRTIM1_FLT_IRQHandler
+                0x080005b4                JPEG_IRQHandler
+                0x080005b4                DMA1_Stream5_IRQHandler
+                0x080005b4                BDMA_Channel1_IRQHandler
+                0x080005b4                HRTIM1_TIMD_IRQHandler
+                0x080005b4                TAMP_STAMP_IRQHandler
+                0x080005b4                PendSV_Handler
+                0x080005b4                NMI_Handler
+                0x080005b4                EXTI3_IRQHandler
+                0x080005b4                LPTIM4_IRQHandler
+                0x080005b4                TIM8_TRG_COM_TIM14_IRQHandler
+                0x080005b4                LPTIM2_IRQHandler
+                0x080005b4                DFSDM1_FLT1_IRQHandler
+                0x080005b4                DMAMUX2_OVR_IRQHandler
+                0x080005b4                TIM8_UP_TIM13_IRQHandler
+                0x080005b4                I2C3_ER_IRQHandler
+                0x080005b4                DFSDM1_FLT2_IRQHandler
+                0x080005b4                MDMA_IRQHandler
+                0x080005b4                LPTIM3_IRQHandler
+                0x080005b4                HSEM1_IRQHandler
+                0x080005b4                EXTI0_IRQHandler
+                0x080005b4                I2C2_EV_IRQHandler
+                0x080005b4                DMA1_Stream2_IRQHandler
+                0x080005b4                FPU_IRQHandler
+                0x080005b4                OTG_HS_WKUP_IRQHandler
+                0x080005b4                FDCAN1_IT1_IRQHandler
+                0x080005b4                UsageFault_Handler
+                0x080005b4                LTDC_ER_IRQHandler
+                0x080005b4                DMA2_Stream2_IRQHandler
+                0x080005b4                HRTIM1_TIME_IRQHandler
+                0x080005b4                SPI1_IRQHandler
+                0x080005b4                TIM6_DAC_IRQHandler
+                0x080005b4                DCMI_IRQHandler
+                0x080005b4                HRTIM1_TIMC_IRQHandler
+                0x080005b4                DMA2_Stream3_IRQHandler
+                0x080005b4                SAI2_IRQHandler
+                0x080005b4                DFSDM1_FLT3_IRQHandler
+                0x080005b4                USART6_IRQHandler
+                0x080005b4                TIM17_IRQHandler
+                0x080005b4                USART3_IRQHandler
+                0x080005b4                BDMA_Channel7_IRQHandler
+                0x080005b4                CRYP_IRQHandler
+                0x080005b4                LPTIM5_IRQHandler
+                0x080005b4                UART5_IRQHandler
+                0x080005b4                ADC3_IRQHandler
+                0x080005b4                DMA2_Stream0_IRQHandler
+                0x080005b4                TIM4_IRQHandler
+                0x080005b4                BDMA_Channel2_IRQHandler
+                0x080005b4                I2C1_EV_IRQHandler
+                0x080005b4                DMA1_Stream6_IRQHandler
+                0x080005b4                DMAMUX1_OVR_IRQHandler
+                0x080005b4                TIM16_IRQHandler
+                0x080005b4                UART4_IRQHandler
+                0x080005b4                BDMA_Channel5_IRQHandler
+                0x080005b4                TIM3_IRQHandler
+                0x080005b4                RCC_IRQHandler
+                0x080005b4                TIM8_BRK_TIM12_IRQHandler
+                0x080005b4                TIM1_TRG_COM_IRQHandler
+                0x080005b4                Default_Handler
+                0x080005b4                ECC_IRQHandler
+                0x080005b4                CEC_IRQHandler
+                0x080005b4                EXTI15_10_IRQHandler
+                0x080005b4                BDMA_Channel0_IRQHandler
+                0x080005b4                ADC_IRQHandler
+                0x080005b4                DMA1_Stream7_IRQHandler
+                0x080005b4                HRTIM1_TIMA_IRQHandler
+                0x080005b4                SPI5_IRQHandler
+                0x080005b4                TIM7_IRQHandler
+                0x080005b4                SDMMC1_IRQHandler
+                0x080005b4                TIM5_IRQHandler
+                0x080005b4                DMA2_Stream7_IRQHandler
+                0x080005b4                TIM15_IRQHandler
+                0x080005b4                PVD_AVD_IRQHandler
+                0x080005b4                I2C3_EV_IRQHandler
+                0x080005b4                EXTI9_5_IRQHandler
+                0x080005b4                RTC_WKUP_IRQHandler
+                0x080005b4                LTDC_IRQHandler
+                0x080005b4                SAI3_IRQHandler
+                0x080005b4                ETH_WKUP_IRQHandler
+                0x080005b4                SPDIF_RX_IRQHandler
+                0x080005b4                SPI2_IRQHandler
+                0x080005b4                MemManage_Handler
+                0x080005b4                SVC_Handler
+                0x080005b4                CRS_IRQHandler
+                0x080005b4                EXTI4_IRQHandler
+                0x080005b4                HRTIM1_TIMB_IRQHandler
+                0x080005b4                FDCAN2_IT1_IRQHandler
+                0x080005b4                ETH_IRQHandler
+                0x080005b4                TIM1_UP_IRQHandler
+                0x080005b4                BDMA_Channel4_IRQHandler
+                0x080005b4                WWDG_IRQHandler
+                0x080005b4                SPI6_IRQHandler
+                0x080005b4                MDIOS_IRQHandler
+                0x080005b4                I2C4_EV_IRQHandler
+                0x080005b4                FDCAN2_IT0_IRQHandler
+                0x080005b4                LPUART1_IRQHandler
+                0x080005b4                FDCAN1_IT0_IRQHandler
+                0x080005b4                TIM2_IRQHandler
+                0x080005b4                OTG_FS_WKUP_IRQHandler
+                0x080005b4                DMA2D_IRQHandler
+                0x080005b4                TIM1_BRK_IRQHandler
+                0x080005b4                EXTI1_IRQHandler
+                0x080005b4                SDMMC2_IRQHandler
+                0x080005b4                BDMA_Channel3_IRQHandler
+                0x080005b4                UART7_IRQHandler
+                0x080005b4                MDIOS_WKUP_IRQHandler
+                0x080005b4                USART2_IRQHandler
+                0x080005b4                DFSDM1_FLT0_IRQHandler
+                0x080005b4                SAI4_IRQHandler
+                0x080005b4                I2C2_ER_IRQHandler
+                0x080005b4                DMA2_Stream1_IRQHandler
+                0x080005b4                FLASH_IRQHandler
+                0x080005b4                DMA2_Stream4_IRQHandler
+                0x080005b4                BusFault_Handler
+                0x080005b4                USART1_IRQHandler
+                0x080005b4                SPI3_IRQHandler
+                0x080005b4                WAKEUP_PIN_IRQHandler
+                0x080005b4                I2C1_ER_IRQHandler
+                0x080005b4                FMC_IRQHandler
+                0x080005b4                FDCAN_CAL_IRQHandler
+                0x080005b4                SWPMI1_IRQHandler
+                0x080005b4                COMP1_IRQHandler
+                0x080005b4                LPTIM1_IRQHandler
+                0x080005b4                I2C4_ER_IRQHandler
+                0x080005b4                DMA2_Stream6_IRQHandler
+                0x080005b4                SAI1_IRQHandler
+ *fill*         0x080005b6        0x2 
  .text._ZN5daisy9DaisySeed9ConfigureEv
-                0x080005c0       0xe0 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
-                0x080005c0                daisy::DaisySeed::Configure()
+                0x080005b8       0xe0 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
+                0x080005b8                daisy::DaisySeed::Configure()
  .text._ZN5daisy9DaisySeed4InitEv
-                0x080006a0       0x34 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
-                0x080006a0                daisy::DaisySeed::Init()
+                0x08000698       0x34 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
+                0x08000698                daisy::DaisySeed::Init()
+ .text._ZN5daisy9DaisySeed6SetLedEb
+                0x080006cc        0x8 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
+                0x080006cc                daisy::DaisySeed::SetLed(bool)
  .text.dsy_audio_passthru
                 0x080006d4        0xc ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
                 0x080006d4                dsy_audio_passthru
@@ -2118,1139 +2119,1143 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../l
  .text.dsy_tim_init
                 0x08001d80       0x70 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
                 0x08001d80                dsy_tim_init
+ .text.dsy_tim_delay_ms
+                0x08001df0       0x1c ../libs/libdaisy/build\libdaisy.a(per_tim.o)
+                0x08001df0                dsy_tim_delay_ms
  .text.HAL_TIM_Base_MspInit
-                0x08001df0       0x30 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
-                0x08001df0                HAL_TIM_Base_MspInit
+                0x08001e0c       0x30 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
+                0x08001e0c                HAL_TIM_Base_MspInit
  .text.DummyRxCallback
-                0x08001e20        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001e20                DummyRxCallback
+                0x08001e3c        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001e3c                DummyRxCallback
  .text._ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
-                0x08001e24      0x10c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001e24                daisy::UsbHandle::Init(daisy::UsbHandle::UsbPeriph)
+                0x08001e40      0x10c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001e40                daisy::UsbHandle::Init(daisy::UsbHandle::UsbPeriph)
  .text._ZN5daisy9UsbHandle16TransmitInternalEPhj
-                0x08001f30        0x8 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f30                daisy::UsbHandle::TransmitInternal(unsigned char*, unsigned int)
+                0x08001f4c        0x8 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f4c                daisy::UsbHandle::TransmitInternal(unsigned char*, unsigned int)
  .text._ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
-                0x08001f38       0x18 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f38                daisy::UsbHandle::SetReceiveCallback(void (*)(unsigned char*, unsigned long*))
+                0x08001f54       0x18 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f54                daisy::UsbHandle::SetReceiveCallback(void (*)(unsigned char*, unsigned long*))
  .text.OTG_HS_EP1_OUT_IRQHandler
-                0x08001f50        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f50                OTG_HS_EP1_OUT_IRQHandler
+                0x08001f6c        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f6c                OTG_HS_EP1_OUT_IRQHandler
  .text.OTG_HS_EP1_IN_IRQHandler
-                0x08001f5c        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f5c                OTG_HS_EP1_IN_IRQHandler
+                0x08001f78        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f78                OTG_HS_EP1_IN_IRQHandler
  .text.OTG_HS_IRQHandler
-                0x08001f68        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f68                OTG_HS_IRQHandler
+                0x08001f84        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f84                OTG_HS_IRQHandler
  .text.OTG_FS_EP1_OUT_IRQHandler
-                0x08001f74        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f74                OTG_FS_EP1_OUT_IRQHandler
+                0x08001f90        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f90                OTG_FS_EP1_OUT_IRQHandler
  .text.OTG_FS_EP1_IN_IRQHandler
-                0x08001f80        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f80                OTG_FS_EP1_IN_IRQHandler
+                0x08001f9c        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001f9c                OTG_FS_EP1_IN_IRQHandler
  .text.OTG_FS_IRQHandler
-                0x08001f8c        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x08001f8c                OTG_FS_IRQHandler
+                0x08001fa8        0xc ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x08001fa8                OTG_FS_IRQHandler
  .text.dsy_hal_map_get_port
-                0x08001f98       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
-                0x08001f98                dsy_hal_map_get_port
+                0x08001fb4       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x08001fb4                dsy_hal_map_get_port
  .text.dsy_hal_map_get_pin
-                0x08001fa8       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
-                0x08001fa8                dsy_hal_map_get_pin
+                0x08001fc4       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x08001fc4                dsy_hal_map_get_pin
  .text.dsy_hal_map_get_i2c
-                0x08001fb8       0x28 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
-                0x08001fb8                dsy_hal_map_get_i2c
+                0x08001fd4       0x28 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x08001fd4                dsy_hal_map_get_i2c
  .text.HAL_PCD_Init
-                0x08001fe0      0x12c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08001fe0                HAL_PCD_Init
+                0x08001ffc      0x12c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08001ffc                HAL_PCD_Init
  .text.HAL_PCD_Start
-                0x0800210c       0x40 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x0800210c                HAL_PCD_Start
+                0x08002128       0x40 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002128                HAL_PCD_Start
  .text.HAL_PCD_IRQHandler
-                0x0800214c      0x6bc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x0800214c                HAL_PCD_IRQHandler
+                0x08002168      0x6bc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002168                HAL_PCD_IRQHandler
  .text.HAL_PCD_SetAddress
-                0x08002808       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002808                HAL_PCD_SetAddress
+                0x08002824       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002824                HAL_PCD_SetAddress
  .text.HAL_PCD_EP_Open
-                0x08002830       0x74 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002830                HAL_PCD_EP_Open
+                0x0800284c       0x74 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x0800284c                HAL_PCD_EP_Open
  .text.HAL_PCD_EP_Close
-                0x080028a4       0x68 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x080028a4                HAL_PCD_EP_Close
+                0x080028c0       0x68 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x080028c0                HAL_PCD_EP_Close
  .text.HAL_PCD_EP_Receive
-                0x0800290c       0x50 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x0800290c                HAL_PCD_EP_Receive
+                0x08002928       0x50 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002928                HAL_PCD_EP_Receive
  .text.HAL_PCD_EP_GetRxCount
-                0x0800295c       0x14 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x0800295c                HAL_PCD_EP_GetRxCount
+                0x08002978       0x14 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002978                HAL_PCD_EP_GetRxCount
  .text.HAL_PCD_EP_Transmit
-                0x08002970       0x48 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002970                HAL_PCD_EP_Transmit
+                0x0800298c       0x48 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x0800298c                HAL_PCD_EP_Transmit
  .text.HAL_PCD_EP_SetStall
-                0x080029b8       0x88 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x080029b8                HAL_PCD_EP_SetStall
+                0x080029d4       0x88 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x080029d4                HAL_PCD_EP_SetStall
  .text.HAL_PCD_EP_ClrStall
-                0x08002a40       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
-                0x08002a40                HAL_PCD_EP_ClrStall
+                0x08002a5c       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x08002a5c                HAL_PCD_EP_ClrStall
  .text.HAL_PCDEx_SetTxFiFo
-                0x08002ab8       0x48 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
-                0x08002ab8                HAL_PCDEx_SetTxFiFo
+                0x08002ad4       0x48 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08002ad4                HAL_PCDEx_SetTxFiFo
  .text.HAL_PCDEx_SetRxFiFo
-                0x08002b00        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
-                0x08002b00                HAL_PCDEx_SetRxFiFo
+                0x08002b1c        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08002b1c                HAL_PCDEx_SetRxFiFo
  .text.HAL_PCDEx_ActivateLPM
-                0x08002b0c       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
-                0x08002b0c                HAL_PCDEx_ActivateLPM
+                0x08002b28       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08002b28                HAL_PCDEx_ActivateLPM
  .text.HAL_PCDEx_LPM_Callback
-                0x08002b38        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
-                0x08002b38                HAL_PCDEx_LPM_Callback
+                0x08002b54        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x08002b54                HAL_PCDEx_LPM_Callback
  .text.USB_CoreInit
-                0x08002b3c       0xd4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002b3c                USB_CoreInit
+                0x08002b58       0xd4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002b58                USB_CoreInit
  .text.USB_SetTurnaroundTime
-                0x08002c10       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002c10                USB_SetTurnaroundTime
+                0x08002c2c       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002c2c                USB_SetTurnaroundTime
  .text.USB_EnableGlobalInt
-                0x08002d08       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002d08                USB_EnableGlobalInt
+                0x08002d24       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002d24                USB_EnableGlobalInt
  .text.USB_DisableGlobalInt
-                0x08002d18       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002d18                USB_DisableGlobalInt
+                0x08002d34       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002d34                USB_DisableGlobalInt
  .text.USB_SetCurrentMode
-                0x08002d28       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002d28                USB_SetCurrentMode
+                0x08002d44       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002d44                USB_SetCurrentMode
  .text.USB_DevInit
-                0x08002d58      0x1ec ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002d58                USB_DevInit
+                0x08002d74      0x1ec ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002d74                USB_DevInit
  .text.USB_FlushTxFifo
-                0x08002f44       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002f44                USB_FlushTxFifo
+                0x08002f60       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002f60                USB_FlushTxFifo
  .text.USB_GetDevSpeed
-                0x08002f68       0x18 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002f68                USB_GetDevSpeed
+                0x08002f84       0x18 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002f84                USB_GetDevSpeed
  .text.USB_ActivateEndpoint
-                0x08002f80       0x90 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08002f80                USB_ActivateEndpoint
+                0x08002f9c       0x90 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08002f9c                USB_ActivateEndpoint
  .text.USB_DeactivateEndpoint
-                0x08003010       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003010                USB_DeactivateEndpoint
+                0x0800302c       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800302c                USB_DeactivateEndpoint
  .text.USB_EPStartXfer
-                0x08003088      0x228 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003088                USB_EPStartXfer
+                0x080030a4      0x228 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080030a4                USB_EPStartXfer
  .text.USB_EP0StartXfer
-                0x080032b0      0x150 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080032b0                USB_EP0StartXfer
+                0x080032cc      0x150 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080032cc                USB_EP0StartXfer
  .text.USB_WritePacket
-                0x08003400       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003400                USB_WritePacket
+                0x0800341c       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800341c                USB_WritePacket
  .text.USB_ReadPacket
-                0x0800342c       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x0800342c                USB_ReadPacket
+                0x08003448       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003448                USB_ReadPacket
  .text.USB_EPSetStall
-                0x08003450       0x68 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003450                USB_EPSetStall
+                0x0800346c       0x68 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800346c                USB_EPSetStall
  .text.USB_EPClearStall
-                0x080034b8       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080034b8                USB_EPClearStall
+                0x080034d4       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080034d4                USB_EPClearStall
  .text.USB_SetDevAddress
-                0x08003510       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003510                USB_SetDevAddress
+                0x0800352c       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800352c                USB_SetDevAddress
  .text.USB_DevConnect
-                0x08003534       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003534                USB_DevConnect
- .text.USB_DevDisconnect
                 0x08003550       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003550                USB_DevDisconnect
+                0x08003550                USB_DevConnect
+ .text.USB_DevDisconnect
+                0x0800356c       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800356c                USB_DevDisconnect
  .text.USB_ReadInterrupts
-                0x0800356c        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x0800356c                USB_ReadInterrupts
+                0x08003588        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003588                USB_ReadInterrupts
  .text.USB_ReadDevAllOutEpInterrupt
-                0x08003574       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003574                USB_ReadDevAllOutEpInterrupt
+                0x08003590       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003590                USB_ReadDevAllOutEpInterrupt
  .text.USB_ReadDevAllInEpInterrupt
-                0x08003584       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003584                USB_ReadDevAllInEpInterrupt
+                0x080035a0       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080035a0                USB_ReadDevAllInEpInterrupt
  .text.USB_ReadDevOutEPInterrupt
-                0x08003594       0x14 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x08003594                USB_ReadDevOutEPInterrupt
+                0x080035b0       0x14 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080035b0                USB_ReadDevOutEPInterrupt
  .text.USB_ReadDevInEPInterrupt
-                0x080035a8       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080035a8                USB_ReadDevInEPInterrupt
+                0x080035c4       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080035c4                USB_ReadDevInEPInterrupt
  .text.USB_GetMode
-                0x080035cc        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080035cc                USB_GetMode
+                0x080035e8        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080035e8                USB_GetMode
  .text.USB_ActivateSetup
-                0x080035d4       0x38 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x080035d4                USB_ActivateSetup
+                0x080035f0       0x38 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x080035f0                USB_ActivateSetup
  .text.USB_EP0_OutStart
-                0x0800360c       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
-                0x0800360c                USB_EP0_OutStart
+                0x08003628       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x08003628                USB_EP0_OutStart
  .text.HAL_NVIC_SetPriorityGrouping
-                0x08003664       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003664                HAL_NVIC_SetPriorityGrouping
+                0x08003680       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003680                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0800368c       0x74 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x0800368c                HAL_NVIC_SetPriority
+                0x080036a8       0x74 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x080036a8                HAL_NVIC_SetPriority
  .text.HAL_NVIC_EnableIRQ
-                0x08003700       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003700                HAL_NVIC_EnableIRQ
+                0x0800371c       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x0800371c                HAL_NVIC_EnableIRQ
  .text.HAL_NVIC_DisableIRQ
-                0x0800371c       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x0800371c                HAL_NVIC_DisableIRQ
+                0x08003738       0x28 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003738                HAL_NVIC_DisableIRQ
  .text.HAL_SYSTICK_Config
-                0x08003744       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003744                HAL_SYSTICK_Config
+                0x08003760       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003760                HAL_SYSTICK_Config
  .text.HAL_MPU_Disable
-                0x08003774       0x20 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003774                HAL_MPU_Disable
+                0x08003790       0x20 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003790                HAL_MPU_Disable
  .text.HAL_MPU_Enable
-                0x08003794       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003794                HAL_MPU_Enable
+                0x080037b0       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x080037b0                HAL_MPU_Enable
  .text.HAL_MPU_ConfigRegion
-                0x080037b8       0x50 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x080037b8                HAL_MPU_ConfigRegion
+                0x080037d4       0x50 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x080037d4                HAL_MPU_ConfigRegion
  .text.HAL_SYSTICK_Callback
-                0x08003808        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x08003808                HAL_SYSTICK_Callback
+                0x08003824        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003824                HAL_SYSTICK_Callback
  .text.HAL_SYSTICK_IRQHandler
-                0x0800380c        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
-                0x0800380c                HAL_SYSTICK_IRQHandler
+                0x08003828        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x08003828                HAL_SYSTICK_IRQHandler
  .text.HAL_SDRAM_Init
-                0x08003814       0x54 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
-                0x08003814                HAL_SDRAM_Init
+                0x08003830       0x54 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
+                0x08003830                HAL_SDRAM_Init
  .text.HAL_SDRAM_SendCommand
-                0x08003868       0x40 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
-                0x08003868                HAL_SDRAM_SendCommand
+                0x08003884       0x40 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
+                0x08003884                HAL_SDRAM_SendCommand
  .text.HAL_SDRAM_ProgramRefreshRate
-                0x080038a8       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
-                0x080038a8                HAL_SDRAM_ProgramRefreshRate
+                0x080038c4       0x30 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
+                0x080038c4                HAL_SDRAM_ProgramRefreshRate
  .text.I2C_WaitOnTXISFlagUntilTimeout
-                0x080038d8       0xb8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x080038f4       0xb8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.I2C_WaitOnSTOPFlagUntilTimeout
-                0x08003990       0xac ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x080039ac       0xac ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
  .text.HAL_I2C_Init
-                0x08003a3c       0xa8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
-                0x08003a3c                HAL_I2C_Init
+                0x08003a58       0xa8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08003a58                HAL_I2C_Init
  .text.HAL_I2C_Master_Transmit
-                0x08003ae4      0x1b4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
-                0x08003ae4                HAL_I2C_Master_Transmit
+                0x08003b00      0x1b4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x08003b00                HAL_I2C_Master_Transmit
  .text.HAL_I2CEx_ConfigAnalogFilter
-                0x08003c98       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
-                0x08003c98                HAL_I2CEx_ConfigAnalogFilter
+                0x08003cb4       0x58 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x08003cb4                HAL_I2CEx_ConfigAnalogFilter
  .text.HAL_I2CEx_ConfigDigitalFilter
-                0x08003cf0       0x54 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
-                0x08003cf0                HAL_I2CEx_ConfigDigitalFilter
+                0x08003d0c       0x54 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x08003d0c                HAL_I2CEx_ConfigDigitalFilter
  .text.QSPI_Config
-                0x08003d44      0x1d4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08003d60      0x1d4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
  .text.HAL_QSPI_Init
-                0x08003f18       0xd8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x08003f18                HAL_QSPI_Init
+                0x08003f34       0xd8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08003f34                HAL_QSPI_Init
  .text.HAL_QSPI_DeInit
-                0x08003ff0       0x3c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x08003ff0                HAL_QSPI_DeInit
+                0x0800400c       0x3c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x0800400c                HAL_QSPI_DeInit
  .text.HAL_QSPI_Command
-                0x0800402c       0xd4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x0800402c                HAL_QSPI_Command
+                0x08004048       0xd4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004048                HAL_QSPI_Command
  .text.HAL_QSPI_Transmit
-                0x08004100       0xfc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x08004100                HAL_QSPI_Transmit
+                0x0800411c       0xfc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x0800411c                HAL_QSPI_Transmit
  .text.HAL_QSPI_Receive
-                0x080041fc      0x108 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080041fc                HAL_QSPI_Receive
+                0x08004218      0x108 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004218                HAL_QSPI_Receive
  .text.HAL_QSPI_AutoPolling
-                0x08004304       0xe8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x08004304                HAL_QSPI_AutoPolling
+                0x08004320       0xe8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004320                HAL_QSPI_AutoPolling
  .text.HAL_QSPI_MemoryMapped
-                0x080043ec       0xb8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080043ec                HAL_QSPI_MemoryMapped
+                0x08004408       0xb8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004408                HAL_QSPI_MemoryMapped
  .text.HAL_QSPI_ErrorCallback
-                0x080044a4        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044a4                HAL_QSPI_ErrorCallback
+                0x080044c0        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x080044c0                HAL_QSPI_ErrorCallback
  .text.QSPI_DMAAbortCplt
-                0x080044a8       0x38 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x080044c4       0x38 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
  .text.HAL_QSPI_AbortCpltCallback
-                0x080044e0        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044e0                HAL_QSPI_AbortCpltCallback
+                0x080044fc        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x080044fc                HAL_QSPI_AbortCpltCallback
  .text.HAL_QSPI_CmdCpltCallback
-                0x080044e4        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044e4                HAL_QSPI_CmdCpltCallback
+                0x08004500        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004500                HAL_QSPI_CmdCpltCallback
  .text.HAL_QSPI_RxCpltCallback
-                0x080044e8        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044e8                HAL_QSPI_RxCpltCallback
+                0x08004504        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004504                HAL_QSPI_RxCpltCallback
  .text.HAL_QSPI_TxCpltCallback
-                0x080044ec        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044ec                HAL_QSPI_TxCpltCallback
+                0x08004508        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004508                HAL_QSPI_TxCpltCallback
  .text.HAL_QSPI_FifoThresholdCallback
-                0x080044f0        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044f0                HAL_QSPI_FifoThresholdCallback
+                0x0800450c        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x0800450c                HAL_QSPI_FifoThresholdCallback
  .text.HAL_QSPI_StatusMatchCallback
-                0x080044f4        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044f4                HAL_QSPI_StatusMatchCallback
+                0x08004510        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004510                HAL_QSPI_StatusMatchCallback
  .text.HAL_QSPI_TimeOutCallback
-                0x080044f8        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044f8                HAL_QSPI_TimeOutCallback
+                0x08004514        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004514                HAL_QSPI_TimeOutCallback
  .text.HAL_QSPI_IRQHandler
-                0x080044fc      0x210 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
-                0x080044fc                HAL_QSPI_IRQHandler
+                0x08004518      0x210 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x08004518                HAL_QSPI_IRQHandler
  .text.HAL_SAI_Init.part.0
-                0x0800470c      0x364 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
+                0x08004728      0x364 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
  .text.HAL_SAI_InitProtocol
-                0x08004a70      0x184 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
-                0x08004a70                HAL_SAI_InitProtocol
+                0x08004a8c      0x184 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
+                0x08004a8c                HAL_SAI_InitProtocol
  .text.HAL_TIM_Base_Init
-                0x08004bf4      0x130 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08004bf4                HAL_TIM_Base_Init
+                0x08004c10      0x130 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08004c10                HAL_TIM_Base_Init
  .text.HAL_TIM_ConfigClockSource
-                0x08004d24      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
-                0x08004d24                HAL_TIM_ConfigClockSource
+                0x08004d40      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
+                0x08004d40                HAL_TIM_ConfigClockSource
  .text.HAL_TIMEx_MasterConfigSynchronization
-                0x08004ea0       0x60 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim_ex.o)
-                0x08004ea0                HAL_TIMEx_MasterConfigSynchronization
+                0x08004ebc       0x60 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x08004ebc                HAL_TIMEx_MasterConfigSynchronization
  .text.HAL_RCC_OscConfig
-                0x08004f00      0x538 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08004f00                HAL_RCC_OscConfig
+                0x08004f1c      0x538 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08004f1c                HAL_RCC_OscConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x08005438      0x140 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08005438                HAL_RCC_GetSysClockFreq
+                0x08005454      0x140 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08005454                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_ClockConfig
-                0x08005578      0x234 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x08005578                HAL_RCC_ClockConfig
+                0x08005594      0x234 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x08005594                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetHCLKFreq
-                0x080057ac       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
-                0x080057ac                HAL_RCC_GetHCLKFreq
+                0x080057c8       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x080057c8                HAL_RCC_GetHCLKFreq
  .text.RCCEx_PLL2_Config
-                0x080057d8       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080057f4       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
  .text.RCCEx_PLL3_Config
-                0x080058d0       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080058ec       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x080059c8      0xa7c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x080059c8                HAL_RCCEx_PeriphCLKConfig
+                0x080059e4      0xa7c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080059e4                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_RCCEx_GetPLL2ClockFreq
-                0x08006444      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x08006444                HAL_RCCEx_GetPLL2ClockFreq
+                0x08006460      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08006460                HAL_RCCEx_GetPLL2ClockFreq
  .text.HAL_RCCEx_GetPLL3ClockFreq
-                0x080065c0      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x080065c0                HAL_RCCEx_GetPLL3ClockFreq
+                0x080065dc      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080065dc                HAL_RCCEx_GetPLL3ClockFreq
  .text.HAL_RCCEx_GetPLL1ClockFreq
-                0x0800673c      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x0800673c                HAL_RCCEx_GetPLL1ClockFreq
+                0x08006758      0x17c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08006758                HAL_RCCEx_GetPLL1ClockFreq
  .text.HAL_RCCEx_GetPeriphCLKFreq
-                0x080068b8      0x198 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x080068b8                HAL_RCCEx_GetPeriphCLKFreq
+                0x080068d4      0x198 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x080068d4                HAL_RCCEx_GetPeriphCLKFreq
  .text.HAL_RCCEx_GetD1SysClockFreq
-                0x08006a50       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
-                0x08006a50                HAL_RCCEx_GetD1SysClockFreq
+                0x08006a6c       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x08006a6c                HAL_RCCEx_GetD1SysClockFreq
  .text.HAL_GPIO_Init
-                0x08006a7c      0x248 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
-                0x08006a7c                HAL_GPIO_Init
+                0x08006a98      0x248 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x08006a98                HAL_GPIO_Init
  .text.HAL_GPIO_DeInit
-                0x08006cc4      0x19c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
-                0x08006cc4                HAL_GPIO_DeInit
+                0x08006ce0      0x19c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x08006ce0                HAL_GPIO_DeInit
  .text.HAL_GPIO_WritePin
-                0x08006e60        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
-                0x08006e60                HAL_GPIO_WritePin
+                0x08006e7c        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x08006e7c                HAL_GPIO_WritePin
  .text.DMA_CalcBaseAndBitshift
-                0x08006e68       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08006e84       0xf8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
  .text.DMA_CalcDMAMUXChannelBaseAndMask
-                0x08006f60       0xd8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08006f7c       0xd8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
  .text.HAL_DMA_Init
-                0x08007038      0x394 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
-                0x08007038                HAL_DMA_Init
+                0x08007054      0x394 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x08007054                HAL_DMA_Init
  .text.HAL_DMA_IRQHandler
-                0x080073cc      0x6bc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
-                0x080073cc                HAL_DMA_IRQHandler
+                0x080073e8      0x6bc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x080073e8                HAL_DMA_IRQHandler
  .text.HAL_MDMA_Abort_IT
-                0x08007a88       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_mdma.o)
-                0x08007a88                HAL_MDMA_Abort_IT
+                0x08007aa4       0x2c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_mdma.o)
+                0x08007aa4                HAL_MDMA_Abort_IT
  .text.HAL_PWREx_ConfigSupply
-                0x08007ab4       0x4c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
-                0x08007ab4                HAL_PWREx_ConfigSupply
+                0x08007ad0       0x4c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
+                0x08007ad0                HAL_PWREx_ConfigSupply
  .text.HAL_PWREx_EnableUSBVoltageDetector
-                0x08007b00       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
-                0x08007b00                HAL_PWREx_EnableUSBVoltageDetector
+                0x08007b1c       0x10 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
+                0x08007b1c                HAL_PWREx_EnableUSBVoltageDetector
  .text.HAL_MspInit
-                0x08007b10        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007b10                HAL_MspInit
+                0x08007b2c        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007b2c                HAL_MspInit
  .text.HAL_InitTick
-                0x08007b14       0x4c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007b14                HAL_InitTick
+                0x08007b30       0x4c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007b30                HAL_InitTick
  .text.HAL_Init
-                0x08007b60       0x5c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007b60                HAL_Init
+                0x08007b7c       0x5c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007b7c                HAL_Init
  .text.HAL_IncTick
-                0x08007bbc       0x18 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007bbc                HAL_IncTick
+                0x08007bd8       0x18 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007bd8                HAL_IncTick
  .text.HAL_GetTick
-                0x08007bd4        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007bd4                HAL_GetTick
+                0x08007bf0        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007bf0                HAL_GetTick
  .text.HAL_Delay
-                0x08007be0       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007be0                HAL_Delay
+                0x08007bfc       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007bfc                HAL_Delay
  .text.HAL_GetREVID
-                0x08007c04        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
-                0x08007c04                HAL_GetREVID
+                0x08007c20        0xc ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x08007c20                HAL_GetREVID
  .text.USBD_Init
-                0x08007c10       0x44 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007c10                USBD_Init
+                0x08007c2c       0x44 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007c2c                USBD_Init
  .text.USBD_RegisterClass
-                0x08007c54       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007c54                USBD_RegisterClass
+                0x08007c70       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007c70                USBD_RegisterClass
  .text.USBD_Start
-                0x08007c80        0xc ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007c80                USBD_Start
+                0x08007c9c        0xc ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007c9c                USBD_Start
  .text.USBD_SetClassConfig
-                0x08007c8c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007c8c                USBD_SetClassConfig
+                0x08007ca8       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ca8                USBD_SetClassConfig
  .text.USBD_ClrClassConfig
-                0x08007ca0       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007ca0                USBD_ClrClassConfig
+                0x08007cbc       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007cbc                USBD_ClrClassConfig
  .text.USBD_LL_SetupStage
-                0x08007cb0       0x5c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007cb0                USBD_LL_SetupStage
+                0x08007ccc       0x5c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ccc                USBD_LL_SetupStage
  .text.USBD_LL_DataOutStage
-                0x08007d0c       0x7c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007d0c                USBD_LL_DataOutStage
+                0x08007d28       0x7c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007d28                USBD_LL_DataOutStage
  .text.USBD_LL_DataInStage
-                0x08007d88       0xb8 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007d88                USBD_LL_DataInStage
+                0x08007da4       0xb8 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007da4                USBD_LL_DataInStage
  .text.USBD_LL_Reset
-                0x08007e40       0x50 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007e40                USBD_LL_Reset
+                0x08007e5c       0x50 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007e5c                USBD_LL_Reset
  .text.USBD_LL_SetSpeed
-                0x08007e90        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007e90                USBD_LL_SetSpeed
+                0x08007eac        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007eac                USBD_LL_SetSpeed
  .text.USBD_LL_Suspend
-                0x08007e98       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007e98                USBD_LL_Suspend
+                0x08007eb4       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007eb4                USBD_LL_Suspend
  .text.USBD_LL_Resume
-                0x08007eac       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007eac                USBD_LL_Resume
+                0x08007ec8       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ec8                USBD_LL_Resume
  .text.USBD_LL_SOF
-                0x08007ebc       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007ebc                USBD_LL_SOF
+                0x08007ed8       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ed8                USBD_LL_SOF
  .text.USBD_LL_IsoINIncomplete
-                0x08007ed8        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007ed8                USBD_LL_IsoINIncomplete
+                0x08007ef4        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ef4                USBD_LL_IsoINIncomplete
  .text.USBD_LL_IsoOUTIncomplete
-                0x08007edc        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007edc                USBD_LL_IsoOUTIncomplete
+                0x08007ef8        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007ef8                USBD_LL_IsoOUTIncomplete
  .text.USBD_LL_DevConnected
-                0x08007ee0        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007ee0                USBD_LL_DevConnected
+                0x08007efc        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007efc                USBD_LL_DevConnected
  .text.USBD_LL_DevDisconnected
-                0x08007ee4       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
-                0x08007ee4                USBD_LL_DevDisconnected
+                0x08007f00       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x08007f00                USBD_LL_DevDisconnected
  .text.USBD_StdDevReq
-                0x08007efc      0x2fc ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x08007efc                USBD_StdDevReq
+                0x08007f18      0x2fc ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x08007f18                USBD_StdDevReq
  .text.USBD_StdItfReq
-                0x080081f8       0x68 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x080081f8                USBD_StdItfReq
+                0x08008214       0x68 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x08008214                USBD_StdItfReq
  .text.USBD_StdEPReq
-                0x08008260      0x134 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x08008260                USBD_StdEPReq
+                0x0800827c      0x134 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x0800827c                USBD_StdEPReq
  .text.USBD_ParseSetupRequest
-                0x08008394       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x08008394                USBD_ParseSetupRequest
+                0x080083b0       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x080083b0                USBD_ParseSetupRequest
  .text.USBD_CtlError
-                0x080083bc       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x080083bc                USBD_CtlError
+                0x080083d8       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x080083d8                USBD_CtlError
  .text.USBD_GetString
-                0x080083d4       0x4c ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
-                0x080083d4                USBD_GetString
+                0x080083f0       0x4c ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x080083f0                USBD_GetString
  .text.USBD_CtlSendData
-                0x08008420       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x08008420                USBD_CtlSendData
+                0x0800843c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x0800843c                USBD_CtlSendData
  .text.USBD_CtlContinueSendData
-                0x0800843c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x0800843c                USBD_CtlContinueSendData
+                0x08008458       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x08008458                USBD_CtlContinueSendData
  .text.USBD_CtlPrepareRx
-                0x08008450       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x08008450                USBD_CtlPrepareRx
+                0x0800846c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x0800846c                USBD_CtlPrepareRx
  .text.USBD_CtlContinueRx
-                0x0800846c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x0800846c                USBD_CtlContinueRx
+                0x08008488       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x08008488                USBD_CtlContinueRx
  .text.USBD_CtlSendStatus
-                0x08008480       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x08008480                USBD_CtlSendStatus
+                0x0800849c       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x0800849c                USBD_CtlSendStatus
  .text.USBD_CtlReceiveStatus
-                0x08008498       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
-                0x08008498                USBD_CtlReceiveStatus
+                0x080084b4       0x18 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x080084b4                USBD_CtlReceiveStatus
  .text.USBD_CDC_EP0_RxReady
-                0x080084b0       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080084cc       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_GetFSCfgDesc
-                0x080084dc       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080084f8       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_GetHSCfgDesc
-                0x080084ec       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008508       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_GetOtherSpeedCfgDesc
-                0x080084fc       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008518       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_GetDeviceQualifierDescriptor
-                0x0800850c       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x0800850c                USBD_CDC_GetDeviceQualifierDescriptor
+                0x08008528       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008528                USBD_CDC_GetDeviceQualifierDescriptor
  .text.USBD_CDC_DataOut
-                0x0800851c       0x30 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008538       0x30 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_DataIn
-                0x0800854c       0x48 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008568       0x48 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_Setup
-                0x08008594       0xd0 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080085b0       0xd0 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_DeInit
-                0x08008664       0x44 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008680       0x44 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_Init
-                0x080086a8       0xbc ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080086c4       0xbc ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .text.USBD_CDC_RegisterInterface
-                0x08008764       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x08008764                USBD_CDC_RegisterInterface
+                0x08008780       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008780                USBD_CDC_RegisterInterface
  .text.USBD_CDC_SetTxBuffer
-                0x08008774       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x08008774                USBD_CDC_SetTxBuffer
+                0x08008790       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x08008790                USBD_CDC_SetTxBuffer
  .text.USBD_CDC_SetRxBuffer
-                0x08008788       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x08008788                USBD_CDC_SetRxBuffer
+                0x080087a4       0x10 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080087a4                USBD_CDC_SetRxBuffer
  .text.USBD_CDC_TransmitPacket
-                0x08008798       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x08008798                USBD_CDC_TransmitPacket
+                0x080087b4       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080087b4                USBD_CDC_TransmitPacket
  .text.USBD_CDC_ReceivePacket
-                0x080087cc       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
-                0x080087cc                USBD_CDC_ReceivePacket
+                0x080087e8       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x080087e8                USBD_CDC_ReceivePacket
  .text.HAL_PCD_MspInit
-                0x08008800      0x160 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008800                HAL_PCD_MspInit
+                0x0800881c      0x160 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x0800881c                HAL_PCD_MspInit
  .text.HAL_PCD_SetupStageCallback
-                0x08008960        0xc ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008960                HAL_PCD_SetupStageCallback
+                0x0800897c        0xc ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x0800897c                HAL_PCD_SetupStageCallback
  .text.HAL_PCD_DataOutStageCallback
-                0x0800896c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x0800896c                HAL_PCD_DataOutStageCallback
+                0x08008988       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008988                HAL_PCD_DataOutStageCallback
  .text.HAL_PCD_DataInStageCallback
-                0x08008980       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008980                HAL_PCD_DataInStageCallback
+                0x0800899c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x0800899c                HAL_PCD_DataInStageCallback
  .text.HAL_PCD_SOFCallback
-                0x08008994        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008994                HAL_PCD_SOFCallback
+                0x080089b0        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x080089b0                HAL_PCD_SOFCallback
  .text.HAL_PCD_ResetCallback
-                0x0800899c       0x24 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x0800899c                HAL_PCD_ResetCallback
+                0x080089b8       0x24 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x080089b8                HAL_PCD_ResetCallback
  .text.HAL_PCD_SuspendCallback
-                0x080089c0       0x30 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x080089c0                HAL_PCD_SuspendCallback
+                0x080089dc       0x30 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x080089dc                HAL_PCD_SuspendCallback
  .text.HAL_PCD_ResumeCallback
-                0x080089f0        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x080089f0                HAL_PCD_ResumeCallback
+                0x08008a0c        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a0c                HAL_PCD_ResumeCallback
  .text.HAL_PCD_ISOOUTIncompleteCallback
-                0x080089f8        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x080089f8                HAL_PCD_ISOOUTIncompleteCallback
+                0x08008a14        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a14                HAL_PCD_ISOOUTIncompleteCallback
  .text.HAL_PCD_ISOINIncompleteCallback
-                0x08008a00        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008a00                HAL_PCD_ISOINIncompleteCallback
+                0x08008a1c        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a1c                HAL_PCD_ISOINIncompleteCallback
  .text.HAL_PCD_ConnectCallback
-                0x08008a08        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008a08                HAL_PCD_ConnectCallback
+                0x08008a24        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a24                HAL_PCD_ConnectCallback
  .text.HAL_PCD_DisconnectCallback
-                0x08008a10        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008a10                HAL_PCD_DisconnectCallback
+                0x08008a2c        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a2c                HAL_PCD_DisconnectCallback
  .text.USBD_LL_Init
-                0x08008a18       0xcc ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008a18                USBD_LL_Init
+                0x08008a34       0xcc ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008a34                USBD_LL_Init
  .text.USBD_LL_Start
-                0x08008ae4       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008ae4                USBD_LL_Start
+                0x08008b00       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008b00                USBD_LL_Start
  .text.USBD_LL_OpenEP
-                0x08008b00       0x24 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008b00                USBD_LL_OpenEP
+                0x08008b1c       0x24 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008b1c                USBD_LL_OpenEP
  .text.USBD_LL_CloseEP
-                0x08008b24       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008b24                USBD_LL_CloseEP
- .text.USBD_LL_StallEP
                 0x08008b40       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008b40                USBD_LL_StallEP
- .text.USBD_LL_ClearStallEP
+                0x08008b40                USBD_LL_CloseEP
+ .text.USBD_LL_StallEP
                 0x08008b5c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008b5c                USBD_LL_ClearStallEP
+                0x08008b5c                USBD_LL_StallEP
+ .text.USBD_LL_ClearStallEP
+                0x08008b78       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008b78                USBD_LL_ClearStallEP
  .text.USBD_LL_IsStallEP
-                0x08008b78       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008b78                USBD_LL_IsStallEP
+                0x08008b94       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008b94                USBD_LL_IsStallEP
  .text.USBD_LL_SetUSBAddress
-                0x08008ba0       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008ba0                USBD_LL_SetUSBAddress
- .text.USBD_LL_Transmit
                 0x08008bbc       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008bbc                USBD_LL_Transmit
- .text.USBD_LL_PrepareReceive
+                0x08008bbc                USBD_LL_SetUSBAddress
+ .text.USBD_LL_Transmit
                 0x08008bd8       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008bd8                USBD_LL_PrepareReceive
+                0x08008bd8                USBD_LL_Transmit
+ .text.USBD_LL_PrepareReceive
+                0x08008bf4       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008bf4                USBD_LL_PrepareReceive
  .text.USBD_LL_GetRxDataSize
-                0x08008bf4        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x08008bf4                USBD_LL_GetRxDataSize
+                0x08008c10        0x8 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x08008c10                USBD_LL_GetRxDataSize
  .text.USBD_HS_DeviceDescriptor
-                0x08008bfc        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008bfc                USBD_HS_DeviceDescriptor
+                0x08008c18        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008c18                USBD_HS_DeviceDescriptor
  .text.USBD_FS_DeviceDescriptor
-                0x08008c08        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c08                USBD_FS_DeviceDescriptor
+                0x08008c24        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008c24                USBD_FS_DeviceDescriptor
  .text.USBD_FS_LangIDStrDescriptor
-                0x08008c14        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c14                USBD_FS_LangIDStrDescriptor
+                0x08008c30        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008c30                USBD_FS_LangIDStrDescriptor
  .text.USBD_FS_ManufacturerStrDescriptor
-                0x08008c20       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c20                USBD_FS_ManufacturerStrDescriptor
- .text.USBD_HS_ProductStrDescriptor
                 0x08008c3c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c3c                USBD_HS_ProductStrDescriptor
- .text.USBD_FS_ConfigStrDescriptor
+                0x08008c3c                USBD_FS_ManufacturerStrDescriptor
+ .text.USBD_HS_ProductStrDescriptor
                 0x08008c58       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c58                USBD_FS_ConfigStrDescriptor
- .text.USBD_FS_InterfaceStrDescriptor
+                0x08008c58                USBD_HS_ProductStrDescriptor
+ .text.USBD_FS_ConfigStrDescriptor
                 0x08008c74       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c74                USBD_FS_InterfaceStrDescriptor
- .text.USBD_FS_ProductStrDescriptor
+                0x08008c74                USBD_FS_ConfigStrDescriptor
+ .text.USBD_FS_InterfaceStrDescriptor
                 0x08008c90       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008c90                USBD_FS_ProductStrDescriptor
+                0x08008c90                USBD_FS_InterfaceStrDescriptor
+ .text.USBD_FS_ProductStrDescriptor
+                0x08008cac       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008cac                USBD_FS_ProductStrDescriptor
  .text.USBD_HS_LangIDStrDescriptor
-                0x08008cac        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008cac                USBD_HS_LangIDStrDescriptor
+                0x08008cc8        0xc ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008cc8                USBD_HS_LangIDStrDescriptor
  .text.USBD_HS_SerialStrDescriptor
-                0x08008cb8      0x11c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008cb8                USBD_HS_SerialStrDescriptor
+                0x08008cd4      0x11c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008cd4                USBD_HS_SerialStrDescriptor
  .text.USBD_HS_ManufacturerStrDescriptor
-                0x08008dd4       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008dd4                USBD_HS_ManufacturerStrDescriptor
- .text.USBD_HS_ConfigStrDescriptor
                 0x08008df0       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008df0                USBD_HS_ConfigStrDescriptor
- .text.USBD_HS_InterfaceStrDescriptor
+                0x08008df0                USBD_HS_ManufacturerStrDescriptor
+ .text.USBD_HS_ConfigStrDescriptor
                 0x08008e0c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008e0c                USBD_HS_InterfaceStrDescriptor
+                0x08008e0c                USBD_HS_ConfigStrDescriptor
+ .text.USBD_HS_InterfaceStrDescriptor
+                0x08008e28       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008e28                USBD_HS_InterfaceStrDescriptor
  .text.USBD_FS_SerialStrDescriptor
-                0x08008e28      0x11c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x08008e28                USBD_FS_SerialStrDescriptor
+                0x08008e44      0x11c ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x08008e44                USBD_FS_SerialStrDescriptor
  .text.dummy_rx_callback
-                0x08008f44        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
-                0x08008f44                dummy_rx_callback
+                0x08008f60        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008f60                dummy_rx_callback
  .text.CDC_DeInit_FS
-                0x08008f48        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008f64        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Control_HS
-                0x08008f4c        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008f68        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Receive_FS
-                0x08008f50       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008f6c       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Receive_HS
-                0x08008f7c       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008f98       0x1c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Init_FS
-                0x08008f98       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008fb4       0x34 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Init_HS
-                0x08008fcc       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08008fe8       0x28 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Control_FS
-                0x08008ff4       0x38 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08009010       0x38 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_DeInit_HS
-                0x0800902c        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08009048        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .text.CDC_Transmit_FS
-                0x08009030       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
-                0x08009030                CDC_Transmit_FS
+                0x0800904c       0x2c ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x0800904c                CDC_Transmit_FS
  .text.CDC_Set_Rx_Callback_FS
-                0x0800905c        0xc ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
-                0x0800905c                CDC_Set_Rx_Callback_FS
+                0x08009078        0xc ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x08009078                CDC_Set_Rx_Callback_FS
  .text.codec_pcm3060_init
-                0x08009068       0x80 ../libs/libdaisy/build\libdaisy.a(dev_codec_pcm3060.o)
-                0x08009068                codec_pcm3060_init
+                0x08009084       0x80 ../libs/libdaisy/build\libdaisy.a(dev_codec_pcm3060.o)
+                0x08009084                codec_pcm3060_init
  .text.codec_wm8731_init
-                0x080090e8      0x20c ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
-                0x080090e8                codec_wm8731_init
+                0x08009104      0x20c ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
+                0x08009104                codec_wm8731_init
  .text.codec_ak4556_init
-                0x080092f4       0x34 ../libs/libdaisy/build\libdaisy.a(dev_codec_ak4556.o)
-                0x080092f4                codec_ak4556_init
+                0x08009310       0x34 ../libs/libdaisy/build\libdaisy.a(dev_codec_ak4556.o)
+                0x08009310                codec_ak4556_init
  .text.dsy_dma_init
-                0x08009328       0x88 ../libs/libdaisy/build\libdaisy.a(sys_dma.o)
-                0x08009328                dsy_dma_init
+                0x08009344       0x88 ../libs/libdaisy/build\libdaisy.a(sys_dma.o)
+                0x08009344                dsy_dma_init
  .text.FMC_SDRAM_Init
-                0x080093b0       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
-                0x080093b0                FMC_SDRAM_Init
+                0x080093cc       0x78 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
+                0x080093cc                FMC_SDRAM_Init
  .text.FMC_SDRAM_Timing_Init
-                0x08009428       0x98 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
-                0x08009428                FMC_SDRAM_Timing_Init
+                0x08009444       0x98 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
+                0x08009444                FMC_SDRAM_Timing_Init
  .text.FMC_SDRAM_SendCommand
-                0x080094c0       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
-                0x080094c0                FMC_SDRAM_SendCommand
+                0x080094dc       0x24 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
+                0x080094dc                FMC_SDRAM_SendCommand
  .text.FMC_SDRAM_ProgramRefreshRate
-                0x080094e4       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
-                0x080094e4                FMC_SDRAM_ProgramRefreshRate
+                0x08009500       0x1c ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
+                0x08009500                FMC_SDRAM_ProgramRefreshRate
  .text.__aeabi_atexit
-                0x08009500        0xa c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libstdc++_nano.a(atexit_arm.o)
-                0x08009500                __aeabi_atexit
- *fill*         0x0800950a        0x2 
+                0x0800951c        0xa c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libstdc++_nano.a(atexit_arm.o)
+                0x0800951c                __aeabi_atexit
+ *fill*         0x08009526        0x2 
  .text.__cxa_atexit
-                0x0800950c       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-cxa_atexit.o)
-                0x0800950c                __cxa_atexit
+                0x08009528       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-cxa_atexit.o)
+                0x08009528                __cxa_atexit
  .text.__libc_init_array
-                0x08009528       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
-                0x08009528                __libc_init_array
- .text.free     0x08009570       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-malloc.o)
-                0x08009570                free
- .text.memcpy   0x08009580       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memcpy-stub.o)
-                0x08009580                memcpy
- .text.memset   0x0800959c       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
-                0x0800959c                memset
- .text._free_r  0x080095ac       0xa0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-freer.o)
-                0x080095ac                _free_r
+                0x08009544       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+                0x08009544                __libc_init_array
+ .text.free     0x0800958c       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-malloc.o)
+                0x0800958c                free
+ .text.memcpy   0x0800959c       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0800959c                memcpy
+ .text.memset   0x080095b8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+                0x080095b8                memset
+ .text._free_r  0x080095c8       0xa0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-freer.o)
+                0x080095c8                _free_r
  .text._malloc_r
-                0x0800964c       0xb4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x0800964c                _malloc_r
- .text.printf   0x08009700       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-printf.o)
-                0x08009700                iprintf
-                0x08009700                printf
- .text.putchar  0x08009730       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putchar.o)
-                0x08009730                putchar
- .text._sbrk_r  0x0800975c       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-sbrkr.o)
-                0x0800975c                _sbrk_r
+                0x08009668       0xb4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x08009668                _malloc_r
+ .text.printf   0x0800971c       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-printf.o)
+                0x0800971c                iprintf
+                0x0800971c                printf
+ .text.putchar  0x0800974c       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putchar.o)
+                0x0800974c                putchar
+ .text._sbrk_r  0x08009778       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-sbrkr.o)
+                0x08009778                _sbrk_r
  .text._vsprintf_r
-                0x0800977c       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
-                0x0800977c                _vsprintf_r
-                0x0800977c                _vsiprintf_r
+                0x08009798       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
+                0x08009798                _vsprintf_r
+                0x08009798                _vsiprintf_r
  .text.vsprintf
-                0x080097a8       0x14 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
-                0x080097a8                vsiprintf
-                0x080097a8                vsprintf
- .text.std      0x080097bc       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x080097c4       0x14 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
+                0x080097c4                vsiprintf
+                0x080097c4                vsprintf
+ .text.std      0x080097d8       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
  .text._cleanup_r
-                0x08009804        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x08009804                _cleanup_r
+                0x08009820        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x08009820                _cleanup_r
  .text.__sfmoreglue
-                0x08009810       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x08009810                __sfmoreglue
+                0x0800982c       0x2c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800982c                __sfmoreglue
  .text.__sfp_lock_acquire
-                0x0800983c        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0800983c                __sfp_lock_acquire
+                0x08009858        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x08009858                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x08009848        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x08009848                __sfp_lock_release
+                0x08009864        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x08009864                __sfp_lock_release
  .text.__sinit_lock_acquire
-                0x08009854        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x08009854                __sinit_lock_acquire
+                0x08009870        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x08009870                __sinit_lock_acquire
  .text.__sinit_lock_release
-                0x08009860        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x08009860                __sinit_lock_release
- .text.__sinit  0x0800986c       0x70 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0800986c                __sinit
- .text.__sfp    0x080098dc       0x8c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x080098dc                __sfp
+                0x0800987c        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800987c                __sinit_lock_release
+ .text.__sinit  0x08009888       0x70 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x08009888                __sinit
+ .text.__sfp    0x080098f8       0x8c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x080098f8                __sfp
  .text._fwalk_reent
-                0x08009968       0x3e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fwalk.o)
-                0x08009968                _fwalk_reent
+                0x08009984       0x3e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fwalk.o)
+                0x08009984                _fwalk_reent
  .text.__retarget_lock_init_recursive
-                0x080099a6        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
-                0x080099a6                __retarget_lock_init_recursive
+                0x080099c2        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
+                0x080099c2                __retarget_lock_init_recursive
  .text.__retarget_lock_acquire_recursive
-                0x080099a8        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
-                0x080099a8                __retarget_lock_acquire_recursive
+                0x080099c4        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
+                0x080099c4                __retarget_lock_acquire_recursive
  .text.__retarget_lock_release_recursive
-                0x080099aa        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
-                0x080099aa                __retarget_lock_release_recursive
+                0x080099c6        0x2 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
+                0x080099c6                __retarget_lock_release_recursive
  .text.__malloc_lock
-                0x080099ac        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
-                0x080099ac                __malloc_lock
+                0x080099c8        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
+                0x080099c8                __malloc_lock
  .text.__malloc_unlock
-                0x080099b8        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
-                0x080099b8                __malloc_unlock
+                0x080099d4        0xc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
+                0x080099d4                __malloc_unlock
  .text.__ssputs_r
-                0x080099c4       0xb6 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x080099c4                __ssputs_r
- *fill*         0x08009a7a        0x2 
+                0x080099e0       0xb6 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x080099e0                __ssputs_r
+ *fill*         0x08009a96        0x2 
  .text._svfprintf_r
-                0x08009a7c      0x200 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
-                0x08009a7c                _svfiprintf_r
-                0x08009a7c                _svfprintf_r
+                0x08009a98      0x200 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x08009a98                _svfiprintf_r
+                0x08009a98                _svfprintf_r
  .text.__sfputc_r
-                0x08009c7c       0x2e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08009c98       0x2e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x08009caa       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x08009caa                __sfputs_r
- *fill*         0x08009cce        0x2 
+                0x08009cc6       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08009cc6                __sfputs_r
+ *fill*         0x08009cea        0x2 
  .text._vfprintf_r
-                0x08009cd0      0x260 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
-                0x08009cd0                _vfprintf_r
-                0x08009cd0                _vfiprintf_r
+                0x08009cec      0x260 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x08009cec                _vfprintf_r
+                0x08009cec                _vfiprintf_r
  .text._printf_common
-                0x08009f30       0xda c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x08009f30                _printf_common
- *fill*         0x0800a00a        0x2 
+                0x08009f4c       0xda c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x08009f4c                _printf_common
+ *fill*         0x0800a026        0x2 
  .text._printf_i
-                0x0800a00c      0x24c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x0800a00c                _printf_i
- .text._putc_r  0x0800a258       0x90 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putc.o)
-                0x0800a258                _putc_r
- .text.__sread  0x0800a2e8       0x22 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
-                0x0800a2e8                __sread
+                0x0800a028      0x24c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800a028                _printf_i
+ .text._putc_r  0x0800a274       0x90 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putc.o)
+                0x0800a274                _putc_r
+ .text.__sread  0x0800a304       0x22 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
+                0x0800a304                __sread
  .text.__swrite
-                0x0800a30a       0x38 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
-                0x0800a30a                __swrite
- .text.__sseek  0x0800a342       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
-                0x0800a342                __sseek
+                0x0800a326       0x38 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
+                0x0800a326                __swrite
+ .text.__sseek  0x0800a35e       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
+                0x0800a35e                __sseek
  .text.__sclose
-                0x0800a366        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
-                0x0800a366                __sclose
- *fill*         0x0800a36e        0x2 
+                0x0800a382        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
+                0x0800a382                __sclose
+ *fill*         0x0800a38a        0x2 
  .text.__swbuf_r
-                0x0800a370       0xa4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wbuf.o)
-                0x0800a370                __swbuf_r
+                0x0800a38c       0xa4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wbuf.o)
+                0x0800a38c                __swbuf_r
  .text._write_r
-                0x0800a414       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-writer.o)
-                0x0800a414                _write_r
+                0x0800a430       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-writer.o)
+                0x0800a430                _write_r
  .text.__swsetup_r
-                0x0800a438       0xdc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wsetup.o)
-                0x0800a438                __swsetup_r
+                0x0800a454       0xdc c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wsetup.o)
+                0x0800a454                __swsetup_r
  .text._close_r
-                0x0800a514       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-closer.o)
-                0x0800a514                _close_r
+                0x0800a530       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-closer.o)
+                0x0800a530                _close_r
  .text.__sflush_r
-                0x0800a534      0x10c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
-                0x0800a534                __sflush_r
+                0x0800a550      0x10c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
+                0x0800a550                __sflush_r
  .text._fflush_r
-                0x0800a640       0x78 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
-                0x0800a640                _fflush_r
+                0x0800a65c       0x78 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
+                0x0800a65c                _fflush_r
  .text._lseek_r
-                0x0800a6b8       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lseekr.o)
-                0x0800a6b8                _lseek_r
+                0x0800a6d4       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lseekr.o)
+                0x0800a6d4                _lseek_r
  .text.__swhatbuf_r
-                0x0800a6dc       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
-                0x0800a6dc                __swhatbuf_r
+                0x0800a6f8       0x48 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
+                0x0800a6f8                __swhatbuf_r
  .text.__smakebuf_r
-                0x0800a724       0x80 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
-                0x0800a724                __smakebuf_r
- .text.memmove  0x0800a7a4       0x34 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memmove.o)
-                0x0800a7a4                memmove
+                0x0800a740       0x80 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
+                0x0800a740                __smakebuf_r
+ .text.memmove  0x0800a7c0       0x34 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memmove.o)
+                0x0800a7c0                memmove
  .text._realloc_r
-                0x0800a7d8       0x4c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-reallocr.o)
-                0x0800a7d8                _realloc_r
- .text._read_r  0x0800a824       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-readr.o)
-                0x0800a824                _read_r
+                0x0800a7f4       0x4c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+                0x0800a7f4                _realloc_r
+ .text._read_r  0x0800a840       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-readr.o)
+                0x0800a840                _read_r
  .text._fstat_r
-                0x0800a848       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fstatr.o)
-                0x0800a848                _fstat_r
+                0x0800a864       0x24 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fstatr.o)
+                0x0800a864                _fstat_r
  .text._isatty_r
-                0x0800a86c       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-isattyr.o)
-                0x0800a86c                _isatty_r
+                0x0800a888       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-isattyr.o)
+                0x0800a888                _isatty_r
  .text._malloc_usable_size_r
-                0x0800a88c       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-msizer.o)
-                0x0800a88c                _malloc_usable_size_r
- .text._close   0x0800a89c       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(close.o)
-                0x0800a89c                _close
- .text._fstat   0x0800a8ac       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(fstat.o)
-                0x0800a8ac                _fstat
- .text._isatty  0x0800a8bc       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(isatty.o)
-                0x0800a8bc                _isatty
- .text._lseek   0x0800a8cc       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(lseek.o)
-                0x0800a8cc                _lseek
- .text._read    0x0800a8dc       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(read.o)
-                0x0800a8dc                _read
- .text._sbrk    0x0800a8ec       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
-                0x0800a8ec                _sbrk
- .text._write   0x0800a908       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(write.o)
-                0x0800a908                _write
+                0x0800a8a8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-msizer.o)
+                0x0800a8a8                _malloc_usable_size_r
+ .text._close   0x0800a8b8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(close.o)
+                0x0800a8b8                _close
+ .text._fstat   0x0800a8c8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(fstat.o)
+                0x0800a8c8                _fstat
+ .text._isatty  0x0800a8d8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(isatty.o)
+                0x0800a8d8                _isatty
+ .text._lseek   0x0800a8e8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(lseek.o)
+                0x0800a8e8                _lseek
+ .text._read    0x0800a8f8       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(read.o)
+                0x0800a8f8                _read
+ .text._sbrk    0x0800a908       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
+                0x0800a908                _sbrk
+ .text._write   0x0800a924       0x10 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(write.o)
+                0x0800a924                _write
  *(.rodata)
- .rodata        0x0800a918       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+ .rodata        0x0800a934       0x10 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
  *(.rodata*)
  .rodata.D1CorePrescTable
-                0x0800a928       0x10 build/system_stm32h7xx.o
-                0x0800a928                D1CorePrescTable
+                0x0800a944       0x10 build/system_stm32h7xx.o
+                0x0800a944                D1CorePrescTable
  .rodata.main.str1.4
-                0x0800a938       0x58 build/musicSynth.o
+                0x0800a954        0xd build/musicSynth.o
+ *fill*         0x0800a961        0x3 
  .rodata.HAL_QSPI_MspInit.str1.4
-                0x0800a990        0x7 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
- *fill*         0x0800a997        0x1 
+                0x0800a964        0x7 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
+ *fill*         0x0800a96b        0x1 
  .rodata.gpio_hal_pin_map
-                0x0800a998       0x20 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x0800a96c       0x20 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
  .rodata.gpio_hal_port_map
-                0x0800a9b8       0x30 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x0800a98c       0x30 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
  .rodata.flagBitshiftOffset.17839
-                0x0800a9e8        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x0800a9bc        0x8 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
  .rodata.USBD_Init.str1.4
-                0x0800a9f0       0x1e ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
- *fill*         0x0800aa0e        0x2 
+                0x0800a9c4       0x1e ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+ *fill*         0x0800a9e2        0x2 
  .rodata.USBD_RegisterClass.str1.4
-                0x0800aa10       0x15 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
- *fill*         0x0800aa25        0x3 
+                0x0800a9e4       0x15 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+ *fill*         0x0800a9f9        0x3 
  .rodata.CSWTCH.24
-                0x0800aa28        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x0800a9fc        0x4 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
  .rodata.USBD_FS_ManufacturerStrDescriptor.str1.4
-                0x0800aa2c        0xd ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
- *fill*         0x0800aa39        0x3 
+                0x0800aa00        0xd ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+ *fill*         0x0800aa0d        0x3 
  .rodata.USBD_HS_ProductStrDescriptor.str1.4
-                0x0800aa3c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x0800aa10       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
  .rodata.USBD_FS_ConfigStrDescriptor.str1.4
-                0x0800aa50        0xb ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
- *fill*         0x0800aa5b        0x1 
+                0x0800aa24        0xb ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+ *fill*         0x0800aa2f        0x1 
  .rodata.USBD_FS_InterfaceStrDescriptor.str1.4
-                0x0800aa5c        0xe ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
- *fill*         0x0800aa6a        0x2 
+                0x0800aa30        0xe ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+ *fill*         0x0800aa3e        0x2 
  .rodata.USBD_FS_ProductStrDescriptor.str1.4
-                0x0800aa6c       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x0800aa40       0x14 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
  .rodata._global_impure_ptr
-                0x0800aa80        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
-                0x0800aa80                _global_impure_ptr
+                0x0800aa54        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+                0x0800aa54                _global_impure_ptr
  .rodata.__sf_fake_stderr
-                0x0800aa84       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0800aa84                __sf_fake_stderr
+                0x0800aa58       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800aa58                __sf_fake_stderr
  .rodata.__sf_fake_stdin
-                0x0800aaa4       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0800aaa4                __sf_fake_stdin
+                0x0800aa78       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800aa78                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x0800aac4       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
-                0x0800aac4                __sf_fake_stdout
+                0x0800aa98       0x20 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800aa98                __sf_fake_stdout
  .rodata._svfprintf_r.str1.1
-                0x0800aae4       0x11 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0800aab8       0x11 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
  .rodata._vfprintf_r.str1.1
-                0x0800aaf5       0x11 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0800aac9       0x11 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
  .rodata._printf_i.str1.1
-                0x0800aaf5       0x22 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800aac9       0x22 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
  *(.glue_7)
- .glue_7        0x0800ab17        0x0 linker stubs
+ .glue_7        0x0800aaeb        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0800ab17        0x0 linker stubs
+ .glue_7t       0x0800aaeb        0x0 linker stubs
  *(.init)
- *fill*         0x0800ab17        0x1 
- .init          0x0800ab18        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0800ab18                _init
- .init          0x0800ab1c        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+ *fill*         0x0800aaeb        0x1 
+ .init          0x0800aaec        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0800aaec                _init
+ .init          0x0800aaf0        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
  *(.fini)
- .fini          0x0800ab24        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
-                0x0800ab24                _fini
- .fini          0x0800ab28        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
-                0x0800ab30                . = ALIGN (0x4)
-                0x0800ab30                _etext = .
+ .fini          0x0800aaf8        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0800aaf8                _fini
+ .fini          0x0800aafc        0x8 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x0800ab04                . = ALIGN (0x4)
+                0x0800ab04                _etext = .
 
-.vfp11_veneer   0x0800ab30        0x0
- .vfp11_veneer  0x0800ab30        0x0 linker stubs
+.vfp11_veneer   0x0800ab04        0x0
+ .vfp11_veneer  0x0800ab04        0x0 linker stubs
 
-.v4_bx          0x0800ab30        0x0
- .v4_bx         0x0800ab30        0x0 linker stubs
+.v4_bx          0x0800ab04        0x0
+ .v4_bx         0x0800ab04        0x0 linker stubs
 
-.iplt           0x0800ab30        0x0
- .iplt          0x0800ab30        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.iplt           0x0800ab04        0x0
+ .iplt          0x0800ab04        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.rel.dyn        0x0800ab30        0x0
- .rel.iplt      0x0800ab30        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+.rel.dyn        0x0800ab04        0x0
+ .rel.iplt      0x0800ab04        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.ARM.extab      0x0800ab30        0x0
-                0x0800ab30                . = ALIGN (0x4)
+.ARM.extab      0x0800ab04        0x0
+                0x0800ab04                . = ALIGN (0x4)
  *(.ARM.extab)
  *(.gnu.linkonce.armextab.*)
-                0x0800ab30                . = ALIGN (0x4)
+                0x0800ab04                . = ALIGN (0x4)
 
-.exidx          0x0800ab30        0x0
-                0x0800ab30                . = ALIGN (0x4)
+.exidx          0x0800ab04        0x0
+                0x0800ab04                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__exidx_start = .)
  *(.ARM.exidx*)
-                0x0800ab30                . = ALIGN (0x4)
+                0x0800ab04                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__exidx_end = .)
 
 .ARM.attributes
-                0x0800ab30       0x2e
+                0x0800ab04       0x2e
  *(.ARM.attributes)
  .ARM.attributes
-                0x0800ab30       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
+                0x0800ab04       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crti.o
  .ARM.attributes
-                0x0800ab4e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+                0x0800ab22       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  .ARM.attributes
-                0x0800ab80       0x32 build/system_stm32h7xx.o
+                0x0800ab54       0x32 build/system_stm32h7xx.o
  .ARM.attributes
-                0x0800abb2       0x32 build/musicSynth.o
+                0x0800ab86       0x32 build/musicSynth.o
  .ARM.attributes
-                0x0800abe4       0x21 build/startup_stm32h750xx.o
+                0x0800abb8       0x21 build/startup_stm32h750xx.o
  .ARM.attributes
-                0x0800ac05       0x32 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
+                0x0800abd9       0x32 ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
  .ARM.attributes
-                0x0800ac37       0x32 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
+                0x0800ac0b       0x32 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
  .ARM.attributes
-                0x0800ac69       0x32 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
+                0x0800ac3d       0x32 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
  .ARM.attributes
-                0x0800ac9b       0x32 ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
+                0x0800ac6f       0x32 ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
  .ARM.attributes
-                0x0800accd       0x32 ../libs/libdaisy/build\libdaisy.a(sys_system.o)
+                0x0800aca1       0x32 ../libs/libdaisy/build\libdaisy.a(sys_system.o)
  .ARM.attributes
-                0x0800acff       0x32 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
+                0x0800acd3       0x32 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
  .ARM.attributes
-                0x0800ad31       0x32 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
+                0x0800ad05       0x32 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
  .ARM.attributes
-                0x0800ad63       0x32 ../libs/libdaisy/build\libdaisy.a(per_gpio.o)
+                0x0800ad37       0x32 ../libs/libdaisy/build\libdaisy.a(per_gpio.o)
  .ARM.attributes
-                0x0800ad95       0x32 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
+                0x0800ad69       0x32 ../libs/libdaisy/build\libdaisy.a(per_tim.o)
  .ARM.attributes
-                0x0800adc7       0x32 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x0800ad9b       0x32 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
  .ARM.attributes
-                0x0800adf9       0x32 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x0800adcd       0x32 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
  .ARM.attributes
-                0x0800ae2b       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
+                0x0800adff       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd.o)
  .ARM.attributes
-                0x0800ae5d       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
+                0x0800ae31       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pcd_ex.o)
  .ARM.attributes
-                0x0800ae8f       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
+                0x0800ae63       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_usb.o)
  .ARM.attributes
-                0x0800aec1       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
+                0x0800ae95       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_cortex.o)
  .ARM.attributes
-                0x0800aef3       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
+                0x0800aec7       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sdram.o)
  .ARM.attributes
-                0x0800af25       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
+                0x0800aef9       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c.o)
  .ARM.attributes
-                0x0800af57       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
+                0x0800af2b       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_i2c_ex.o)
  .ARM.attributes
-                0x0800af89       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
+                0x0800af5d       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_qspi.o)
  .ARM.attributes
-                0x0800afbb       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
+                0x0800af8f       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_sai.o)
  .ARM.attributes
-                0x0800afed       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
+                0x0800afc1       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim.o)
  .ARM.attributes
-                0x0800b01f       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim_ex.o)
+                0x0800aff3       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_tim_ex.o)
  .ARM.attributes
-                0x0800b051       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
+                0x0800b025       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc.o)
  .ARM.attributes
-                0x0800b083       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
+                0x0800b057       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_rcc_ex.o)
  .ARM.attributes
-                0x0800b0b5       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
+                0x0800b089       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_gpio.o)
  .ARM.attributes
-                0x0800b0e7       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
+                0x0800b0bb       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_dma.o)
  .ARM.attributes
-                0x0800b119       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_mdma.o)
+                0x0800b0ed       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_mdma.o)
  .ARM.attributes
-                0x0800b14b       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
+                0x0800b11f       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal_pwr_ex.o)
  .ARM.attributes
-                0x0800b17d       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x0800b151       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
  .ARM.attributes
-                0x0800b1af       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
+                0x0800b183       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_core.o)
  .ARM.attributes
-                0x0800b1e1       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+                0x0800b1b5       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
  .ARM.attributes
-                0x0800b213       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
+                0x0800b1e7       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_ioreq.o)
  .ARM.attributes
-                0x0800b245       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x0800b219       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .ARM.attributes
-                0x0800b277       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x0800b24b       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
  .ARM.attributes
-                0x0800b2a9       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x0800b27d       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
  .ARM.attributes
-                0x0800b2db       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x0800b2af       0x32 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
  .ARM.attributes
-                0x0800b30d       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_pcm3060.o)
+                0x0800b2e1       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_pcm3060.o)
  .ARM.attributes
-                0x0800b33f       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
+                0x0800b313       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
  .ARM.attributes
-                0x0800b371       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_ak4556.o)
+                0x0800b345       0x32 ../libs/libdaisy/build\libdaisy.a(dev_codec_ak4556.o)
  .ARM.attributes
-                0x0800b3a3       0x32 ../libs/libdaisy/build\libdaisy.a(sys_dma.o)
+                0x0800b377       0x32 ../libs/libdaisy/build\libdaisy.a(sys_dma.o)
  .ARM.attributes
-                0x0800b3d5       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
+                0x0800b3a9       0x32 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_ll_fmc.o)
  .ARM.attributes
-                0x0800b407       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libstdc++_nano.a(atexit_arm.o)
+                0x0800b3db       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libstdc++_nano.a(atexit_arm.o)
  .ARM.attributes
-                0x0800b439       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-cxa_atexit.o)
+                0x0800b40d       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-cxa_atexit.o)
  .ARM.attributes
-                0x0800b46b       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
+                0x0800b43f       0x30 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-impure.o)
  .ARM.attributes
-                0x0800b49b       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
+                0x0800b46f       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-init.o)
  .ARM.attributes
-                0x0800b4cd       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-malloc.o)
+                0x0800b4a1       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-malloc.o)
  .ARM.attributes
-                0x0800b4ff       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memcpy-stub.o)
+                0x0800b4d3       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memcpy-stub.o)
  .ARM.attributes
-                0x0800b531       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
+                0x0800b505       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memset.o)
  .ARM.attributes
-                0x0800b563       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-freer.o)
+                0x0800b537       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-freer.o)
  .ARM.attributes
-                0x0800b595       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x0800b569       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
  .ARM.attributes
-                0x0800b5c7       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-printf.o)
+                0x0800b59b       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-printf.o)
  .ARM.attributes
-                0x0800b5f9       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putchar.o)
+                0x0800b5cd       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putchar.o)
  .ARM.attributes
-                0x0800b62b       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-sbrkr.o)
+                0x0800b5ff       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-sbrkr.o)
  .ARM.attributes
-                0x0800b65d       0x17 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-strlen.o)
+                0x0800b631       0x17 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-strlen.o)
  .ARM.attributes
-                0x0800b674       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
+                0x0800b648       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-vsprintf.o)
  .ARM.attributes
-                0x0800b6a6       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
+                0x0800b67a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
  .ARM.attributes
-                0x0800b6d8       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fwalk.o)
+                0x0800b6ac       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fwalk.o)
  .ARM.attributes
-                0x0800b70a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
+                0x0800b6de       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
  .ARM.attributes
-                0x0800b73c       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
+                0x0800b710       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-mlock.o)
  .ARM.attributes
-                0x0800b76e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
+                0x0800b742       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-svfprintf.o)
  .ARM.attributes
-                0x0800b7a0       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
+                0x0800b774       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf.o)
  .ARM.attributes
-                0x0800b7d2       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x0800b7a6       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-vfprintf_i.o)
  .ARM.attributes
-                0x0800b804       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putc.o)
+                0x0800b7d8       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-putc.o)
  .ARM.attributes
-                0x0800b836       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-reent.o)
+                0x0800b80a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-reent.o)
  .ARM.attributes
-                0x0800b868       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
+                0x0800b83c       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-stdio.o)
  .ARM.attributes
-                0x0800b89a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wbuf.o)
+                0x0800b86e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wbuf.o)
  .ARM.attributes
-                0x0800b8cc       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-writer.o)
+                0x0800b8a0       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-writer.o)
  .ARM.attributes
-                0x0800b8fe       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wsetup.o)
+                0x0800b8d2       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-wsetup.o)
  .ARM.attributes
-                0x0800b930       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-closer.o)
+                0x0800b904       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-closer.o)
  .ARM.attributes
-                0x0800b962       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
+                0x0800b936       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fflush.o)
  .ARM.attributes
-                0x0800b994       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lseekr.o)
+                0x0800b968       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lseekr.o)
  .ARM.attributes
-                0x0800b9c6       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
+                0x0800b99a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-makebuf.o)
  .ARM.attributes
-                0x0800b9f8       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memchr.o)
+                0x0800b9cc       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memchr.o)
  .ARM.attributes
-                0x0800ba14       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memmove.o)
+                0x0800b9e8       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-memmove.o)
  .ARM.attributes
-                0x0800ba46       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-reallocr.o)
+                0x0800ba1a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-reallocr.o)
  .ARM.attributes
-                0x0800ba78       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-readr.o)
+                0x0800ba4c       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-readr.o)
  .ARM.attributes
-                0x0800baaa       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fstatr.o)
+                0x0800ba7e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-fstatr.o)
  .ARM.attributes
-                0x0800badc       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-isattyr.o)
+                0x0800bab0       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-isattyr.o)
  .ARM.attributes
-                0x0800bb0e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-msizer.o)
+                0x0800bae2       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-msizer.o)
  .ARM.attributes
-                0x0800bb40       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(close.o)
+                0x0800bb14       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(close.o)
  .ARM.attributes
-                0x0800bb72       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(fstat.o)
+                0x0800bb46       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(fstat.o)
  .ARM.attributes
-                0x0800bba4       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(isatty.o)
+                0x0800bb78       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(isatty.o)
  .ARM.attributes
-                0x0800bbd6       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(lseek.o)
+                0x0800bbaa       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(lseek.o)
  .ARM.attributes
-                0x0800bc08       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(read.o)
+                0x0800bbdc       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(read.o)
  .ARM.attributes
-                0x0800bc3a       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
+                0x0800bc0e       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
  .ARM.attributes
-                0x0800bc6c       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(write.o)
+                0x0800bc40       0x32 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(write.o)
  .ARM.attributes
-                0x0800bc9e       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
+                0x0800bc72       0x1e c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtn.o
 
-.preinit_array  0x0800ab30        0x0
-                0x0800ab30                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0800ab04        0x0
+                0x0800ab04                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0800ab30                PROVIDE (__preinit_array_end = .)
+                0x0800ab04                PROVIDE (__preinit_array_end = .)
 
-.init_array     0x0800ab30        0x8
-                0x0800ab30                PROVIDE (__init_array_start = .)
+.init_array     0x0800ab04        0x8
+                0x0800ab04                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  *(.init_array*)
- .init_array    0x0800ab30        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
- .init_array    0x0800ab34        0x4 build/musicSynth.o
-                0x0800ab38                PROVIDE (__init_array_end = .)
+ .init_array    0x0800ab04        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .init_array    0x0800ab08        0x4 build/musicSynth.o
+                0x0800ab0c                PROVIDE (__init_array_end = .)
 
-.fini_array     0x0800ab38        0x4
+.fini_array     0x0800ab0c        0x4
                 [!provide]                PROVIDE (__fini_array_start = .)
  *(.fini_array*)
- .fini_array    0x0800ab38        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
+ .fini_array    0x0800ab0c        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(SORT_BY_NAME(.fini_array.*))
                 [!provide]                PROVIDE (__fini_array_end = .)
 
-.data           0x24000000      0x230 load address 0x0800ab3c
+.data           0x24000000      0x230 load address 0x0800ab10
                 0x24000000                . = ALIGN (0x4)
                 0x24000000                _sdata = .
                 [!provide]                PROVIDE (__data_start__ = _sdata)
@@ -3323,135 +3328,138 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../l
                 0x24000230                . = ALIGN (0x4)
                 0x24000230                _edata = .
                 [!provide]                PROVIDE (__data_end__ = _edata)
-                0x0800ab3c                _sidata = LOADADDR (.data)
+                0x0800ab10                _sidata = LOADADDR (.data)
 
-.igot.plt       0x24000230        0x0 load address 0x0800ad6c
+.igot.plt       0x24000230        0x0 load address 0x0800ad40
  .igot.plt      0x24000230        0x0 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
 
-.bss            0x24000230     0x5408 load address 0x0800ad6c
+.bss            0x24000230     0x5410 load address 0x0800ad40
                 0x24000230                . = ALIGN (0x4)
                 0x24000230                _sbss = .
                 0x24000230                PROVIDE (__bss_start__ = _sbss)
  *(.bss)
  .bss           0x24000230       0x1c c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/thumb/v7e-m+dp/hard/crtbegin.o
  *(.bss*)
+ .bss._ZL7counter
+                0x2400024c        0x4 build/musicSynth.o
  .bss._ZN8PrintOut7sumbuffE
-                0x2400024c      0x400 build/musicSynth.o
-                0x2400024c                PrintOut::sumbuff
- .bss.osc1      0x2400064c       0x24 build/musicSynth.o
-                0x2400064c                osc1
- .bss.osc2      0x24000670       0x24 build/musicSynth.o
-                0x24000670                osc2
- .bss.pod       0x24000694      0x1a8 build/musicSynth.o
-                0x24000694                pod
- .bss.printer   0x2400083c      0x2dc build/musicSynth.o
-                0x2400083c                printer
- .bss.seed      0x24000b18       0x6c build/musicSynth.o
-                0x24000b18                seed
+                0x24000250      0x400 build/musicSynth.o
+                0x24000250                PrintOut::sumbuff
+ .bss.osc1      0x24000650       0x24 build/musicSynth.o
+                0x24000650                osc1
+ .bss.osc2      0x24000674       0x24 build/musicSynth.o
+                0x24000674                osc2
+ .bss.pod       0x24000698      0x1a8 build/musicSynth.o
+                0x24000698                pod
+ .bss.printer   0x24000840      0x2dc build/musicSynth.o
+                0x24000840                printer
+ .bss.seed      0x24000b1c       0x6c build/musicSynth.o
+                0x24000b1c                seed
  .bss.audio_handle
-                0x24000b84      0x828 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
+                0x24000b88      0x828 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
  .bss.audio_handle_ext
-                0x240013ac      0x828 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
+                0x240013b0      0x828 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
  .bss.using_new_callbacks
-                0x24001bd4        0x1 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
- *fill*         0x24001bd5        0x3 
+                0x24001bd8        0x1 ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
+ *fill*         0x24001bd9        0x3 
  .bss.qspi_handle
-                0x24001bd8       0x54 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
+                0x24001bdc       0x54 ../libs/libdaisy/build\libdaisy.a(per_qspi.o)
  .bss.FMC_Initialized
-                0x24001c2c        0x4 ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
+                0x24001c30        0x4 ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
+ *fill*         0x24001c34        0x4 
  .bss.dsy_sdram
-                0x24001c30       0x3c ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
+                0x24001c38       0x3c ../libs/libdaisy/build\libdaisy.a(dev_sdram.o)
  .bss.i2c1_handler
-                0x24001c6c        0x6 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
- *fill*         0x24001c72        0x2 
- .bss.i2c2_handler
                 0x24001c74        0x6 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
  *fill*         0x24001c7a        0x2 
- .bss.i2c3_handler
+ .bss.i2c2_handler
                 0x24001c7c        0x6 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
  *fill*         0x24001c82        0x2 
- .bss.i2c4_handler
+ .bss.i2c3_handler
                 0x24001c84        0x6 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
  *fill*         0x24001c8a        0x2 
+ .bss.i2c4_handler
+                0x24001c8c        0x6 ../libs/libdaisy/build\libdaisy.a(per_i2c.o)
+ *fill*         0x24001c92        0x2 
  .bss.SAI1_client
-                0x24001c8c        0x4 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
+                0x24001c94        0x4 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
  .bss.SAI2_client
-                0x24001c90        0x4 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
+                0x24001c98        0x4 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
  .bss.sai_handle
-                0x24001c94       0x21 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
- *fill*         0x24001cb5        0x3 
- .bss.tim       0x24001cb8       0x4c ../libs/libdaisy/build\libdaisy.a(per_tim.o)
+                0x24001c9c       0x21 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
+ *fill*         0x24001cbd        0x3 
+ .bss.tim       0x24001cc0       0x4c ../libs/libdaisy/build\libdaisy.a(per_tim.o)
  .bss.hUsbDeviceFS
-                0x24001d04      0x29c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x24001d04                hUsbDeviceFS
+                0x24001d0c      0x29c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x24001d0c                hUsbDeviceFS
  .bss.hUsbDeviceHS
-                0x24001fa0      0x29c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x24001fa0                hUsbDeviceHS
+                0x24001fa8      0x29c ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x24001fa8                hUsbDeviceHS
  .bss.rx_callback
-                0x2400223c        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x2400223c                rx_callback
+                0x24002244        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x24002244                rx_callback
  .bss.rxcallback
-                0x24002240        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
-                0x24002240                rxcallback
- .bss.uwTick    0x24002244        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
+                0x24002248        0x4 ../libs/libdaisy/build\libdaisy.a(hid_usb.o)
+                0x24002248                rxcallback
+ .bss.uwTick    0x2400224c        0x4 ../libs/libdaisy/build\libdaisy.a(stm32h7xx_hal.o)
  .bss.cfgidx.19500
-                0x24002248        0x1 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
- *fill*         0x24002249        0x3 
- .bss.h_cdc_fs  0x2400224c      0x21c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
- .bss.h_cdc_hs  0x24002468      0x21c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+                0x24002250        0x1 ../libs/libdaisy/build\libdaisy.a(usbd_ctlreq.o)
+ *fill*         0x24002251        0x3 
+ .bss.h_cdc_fs  0x24002254      0x21c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
+ .bss.h_cdc_hs  0x24002470      0x21c ../libs/libdaisy/build\libdaisy.a(usbd_cdc.o)
  .bss.__malloc_free_list
-                0x24002684        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x24002684                __malloc_free_list
+                0x2400268c        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x2400268c                __malloc_free_list
  .bss.__malloc_sbrk_start
-                0x24002688        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
-                0x24002688                __malloc_sbrk_start
+                0x24002690        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-nano-mallocr.o)
+                0x24002690                __malloc_sbrk_start
  .bss.heap_end.5507
-                0x2400268c        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
+                0x24002694        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libnosys.a(sbrk.o)
  *(COMMON)
- COMMON         0x24002690      0x440 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
-                0x24002690                hsai_BlockB2
-                0x24002728                hdma_sai2_b
-                0x240027a0                hsai_BlockA2
-                0x24002838                hsai_BlockB1
-                0x240028d0                hdma_sai1_a
-                0x24002948                hdma_sai1_b
-                0x240029c0                hdma_sai2_a
-                0x24002a38                hsai_BlockA1
- COMMON         0x24002ad0      0x130 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
-                0x24002ad0                hi2c3
-                0x24002b1c                hi2c4
-                0x24002b68                hi2c1
-                0x24002bb4                hi2c2
- COMMON         0x24002c00      0x810 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
-                0x24002c00                hpcd_USB_OTG_HS
-                0x24003008                hpcd_USB_OTG_FS
- COMMON         0x24003410      0x200 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
-                0x24003410                USBD_StrDesc
- COMMON         0x24003610     0x2004 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
-                0x24003610                UserRxBufferHS
-                0x24003e10                UserRxBufferFS
-                0x24004610                UserTxBufferFS
-                0x24004e10                UserTxBufferHS
-                0x24005610                rx_callback_fs
- COMMON         0x24005614       0x14 ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
-                0x24005614                codec_handle
- COMMON         0x24005628        0x9 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
-                0x24005628                __lock___atexit_recursive_mutex
-                0x24005629                __lock___arc4random_mutex
-                0x2400562a                __lock___env_recursive_mutex
-                0x2400562b                __lock___sinit_recursive_mutex
-                0x2400562c                __lock___malloc_recursive_mutex
-                0x2400562d                __lock___at_quick_exit_mutex
-                0x2400562e                __lock___dd_hash_mutex
-                0x2400562f                __lock___tz_mutex
-                0x24005630                __lock___sfp_recursive_mutex
- *fill*         0x24005631        0x3 
- COMMON         0x24005634        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-reent.o)
-                0x24005634                errno
-                0x24005638                . = ALIGN (0x4)
-                0x24005638                _ebss = .
-                0x24005638                PROVIDE (__bss_end__ = _ebss)
-                0x24005638                PROVIDE (end = .)
+ COMMON         0x24002698      0x440 ../libs/libdaisy/build\libdaisy.a(per_sai.o)
+                0x24002698                hsai_BlockB2
+                0x24002730                hdma_sai2_b
+                0x240027a8                hsai_BlockA2
+                0x24002840                hsai_BlockB1
+                0x240028d8                hdma_sai1_a
+                0x24002950                hdma_sai1_b
+                0x240029c8                hdma_sai2_a
+                0x24002a40                hsai_BlockA1
+ COMMON         0x24002ad8      0x130 ../libs/libdaisy/build\libdaisy.a(util_hal_map.o)
+                0x24002ad8                hi2c3
+                0x24002b24                hi2c4
+                0x24002b70                hi2c1
+                0x24002bbc                hi2c2
+ COMMON         0x24002c08      0x810 ../libs/libdaisy/build\libdaisy.a(usbd_conf.o)
+                0x24002c08                hpcd_USB_OTG_HS
+                0x24003010                hpcd_USB_OTG_FS
+ COMMON         0x24003418      0x200 ../libs/libdaisy/build\libdaisy.a(usbd_desc.o)
+                0x24003418                USBD_StrDesc
+ COMMON         0x24003618     0x2004 ../libs/libdaisy/build\libdaisy.a(usbd_cdc_if.o)
+                0x24003618                UserRxBufferHS
+                0x24003e18                UserRxBufferFS
+                0x24004618                UserTxBufferFS
+                0x24004e18                UserTxBufferHS
+                0x24005618                rx_callback_fs
+ COMMON         0x2400561c       0x14 ../libs/libdaisy/build\libdaisy.a(dev_codec_wm8731.o)
+                0x2400561c                codec_handle
+ COMMON         0x24005630        0x9 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-lock.o)
+                0x24005630                __lock___atexit_recursive_mutex
+                0x24005631                __lock___arc4random_mutex
+                0x24005632                __lock___env_recursive_mutex
+                0x24005633                __lock___sinit_recursive_mutex
+                0x24005634                __lock___malloc_recursive_mutex
+                0x24005635                __lock___at_quick_exit_mutex
+                0x24005636                __lock___dd_hash_mutex
+                0x24005637                __lock___tz_mutex
+                0x24005638                __lock___sfp_recursive_mutex
+ *fill*         0x24005639        0x3 
+ COMMON         0x2400563c        0x4 c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-reent.o)
+                0x2400563c                errno
+                0x24005640                . = ALIGN (0x4)
+                0x24005640                _ebss = .
+                0x24005640                PROVIDE (__bss_end__ = _ebss)
+                0x24005640                PROVIDE (end = .)
 
 .dtcmram_bss    0x20000000        0x0
                 0x20000000                . = ALIGN (0x4)
@@ -3516,19 +3524,19 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../l
                 0x90000000                _eqspiflash_bss = .
                 [!provide]                PROVIDE (__qspiflash_bss_end = _eqspiflash_bss)
 
-.heap           0x24005638        0x0
-                0x24005638                . = ALIGN (0x4)
+.heap           0x24005640        0x0
+                0x24005640                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__heap_start__ = .)
  *(.heap)
-                0x24005638                . = ALIGN (0x4)
+                0x24005640                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__heap_end__ = .)
 
 .reserved_for_stack
-                0x24005638        0x0
-                0x24005638                . = ALIGN (0x4)
+                0x24005640        0x0
+                0x24005640                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__reserved_for_stack_start__ = .)
  *(.reserved_for_stack)
-                0x24005638                . = ALIGN (0x4)
+                0x24005640                . = ALIGN (0x4)
                 [!provide]                PROVIDE (__reserved_for_stack_end__ = .)
 
 DISCARD
@@ -5049,6 +5057,7 @@ daisy::DaisySeed::Init()                          ../libs/libdaisy/build\libdais
                                                   build/musicSynth.o
 daisy::DaisySeed::SetAudioBlockSize(unsigned int) ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
 daisy::DaisySeed::SetLed(bool)                    ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
+                                                  build/musicSynth.o
 daisy::DaisySeed::SetTestPoint(bool)              ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
 daisy::DaisySeed::StartAudio(void (*)(float*, float*, unsigned int)) ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
 daisy::DaisySeed::~DaisySeed()                    build/musicSynth.o
@@ -5118,12 +5127,12 @@ dsy_sdram_init                                    ../libs/libdaisy/build\libdais
                                                   ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
 dsy_system_delay                                  ../libs/libdaisy/build\libdaisy.a(sys_system.o)
                                                   ../libs/libdaisy/build\libdaisy.a(dev_codec_ak4556.o)
-                                                  build/musicSynth.o
 dsy_system_getnow                                 ../libs/libdaisy/build\libdaisy.a(sys_system.o)
 dsy_system_init                                   ../libs/libdaisy/build\libdaisy.a(sys_system.o)
                                                   ../libs/libdaisy/build\libdaisy.a(daisy_seed.o)
 dsy_system_jumptoqspi                             ../libs/libdaisy/build\libdaisy.a(sys_system.o)
 dsy_tim_delay_ms                                  ../libs/libdaisy/build\libdaisy.a(per_tim.o)
+                                                  build/musicSynth.o
 dsy_tim_delay_tick                                ../libs/libdaisy/build\libdaisy.a(per_tim.o)
 dsy_tim_delay_us                                  ../libs/libdaisy/build\libdaisy.a(per_tim.o)
 dsy_tim_get_ms                                    ../libs/libdaisy/build\libdaisy.a(per_tim.o)
@@ -5184,6 +5193,7 @@ hsai_BlockB1                                      ../libs/libdaisy/build\libdais
 hsai_BlockB2                                      ../libs/libdaisy/build\libdaisy.a(per_sai.o)
                                                   ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
 iprintf                                           c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-printf.o)
+led_state                                         build/musicSynth.o
 main                                              build/musicSynth.o
                                                   build/startup_stm32h750xx.o
                                                   c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
@@ -5205,6 +5215,7 @@ memset                                            c:/program files (x86)/gnu arm
                                                   c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard\libc_nano.a(lib_a-findfp.o)
                                                   ../libs/libdaisy/build\libdaisy.a(sys_system.o)
                                                   ../libs/libdaisy/build\libdaisy.a(hid_audio.o)
+                                                  build/musicSynth.o
                                                   c:/program files (x86)/gnu arm embedded toolchain/9 2020-q2-update/bin/../lib/gcc/arm-none-eabi/9.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+dp/hard/crt0.o
 osc1                                              build/musicSynth.o
 osc2                                              build/musicSynth.o

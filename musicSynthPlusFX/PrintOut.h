@@ -3,10 +3,8 @@
 #ifndef __PRINTOUT_H_
 #define __PRINTOUT_H_
 
-// #include <stdio.h>
-// #include <string.h>
-// #include <cstddef>
-// #include <cstring>
+#include <stdio.h>
+#include <cstring>
 #include <stdarg.h>
 
 #include "daisy_seed.h"
@@ -29,15 +27,16 @@ namespace PrintOut {
             DaisySeed seed;
 
         public:
-            Printer() {  //DaisySeed& seed
-            }
+            Printer() {  //DaisySeed& seed 
+            }  // Printer class constructor
             
             unsigned int checkSize(const char* texttocheck) {
                 return strlen(texttocheck);
             }
 
             void out(const char* textout, ...) {
-                
+                memset(buffer, 0, sizeof(buffer));
+
                 unsigned int sizeCheck = checkSize(textout) + 2;  // adding 2 chars for padding...
                 if (sizeCheck > sizeof(buffer)) {
                     return;
@@ -50,9 +49,10 @@ namespace PrintOut {
                     va_end (va);
                     return;
                 }  // end else for sizeCheck
-            }
+                
+            }  // end out 'out()' method
 
-    };
+    };  // end of Printer class
 
 }  // end of namespace PrintOut
 
