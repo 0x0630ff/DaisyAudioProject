@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
   60              		@ frame_needed = 0, uses_anonymous_args = 0
   61              		@ link register save eliminated.
   62 0000 7047     		bx	lr
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 2
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 2
 
 
   64              		.weak	_ZN7daisysp10OscillatorD1Ev
@@ -97,319 +97,448 @@ ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
   98              		.align	2
   99              	.L16:
  100 0024 00000000 		.word	.LANCHOR0
- 102              		.section	.text._ZN8PrintOut7PrinterD2Ev,"axG",%progbits,_ZN8PrintOut7PrinterD5Ev,comdat
+ 102              		.section	.text._ZN11MidiManager7MIDIComD2Ev,"axG",%progbits,_ZN11MidiManager7MIDIComD5Ev,comdat
  103              		.align	1
  104              		.p2align 2,,3
- 105              		.weak	_ZN8PrintOut7PrinterD2Ev
+ 105              		.weak	_ZN11MidiManager7MIDIComD2Ev
  106              		.syntax unified
  107              		.thumb
  108              		.thumb_func
  109              		.fpu fpv5-d16
- 111              	_ZN8PrintOut7PrinterD2Ev:
+ 111              	_ZN11MidiManager7MIDIComD2Ev:
  112              		@ args = 0, pretend = 0, frame = 0
  113              		@ frame_needed = 0, uses_anonymous_args = 0
  114              		@ link register save eliminated.
  115 0000 7047     		bx	lr
- 117              		.weak	_ZN8PrintOut7PrinterD1Ev
- 118              		.thumb_set _ZN8PrintOut7PrinterD1Ev,_ZN8PrintOut7PrinterD2Ev
- 119 0002 00BF     		.section	.text._ZN8PrintOut7Printer3outEPKcz,"axG",%progbits,_ZN8PrintOut7Printer3outEPKcz,comdat
+ 117              		.weak	_ZN11MidiManager7MIDIComD1Ev
+ 118              		.thumb_set _ZN11MidiManager7MIDIComD1Ev,_ZN11MidiManager7MIDIComD2Ev
+ 119 0002 00BF     		.section	.text._ZN8PrintOut7PrinterD2Ev,"axG",%progbits,_ZN8PrintOut7PrinterD5Ev,comdat
  120              		.align	1
  121              		.p2align 2,,3
- 122              		.weak	_ZN8PrintOut7Printer3outEPKcz
+ 122              		.weak	_ZN8PrintOut7PrinterD2Ev
  123              		.syntax unified
  124              		.thumb
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 3
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 3
 
 
  125              		.thumb_func
  126              		.fpu fpv5-d16
- 128              	_ZN8PrintOut7Printer3outEPKcz:
- 129              		@ args = 4, pretend = 12, frame = 8
- 130              		@ frame_needed = 0, uses_anonymous_args = 1
- 131 0000 0EB4     		push	{r1, r2, r3}
- 132 0002 F0B5     		push	{r4, r5, r6, r7, lr}
- 133 0004 82B0     		sub	sp, sp, #8
- 134 0006 00F16B05 		add	r5, r0, #107
- 135 000a 0446     		mov	r4, r0
- 136 000c 4FF40072 		mov	r2, #512
- 137 0010 07AE     		add	r6, sp, #28
- 138 0012 0021     		movs	r1, #0
- 139 0014 2846     		mov	r0, r5
- 140 0016 56F8047B 		ldr	r7, [r6], #4
- 141 001a FFF7FEFF 		bl	memset
- 142 001e 2846     		mov	r0, r5
- 143 0020 3946     		mov	r1, r7
- 144 0022 3246     		mov	r2, r6
- 145 0024 0196     		str	r6, [sp, #4]
- 146 0026 FFF7FEFF 		bl	vsprintf
- 147 002a 2846     		mov	r0, r5
- 148 002c FFF7FEFF 		bl	strlen
- 149 0030 2946     		mov	r1, r5
- 150 0032 0246     		mov	r2, r0
- 151 0034 04F2CE20 		addw	r0, r4, #718
- 152 0038 FFF7FEFF 		bl	_ZN5daisy9UsbHandle16TransmitInternalEPhj
- 153 003c 02B0     		add	sp, sp, #8
- 154              		@ sp needed
- 155 003e BDE8F040 		pop	{r4, r5, r6, r7, lr}
- 156 0042 03B0     		add	sp, sp, #12
- 157 0044 7047     		bx	lr
- 159 0046 00BF     		.section	.text._Z5setupv,"ax",%progbits
- 160              		.align	1
- 161              		.p2align 2,,3
- 162              		.global	_Z5setupv
- 163              		.syntax unified
- 164              		.thumb
- 165              		.thumb_func
- 166              		.fpu fpv5-d16
- 168              	_Z5setupv:
- 169              		@ args = 0, pretend = 0, frame = 0
- 170              		@ frame_needed = 0, uses_anonymous_args = 0
- 171 0000 0B48     		ldr	r0, .L23
- 172 0002 10B5     		push	{r4, lr}
- 173 0004 00F16204 		add	r4, r0, #98
- 174 0008 FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
- 175 000c 0948     		ldr	r0, .L23+4
- 176 000e FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
- 177 0012 FFF7FEFF 		bl	dsy_tim_init
- 178 0016 FFF7FEFF 		bl	dsy_tim_start
- 179 001a 2046     		mov	r0, r4
- 180 001c 0021     		movs	r1, #0
- 181 001e FFF7FEFF 		bl	_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
- 182 0022 2046     		mov	r0, r4
- 183 0024 0449     		ldr	r1, .L23+8
- 184 0026 BDE81040 		pop	{r4, lr}
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 4
+ 128              	_ZN8PrintOut7PrinterD2Ev:
+ 129              		@ args = 0, pretend = 0, frame = 0
+ 130              		@ frame_needed = 0, uses_anonymous_args = 0
+ 131              		@ link register save eliminated.
+ 132 0000 7047     		bx	lr
+ 134              		.weak	_ZN8PrintOut7PrinterD1Ev
+ 135              		.thumb_set _ZN8PrintOut7PrinterD1Ev,_ZN8PrintOut7PrinterD2Ev
+ 136 0002 00BF     		.section	.text._ZN8PrintOut7Printer3outEPKcz,"axG",%progbits,_ZN8PrintOut7Printer3outEPKcz,comdat
+ 137              		.align	1
+ 138              		.p2align 2,,3
+ 139              		.weak	_ZN8PrintOut7Printer3outEPKcz
+ 140              		.syntax unified
+ 141              		.thumb
+ 142              		.thumb_func
+ 143              		.fpu fpv5-d16
+ 145              	_ZN8PrintOut7Printer3outEPKcz:
+ 146              		@ args = 4, pretend = 12, frame = 8
+ 147              		@ frame_needed = 0, uses_anonymous_args = 1
+ 148 0000 0EB4     		push	{r1, r2, r3}
+ 149 0002 F0B5     		push	{r4, r5, r6, r7, lr}
+ 150 0004 82B0     		sub	sp, sp, #8
+ 151 0006 00F16B05 		add	r5, r0, #107
+ 152 000a 0446     		mov	r4, r0
+ 153 000c 4FF40072 		mov	r2, #512
+ 154 0010 07AE     		add	r6, sp, #28
+ 155 0012 0021     		movs	r1, #0
+ 156 0014 2846     		mov	r0, r5
+ 157 0016 56F8047B 		ldr	r7, [r6], #4
+ 158 001a FFF7FEFF 		bl	memset
+ 159 001e 2846     		mov	r0, r5
+ 160 0020 3946     		mov	r1, r7
+ 161 0022 3246     		mov	r2, r6
+ 162 0024 0196     		str	r6, [sp, #4]
+ 163 0026 FFF7FEFF 		bl	vsprintf
+ 164 002a 2846     		mov	r0, r5
+ 165 002c FFF7FEFF 		bl	strlen
+ 166 0030 2946     		mov	r1, r5
+ 167 0032 0246     		mov	r2, r0
+ 168 0034 04F2CE20 		addw	r0, r4, #718
+ 169 0038 FFF7FEFF 		bl	_ZN5daisy9UsbHandle16TransmitInternalEPhj
+ 170 003c 02B0     		add	sp, sp, #8
+ 171              		@ sp needed
+ 172 003e BDE8F040 		pop	{r4, r5, r6, r7, lr}
+ 173 0042 03B0     		add	sp, sp, #12
+ 174 0044 7047     		bx	lr
+ 176 0046 00BF     		.section	.text._Z5setupv,"ax",%progbits
+ 177              		.align	1
+ 178              		.p2align 2,,3
+ 179              		.global	_Z5setupv
+ 180              		.syntax unified
+ 181              		.thumb
+ 182              		.thumb_func
+ 183              		.fpu fpv5-d16
+ 185              	_Z5setupv:
+ 186              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 4
 
 
- 185 002a FFF7FEBF 		b	_ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
- 186              	.L24:
- 187 002e 00BF     		.align	2
- 188              	.L23:
- 189 0030 00000000 		.word	.LANCHOR1
- 190 0034 00000000 		.word	.LANCHOR2
- 191 0038 00000000 		.word	_ZN8PrintOut11UsbCallbackEPhPm
- 193              		.section	.rodata.main.str1.4,"aMS",%progbits,1
- 194              		.align	2
- 195              	.LC0:
- 196 0000 436F756E 		.ascii	"Counter:%6d  ||  TimeStamp:%6u\015\012\000"
- 196      7465723A 
- 196      25366420 
- 196      207C7C20 
- 196      2054696D 
- 197              		.section	.text.startup.main,"ax",%progbits
- 198              		.align	1
- 199              		.p2align 2,,3
- 200              		.global	main
- 201              		.syntax unified
- 202              		.thumb
- 203              		.thumb_func
- 204              		.fpu fpv5-d16
- 206              	main:
- 207              		@ args = 0, pretend = 0, frame = 0
- 208              		@ frame_needed = 0, uses_anonymous_args = 0
- 209 0000 38B5     		push	{r3, r4, r5, lr}
- 210 0002 084C     		ldr	r4, .L28
- 211 0004 FFF7FEFF 		bl	_Z5setupv
- 212              	.L26:
- 213 0008 FFF7FEFF 		bl	dsy_tim_get_ms
- 214 000c 2268     		ldr	r2, [r4]
- 215 000e 0346     		mov	r3, r0
- 216 0010 0549     		ldr	r1, .L28+4
- 217 0012 551C     		adds	r5, r2, #1
- 218 0014 0548     		ldr	r0, .L28+8
- 219 0016 2560     		str	r5, [r4]
- 220 0018 FFF7FEFF 		bl	_ZN8PrintOut7Printer3outEPKcz
- 221 001c FA20     		movs	r0, #250
- 222 001e FFF7FEFF 		bl	dsy_tim_delay_ms
- 223 0022 F1E7     		b	.L26
- 224              	.L29:
- 225              		.align	2
- 226              	.L28:
- 227 0024 00000000 		.word	.LANCHOR3
- 228 0028 00000000 		.word	.LC0
- 229 002c 00000000 		.word	.LANCHOR4
- 231              		.section	.text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE,"ax",%progbits
- 232              		.align	1
- 233              		.p2align 2,,3
- 234              		.syntax unified
- 235              		.thumb
- 236              		.thumb_func
- 237              		.fpu fpv5-d16
- 239              	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE:
- 240              		@ args = 0, pretend = 0, frame = 0
- 241              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 5
+ 187              		@ frame_needed = 0, uses_anonymous_args = 0
+ 188 0000 2DE9F041 		push	{r4, r5, r6, r7, r8, lr}
+ 189 0004 2F48     		ldr	r0, .L24
+ 190 0006 0026     		movs	r6, #0
+ 191 0008 2F4C     		ldr	r4, .L24+4
+ 192 000a 4FF07C58 		mov	r8, #1056964608
+ 193 000e 00F16207 		add	r7, r0, #98
+ 194 0012 2E4D     		ldr	r5, .L24+8
+ 195 0014 2DED048B 		vpush.64	{d8, d9}
+ 196 0018 FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
+ 197 001c 2046     		mov	r0, r4
+ 198 001e FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
+ 199 0022 2046     		mov	r0, r4
+ 200 0024 FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
+ 201 0028 2046     		mov	r0, r4
+ 202 002a FFF7FEFF 		bl	_ZN5daisy8DaisyPod15AudioSampleRateEv
+ 203 002e B0EE408A 		vmov.f32	s16, s0
+ 204 0032 FFF7FEFF 		bl	dsy_tim_init
+ 205 0036 DFED268A 		vldr.32	s17, .L24+12
+ 206 003a FFF7FEFF 		bl	dsy_tim_start
+ 207 003e 3846     		mov	r0, r7
+ 208 0040 3146     		mov	r1, r6
+ 209 0042 244C     		ldr	r4, .L24+16
+ 210 0044 FFF7FEFF 		bl	_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
+ 211 0048 2349     		ldr	r1, .L24+20
+ 212 004a 3846     		mov	r0, r7
+ 213 004c 0027     		movs	r7, #0
+ 214 004e FFF7FEFF 		bl	_ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
+ 215 0052 F7EE007A 		vmov.f32	s15, #1.0e+0
+ 216 0056 2846     		mov	r0, r5
+ 217 0058 B0EE680A 		vmov.f32	s0, s17
+ 218 005c 85ED038A 		vstr.32	s16, [r5, #12]
+ 219 0060 87EE889A 		vdiv.f32	s18, s15, s16
+ 220 0064 C5ED028A 		vstr.32	s17, [r5, #8]
+ 221 0068 C5F80480 		str	r8, [r5, #4]	@ float
+ 222 006c 6F61     		str	r7, [r5, #20]	@ float
+ 223 006e 85ED049A 		vstr.32	s18, [r5, #16]
+ 224 0072 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 225 0076 F0EE407A 		vmov.f32	s15, s0
+ 226 007a 2046     		mov	r0, r4
+ 227 007c B0EE680A 		vmov.f32	s0, s17
+ 228 0080 84ED049A 		vstr.32	s18, [r4, #16]
+ 229 0084 84ED038A 		vstr.32	s16, [r4, #12]
+ 230 0088 C4ED028A 		vstr.32	s17, [r4, #8]
+ 231 008c C5ED067A 		vstr.32	s15, [r5, #24]
+ 232 0090 C4F80480 		str	r8, [r4, #4]	@ float
+ 233 0094 6761     		str	r7, [r4, #20]	@ float
+ 234 0096 2E70     		strb	r6, [r5]
+ 235 0098 FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 236 009c 0F4B     		ldr	r3, .L24+24
+ 237 009e 2670     		strb	r6, [r4]
+ 238 00a0 03F27C40 		addw	r0, r3, #1148
+ 239 00a4 93F8F524 		ldrb	r2, [r3, #1269]	@ zero_extendqisi2
+ 240 00a8 93F8F414 		ldrb	r1, [r3, #1268]	@ zero_extendqisi2
+ 241 00ac 84ED060A 		vstr.32	s0, [r4, #24]
+ 242 00b0 FFF7FEFF 		bl	_ZN5daisy11MidiHandler4InitENS0_13MidiInputModeENS0_14MidiOutputModeE
+ 243 00b4 0A48     		ldr	r0, .L24+28
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 5
 
 
- 242 0000 10B5     		push	{r4, lr}
- 243 0002 0E4A     		ldr	r2, .L32
- 244 0004 0E4C     		ldr	r4, .L32+4
- 245 0006 0F49     		ldr	r1, .L32+8
- 246 0008 0F48     		ldr	r0, .L32+12
- 247 000a FFF7FEFF 		bl	__aeabi_atexit
- 248 000e 0B4A     		ldr	r2, .L32
- 249 0010 0E49     		ldr	r1, .L32+16
- 250 0012 0F48     		ldr	r0, .L32+20
- 251 0014 FFF7FEFF 		bl	__aeabi_atexit
- 252 0018 2146     		mov	r1, r4
- 253 001a 084A     		ldr	r2, .L32
- 254 001c 0D48     		ldr	r0, .L32+24
- 255 001e FFF7FEFF 		bl	__aeabi_atexit
- 256 0022 2146     		mov	r1, r4
- 257 0024 054A     		ldr	r2, .L32
- 258 0026 0C48     		ldr	r0, .L32+28
- 259 0028 FFF7FEFF 		bl	__aeabi_atexit
- 260 002c 034A     		ldr	r2, .L32
- 261 002e 0B49     		ldr	r1, .L32+32
- 262 0030 0B48     		ldr	r0, .L32+36
- 263 0032 BDE81040 		pop	{r4, lr}
- 264 0036 FFF7FEBF 		b	__aeabi_atexit
- 265              	.L33:
- 266 003a 00BF     		.align	2
- 267              	.L32:
- 268 003c 00000000 		.word	__dso_handle
- 269 0040 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
- 270 0044 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 271 0048 00000000 		.word	.LANCHOR1
- 272 004c 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
- 273 0050 00000000 		.word	.LANCHOR2
- 274 0054 00000000 		.word	.LANCHOR5
- 275 0058 00000000 		.word	.LANCHOR6
- 276 005c 00000000 		.word	_ZN8PrintOut7PrinterD1Ev
- 277 0060 00000000 		.word	.LANCHOR4
- 279              		.section	.init_array,"aw",%init_array
- 280              		.align	2
- 281 0000 00000000 		.word	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE(target1)
- 282              		.global	counter
- 283              		.global	timer
- 284              		.global	print
- 285              		.global	osc2
- 286              		.global	osc1
- 287              		.global	pod
- 288              		.global	seed
- 289              		.global	_ZN8PrintOut7sumbuffE
- 290              		.section	.bss._ZN8PrintOut7sumbuffE,"aw",%nobits
- 291              		.align	2
- 292              		.set	.LANCHOR0,. + 0
- 295              	_ZN8PrintOut7sumbuffE:
- 296 0000 00000000 		.space	1024
- 296      00000000 
- 296      00000000 
- 296      00000000 
- 296      00000000 
- 297              		.section	.bss.counter,"aw",%nobits
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 6
+ 244 00b6 BDEC048B 		vldm	sp!, {d8-d9}
+ 245 00ba BDE8F041 		pop	{r4, r5, r6, r7, r8, lr}
+ 246 00be FFF7FEBF 		b	_ZN5daisy11MidiHandler12StartReceiveEv
+ 247              	.L25:
+ 248 00c2 00BF     		.align	2
+ 249              	.L24:
+ 250 00c4 00000000 		.word	.LANCHOR1
+ 251 00c8 00000000 		.word	.LANCHOR2
+ 252 00cc 00000000 		.word	.LANCHOR3
+ 253 00d0 0000C842 		.word	1120403456
+ 254 00d4 00000000 		.word	.LANCHOR4
+ 255 00d8 00000000 		.word	_ZN8PrintOut11UsbCallbackEPhPm
+ 256 00dc 00000000 		.word	.LANCHOR5
+ 257 00e0 7C040000 		.word	.LANCHOR5+1148
+ 259              		.section	.rodata.main.str1.4,"aMS",%progbits,1
+ 260              		.align	2
+ 261              	.LC0:
+ 262 0000 4D494449 		.ascii	"MIDI Thingy!!\000"
+ 262      20546869 
+ 262      6E677921 
+ 262      2100
+ 263 000e 0000     		.align	2
+ 264              	.LC1:
+ 265 0010 4E6F7465 		.ascii	"Note Received:\011%d\011%d\011%d\015\012\000"
+ 265      20526563 
+ 265      65697665 
+ 265      643A0925 
+ 265      64092564 
+ 266              		.section	.text.startup.main,"ax",%progbits
+ 267              		.align	1
+ 268              		.p2align 2,,3
+ 269              		.global	main
+ 270              		.syntax unified
+ 271              		.thumb
+ 272              		.thumb_func
+ 273              		.fpu fpv5-d16
+ 275              	main:
+ 276              		@ Volatile: function does not return.
+ 277              		@ args = 0, pretend = 0, frame = 16
+ 278              		@ frame_needed = 0, uses_anonymous_args = 0
+ 279 0000 00B5     		push	{lr}
+ 280 0002 87B0     		sub	sp, sp, #28
+ 281 0004 164C     		ldr	r4, .L37
+ 282 0006 03AD     		add	r5, sp, #12
+ 283 0008 FFF7FEFF 		bl	_Z5setupv
+ 284              	.L28:
+ 285 000c 1448     		ldr	r0, .L37
+ 286 000e FFF7FEFF 		bl	_ZN5daisy11MidiHandler6ListenEv
+ 287              	.L36:
+ 288 0012 636F     		ldr	r3, [r4, #116]
+ 289 0014 226F     		ldr	r2, [r4, #112]
+ 290 0016 9B1A     		subs	r3, r3, r2
+ 291 0018 5A07     		lsls	r2, r3, #29
+ 292 001a F7D0     		beq	.L28
+ 293 001c 1149     		ldr	r1, .L37+4
+ 294 001e 1248     		ldr	r0, .L37+8
+ 295 0020 FFF7FEFF 		bl	_ZN8PrintOut7Printer3outEPKcz
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 6
 
 
- 298              		.align	2
- 299              		.set	.LANCHOR3,. + 0
- 302              	counter:
- 303 0000 00000000 		.space	4
- 304              		.section	.bss.osc1,"aw",%nobits
- 305              		.align	2
- 306              		.set	.LANCHOR5,. + 0
- 309              	osc1:
- 310 0000 00000000 		.space	36
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 311              		.section	.bss.osc2,"aw",%nobits
- 312              		.align	2
- 313              		.set	.LANCHOR6,. + 0
- 316              	osc2:
- 317 0000 00000000 		.space	36
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 318              		.section	.bss.pod,"aw",%nobits
- 319              		.align	2
- 320              		.set	.LANCHOR2,. + 0
- 323              	pod:
- 324 0000 00000000 		.space	424
- 324      00000000 
- 324      00000000 
- 324      00000000 
- 324      00000000 
- 325              		.section	.bss.print,"aw",%nobits
- 326              		.align	2
- 327              		.set	.LANCHOR4,. + 0
- 330              	print:
- 331 0000 00000000 		.space	728
- 331      00000000 
- 331      00000000 
- 331      00000000 
- 331      00000000 
- 332              		.section	.bss.seed,"aw",%nobits
- 333              		.align	2
- 334              		.set	.LANCHOR1,. + 0
- 337              	seed:
- 338 0000 00000000 		.space	108
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 339              		.section	.bss.timer,"aw",%nobits
- 340              		.align	2
- 343              	timer:
- 344 0000 00000000 		.space	8
- 344      00000000 
- 345              		.hidden	__dso_handle
- 346              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 7
+ 296              	.L29:
+ 297 0024 636F     		ldr	r3, [r4, #116]
+ 298 0026 226F     		ldr	r2, [r4, #112]
+ 299 0028 9B1A     		subs	r3, r3, r2
+ 300 002a 5B07     		lsls	r3, r3, #29
+ 301 002c FAD0     		beq	.L29
+ 302 002e 226F     		ldr	r2, [r4, #112]
+ 303 0030 02EB4203 		add	r3, r2, r2, lsl #1
+ 304 0034 0132     		adds	r2, r2, #1
+ 305 0036 04EB8303 		add	r3, r4, r3, lsl #2
+ 306 003a 02F00702 		and	r2, r2, #7
+ 307 003e 1033     		adds	r3, r3, #16
+ 308 0040 2267     		str	r2, [r4, #112]
+ 309 0042 93E80700 		ldm	r3, {r0, r1, r2}
+ 310 0046 85E80700 		stm	r5, {r0, r1, r2}
+ 311 004a 9DF81520 		ldrb	r2, [sp, #21]	@ zero_extendqisi2
+ 312 004e 9DF81430 		ldrb	r3, [sp, #20]	@ zero_extendqisi2
+ 313 0052 0092     		str	r2, [sp]
+ 314 0054 0549     		ldr	r1, .L37+12
+ 315 0056 049A     		ldr	r2, [sp, #16]
+ 316 0058 0348     		ldr	r0, .L37+8
+ 317 005a FFF7FEFF 		bl	_ZN8PrintOut7Printer3outEPKcz
+ 318 005e D8E7     		b	.L36
+ 319              	.L38:
+ 320              		.align	2
+ 321              	.L37:
+ 322 0060 00000000 		.word	.LANCHOR5
+ 323 0064 00000000 		.word	.LC0
+ 324 0068 00000000 		.word	.LANCHOR6
+ 325 006c 10000000 		.word	.LC1
+ 327              		.section	.text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE,"ax",%progbits
+ 328              		.align	1
+ 329              		.p2align 2,,3
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu fpv5-d16
+ 335              	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE:
+ 336              		@ args = 0, pretend = 0, frame = 0
+ 337              		@ frame_needed = 0, uses_anonymous_args = 0
+ 338 0000 10B5     		push	{r4, lr}
+ 339 0002 124A     		ldr	r2, .L41
+ 340 0004 1249     		ldr	r1, .L41+4
+ 341 0006 1348     		ldr	r0, .L41+8
+ 342 0008 FFF7FEFF 		bl	__aeabi_atexit
+ 343 000c 0F4A     		ldr	r2, .L41
+ 344 000e 1249     		ldr	r1, .L41+12
+ 345 0010 1248     		ldr	r0, .L41+16
+ 346 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 347 0016 0123     		movs	r3, #1
+ 348 0018 1148     		ldr	r0, .L41+20
+ 349 001a 124C     		ldr	r4, .L41+24
+ 350 001c A0F8F434 		strh	r3, [r0, #1268]	@ movhi
+ 351 0020 0A4A     		ldr	r2, .L41
+ 352 0022 1149     		ldr	r1, .L41+28
+ 353 0024 FFF7FEFF 		bl	__aeabi_atexit
+ 354 0028 2146     		mov	r1, r4
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 7
+
+
+ 355 002a 084A     		ldr	r2, .L41
+ 356 002c 0F48     		ldr	r0, .L41+32
+ 357 002e FFF7FEFF 		bl	__aeabi_atexit
+ 358 0032 2146     		mov	r1, r4
+ 359 0034 054A     		ldr	r2, .L41
+ 360 0036 0E48     		ldr	r0, .L41+36
+ 361 0038 FFF7FEFF 		bl	__aeabi_atexit
+ 362 003c 034A     		ldr	r2, .L41
+ 363 003e 0D49     		ldr	r1, .L41+40
+ 364 0040 0D48     		ldr	r0, .L41+44
+ 365 0042 BDE81040 		pop	{r4, lr}
+ 366 0046 FFF7FEBF 		b	__aeabi_atexit
+ 367              	.L42:
+ 368 004a 00BF     		.align	2
+ 369              	.L41:
+ 370 004c 00000000 		.word	__dso_handle
+ 371 0050 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 372 0054 00000000 		.word	.LANCHOR1
+ 373 0058 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 374 005c 00000000 		.word	.LANCHOR2
+ 375 0060 00000000 		.word	.LANCHOR5
+ 376 0064 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
+ 377 0068 00000000 		.word	_ZN11MidiManager7MIDIComD1Ev
+ 378 006c 00000000 		.word	.LANCHOR3
+ 379 0070 00000000 		.word	.LANCHOR4
+ 380 0074 00000000 		.word	_ZN8PrintOut7PrinterD1Ev
+ 381 0078 00000000 		.word	.LANCHOR6
+ 383              		.section	.init_array,"aw",%init_array
+ 384              		.align	2
+ 385 0000 00000000 		.word	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE(target1)
+ 386              		.global	counter
+ 387              		.global	timer
+ 388              		.global	print
+ 389              		.global	osc2
+ 390              		.global	osc1
+ 391              		.global	midi
+ 392              		.global	pod
+ 393              		.global	seed
+ 394              		.global	_ZN8PrintOut7sumbuffE
+ 395              		.section	.bss._ZN8PrintOut7sumbuffE,"aw",%nobits
+ 396              		.align	2
+ 397              		.set	.LANCHOR0,. + 0
+ 400              	_ZN8PrintOut7sumbuffE:
+ 401 0000 00000000 		.space	1024
+ 401      00000000 
+ 401      00000000 
+ 401      00000000 
+ 401      00000000 
+ 402              		.section	.bss.counter,"aw",%nobits
+ 403              		.align	2
+ 406              	counter:
+ 407 0000 00000000 		.space	4
+ 408              		.section	.bss.midi,"aw",%nobits
+ 409              		.align	2
+ 410              		.set	.LANCHOR5,. + 0
+ 413              	midi:
+ 414 0000 00000000 		.space	1272
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 8
+
+
+ 414      00000000 
+ 414      00000000 
+ 414      00000000 
+ 414      00000000 
+ 415              		.section	.bss.osc1,"aw",%nobits
+ 416              		.align	2
+ 417              		.set	.LANCHOR3,. + 0
+ 420              	osc1:
+ 421 0000 00000000 		.space	36
+ 421      00000000 
+ 421      00000000 
+ 421      00000000 
+ 421      00000000 
+ 422              		.section	.bss.osc2,"aw",%nobits
+ 423              		.align	2
+ 424              		.set	.LANCHOR4,. + 0
+ 427              	osc2:
+ 428 0000 00000000 		.space	36
+ 428      00000000 
+ 428      00000000 
+ 428      00000000 
+ 428      00000000 
+ 429              		.section	.bss.pod,"aw",%nobits
+ 430              		.align	2
+ 431              		.set	.LANCHOR2,. + 0
+ 434              	pod:
+ 435 0000 00000000 		.space	424
+ 435      00000000 
+ 435      00000000 
+ 435      00000000 
+ 435      00000000 
+ 436              		.section	.bss.print,"aw",%nobits
+ 437              		.align	2
+ 438              		.set	.LANCHOR6,. + 0
+ 441              	print:
+ 442 0000 00000000 		.space	728
+ 442      00000000 
+ 442      00000000 
+ 442      00000000 
+ 442      00000000 
+ 443              		.section	.bss.seed,"aw",%nobits
+ 444              		.align	2
+ 445              		.set	.LANCHOR1,. + 0
+ 448              	seed:
+ 449 0000 00000000 		.space	108
+ 449      00000000 
+ 449      00000000 
+ 449      00000000 
+ 449      00000000 
+ 450              		.section	.bss.timer,"aw",%nobits
+ 451              		.align	2
+ 454              	timer:
+ 455 0000 00000000 		.space	8
+ 455      00000000 
+ 456              		.hidden	__dso_handle
+ 457              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 musicSynth.cpp
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:15     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:33     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:50     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:67     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:75     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 _ZN8PrintOut11UsbCallbackEPhPm
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:100    .text._ZN8PrintOut11UsbCallbackEPhPm:00000024 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:103    .text._ZN8PrintOut7PrinterD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:120    .text._ZN8PrintOut7Printer3outEPKcz:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:128    .text._ZN8PrintOut7Printer3outEPKcz:00000000 _ZN8PrintOut7Printer3outEPKcz
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:160    .text._Z5setupv:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:168    .text._Z5setupv:00000000 _Z5setupv
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:189    .text._Z5setupv:00000030 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:194    .rodata.main.str1.4:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:198    .text.startup.main:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:206    .text.startup.main:00000000 main
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:227    .text.startup.main:00000024 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:232    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:239    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 _GLOBAL__sub_I__ZN8PrintOut7sumbuffE
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:268    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:0000003c $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:280    .init_array:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:302    .bss.counter:00000000 counter
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:343    .bss.timer:00000000 timer
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:330    .bss.print:00000000 print
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:316    .bss.osc2:00000000 osc2
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:309    .bss.osc1:00000000 osc1
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:323    .bss.pod:00000000 pod
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:337    .bss.seed:00000000 seed
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:295    .bss._ZN8PrintOut7sumbuffE:00000000 _ZN8PrintOut7sumbuffE
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:291    .bss._ZN8PrintOut7sumbuffE:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:298    .bss.counter:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:305    .bss.osc1:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:312    .bss.osc2:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:319    .bss.pod:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:326    .bss.print:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:333    .bss.seed:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:340    .bss.timer:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:15     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:33     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:50     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:67     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:75     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 _ZN8PrintOut11UsbCallbackEPhPm
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:100    .text._ZN8PrintOut11UsbCallbackEPhPm:00000024 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:103    .text._ZN11MidiManager7MIDIComD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:111    .text._ZN11MidiManager7MIDIComD2Ev:00000000 _ZN11MidiManager7MIDIComD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:111    .text._ZN11MidiManager7MIDIComD2Ev:00000000 _ZN11MidiManager7MIDIComD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:120    .text._ZN8PrintOut7PrinterD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:128    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:128    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:137    .text._ZN8PrintOut7Printer3outEPKcz:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:145    .text._ZN8PrintOut7Printer3outEPKcz:00000000 _ZN8PrintOut7Printer3outEPKcz
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:177    .text._Z5setupv:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:185    .text._Z5setupv:00000000 _Z5setupv
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:250    .text._Z5setupv:000000c4 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:260    .rodata.main.str1.4:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:267    .text.startup.main:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:275    .text.startup.main:00000000 main
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:322    .text.startup.main:00000060 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:328    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:335    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 _GLOBAL__sub_I__ZN8PrintOut7sumbuffE
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:370    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:0000004c $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:384    .init_array:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:406    .bss.counter:00000000 counter
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:454    .bss.timer:00000000 timer
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:441    .bss.print:00000000 print
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:427    .bss.osc2:00000000 osc2
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:420    .bss.osc1:00000000 osc1
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:413    .bss.midi:00000000 midi
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:434    .bss.pod:00000000 pod
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:448    .bss.seed:00000000 seed
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:400    .bss._ZN8PrintOut7sumbuffE:00000000 _ZN8PrintOut7sumbuffE
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:396    .bss._ZN8PrintOut7sumbuffE:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:403    .bss.counter:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:409    .bss.midi:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:416    .bss.osc1:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:423    .bss.osc2:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:430    .bss.pod:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:437    .bss.print:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:444    .bss.seed:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s:451    .bss.timer:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
                            .group:00000000 _ZN5daisy8DaisyPodD5Ev
                            .group:00000000 _ZN7daisysp10OscillatorD5Ev
+                           .group:00000000 _ZN11MidiManager7MIDIComD5Ev
                            .group:00000000 _ZN8PrintOut7PrinterD5Ev
+
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccMPrher.s 			page 10
+
 
 UNDEFINED SYMBOLS
 memset
@@ -417,15 +546,16 @@ vsprintf
 strlen
 _ZN5daisy9UsbHandle16TransmitInternalEPhj
 _ZN5daisy9DaisySeed9ConfigureEv
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 8
-
-
 _ZN5daisy8DaisyPod4InitEv
+_ZN5daisy8DaisyPod8StartAdcEv
+_ZN5daisy8DaisyPod15AudioSampleRateEv
 dsy_tim_init
 dsy_tim_start
 _ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
 _ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
-dsy_tim_get_ms
-dsy_tim_delay_ms
+_ZN7daisysp10Oscillator12CalcPhaseIncEf
+_ZN5daisy11MidiHandler4InitENS0_13MidiInputModeENS0_14MidiOutputModeE
+_ZN5daisy11MidiHandler12StartReceiveEv
+_ZN5daisy11MidiHandler6ListenEv
 __aeabi_atexit
 __dso_handle

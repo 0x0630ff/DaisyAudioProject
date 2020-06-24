@@ -1,4 +1,4 @@
-build/musicSynth.o: musicSynth.cpp ../libs/libdaisy/src/daisy_pod.h \
+build/PodMidi.o: PodMidi.cpp ../libs/libdaisy/src/daisy_pod.h \
  ../libs/libdaisy/src/daisy_seed.h ../libs/libdaisy/src/daisy.h \
  ../libs/libdaisy/src/daisy_core.h ../libs/libdaisy/src/sys_system.h \
  ../libs/libdaisy/src/per_qspi.h ../libs/libdaisy/src/per_dac.h \
@@ -34,8 +34,7 @@ build/musicSynth.o: musicSynth.cpp ../libs/libdaisy/src/daisy_pod.h \
  ../libs/DaisySP/modules/port.h ../libs/DaisySP/modules/pitchshifter.h \
  ../libs/DaisySP/modules/PolyPluck.h ../libs/DaisySP/modules/pluck.h \
  ../libs/DaisySP/modules/reverbsc.h ../libs/DaisySP/modules/svf.h \
- ../libs/DaisySP/modules/tone.h ../libs/DaisySP/modules/whitenoise.h \
- PrintOut.h Timer.h midiEvents.h
+ ../libs/DaisySP/modules/tone.h ../libs/DaisySP/modules/whitenoise.h
 
 ../libs/libdaisy/src/daisy_pod.h:
 
@@ -174,9 +173,3 @@ build/musicSynth.o: musicSynth.cpp ../libs/libdaisy/src/daisy_pod.h \
 ../libs/DaisySP/modules/tone.h:
 
 ../libs/DaisySP/modules/whitenoise.h:
-
-PrintOut.h:
-
-Timer.h:
-
-midiEvents.h:
