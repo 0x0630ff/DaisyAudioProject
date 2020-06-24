@@ -47,6 +47,8 @@ int counter = 0;
 void setup() {
     seed.Configure();
     pod.Init();
+    float samplerate;
+    samplerate = pod.AudioSampleRate();
     dsy_tim_init();
     dsy_tim_start();
     seed.usb_handle.Init(UsbHandle::FS_INTERNAL);
@@ -57,10 +59,8 @@ int main(void) {
     setup();
     while (true) {
         uint32_t ts = timer.getMS();
-        print.out("Counter:   %10d \r\n", counter++);
-        dsy_tim_delay_ms(5);
-        print.out("TimeStamp: %10u \r\n", ts);
-        dsy_tim_delay_ms(495);
+        print.out("Counter:%6d  ||  TimeStamp:%6u\r\n", counter++, ts);
+        dsy_tim_delay_ms(250);
     }
 
 }
