@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 1
 
 
    1              		.cpu cortex-m7
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
   60              		@ frame_needed = 0, uses_anonymous_args = 0
   61              		@ link register save eliminated.
   62 0000 7047     		bx	lr
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 2
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 2
 
 
   64              		.weak	_ZN7daisysp10OscillatorD1Ev
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
  122              		.weak	_ZN8PrintOut7Printer3outEPKcz
  123              		.syntax unified
  124              		.thumb
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 3
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 3
 
 
  125              		.thumb_func
@@ -164,248 +164,254 @@ ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 1
  168              	_Z5setupv:
  169              		@ args = 0, pretend = 0, frame = 0
  170              		@ frame_needed = 0, uses_anonymous_args = 0
- 171 0000 0B48     		ldr	r0, .L23
- 172 0002 10B5     		push	{r4, lr}
- 173 0004 00F16204 		add	r4, r0, #98
- 174 0008 FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
- 175 000c 0948     		ldr	r0, .L23+4
- 176 000e FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
- 177 0012 FFF7FEFF 		bl	dsy_tim_init
- 178 0016 FFF7FEFF 		bl	dsy_tim_start
- 179 001a 2046     		mov	r0, r4
- 180 001c 0021     		movs	r1, #0
- 181 001e FFF7FEFF 		bl	_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
+ 171 0000 38B5     		push	{r3, r4, r5, lr}
+ 172 0002 0D48     		ldr	r0, .L23
+ 173 0004 0D4D     		ldr	r5, .L23+4
+ 174 0006 00F16204 		add	r4, r0, #98
+ 175 000a FFF7FEFF 		bl	_ZN5daisy9DaisySeed9ConfigureEv
+ 176 000e 2846     		mov	r0, r5
+ 177 0010 FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
+ 178 0014 2846     		mov	r0, r5
+ 179 0016 FFF7FEFF 		bl	_ZN5daisy8DaisyPod15AudioSampleRateEv
+ 180 001a FFF7FEFF 		bl	dsy_tim_init
+ 181 001e FFF7FEFF 		bl	dsy_tim_start
  182 0022 2046     		mov	r0, r4
- 183 0024 0449     		ldr	r1, .L23+8
- 184 0026 BDE81040 		pop	{r4, lr}
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 4
+ 183 0024 0021     		movs	r1, #0
+ 184 0026 FFF7FEFF 		bl	_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 4
 
 
- 185 002a FFF7FEBF 		b	_ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
- 186              	.L24:
- 187 002e 00BF     		.align	2
- 188              	.L23:
- 189 0030 00000000 		.word	.LANCHOR1
- 190 0034 00000000 		.word	.LANCHOR2
- 191 0038 00000000 		.word	_ZN8PrintOut11UsbCallbackEPhPm
- 193              		.section	.rodata.main.str1.4,"aMS",%progbits,1
- 194              		.align	2
- 195              	.LC0:
- 196 0000 436F756E 		.ascii	"Counter:%6d  ||  TimeStamp:%6u\015\012\000"
- 196      7465723A 
- 196      25366420 
- 196      207C7C20 
- 196      2054696D 
- 197              		.section	.text.startup.main,"ax",%progbits
- 198              		.align	1
- 199              		.p2align 2,,3
- 200              		.global	main
- 201              		.syntax unified
- 202              		.thumb
- 203              		.thumb_func
- 204              		.fpu fpv5-d16
- 206              	main:
- 207              		@ args = 0, pretend = 0, frame = 0
- 208              		@ frame_needed = 0, uses_anonymous_args = 0
- 209 0000 38B5     		push	{r3, r4, r5, lr}
- 210 0002 084C     		ldr	r4, .L28
- 211 0004 FFF7FEFF 		bl	_Z5setupv
- 212              	.L26:
- 213 0008 FFF7FEFF 		bl	dsy_tim_get_ms
- 214 000c 2268     		ldr	r2, [r4]
- 215 000e 0346     		mov	r3, r0
- 216 0010 0549     		ldr	r1, .L28+4
- 217 0012 551C     		adds	r5, r2, #1
- 218 0014 0548     		ldr	r0, .L28+8
- 219 0016 2560     		str	r5, [r4]
- 220 0018 FFF7FEFF 		bl	_ZN8PrintOut7Printer3outEPKcz
- 221 001c FA20     		movs	r0, #250
- 222 001e FFF7FEFF 		bl	dsy_tim_delay_ms
- 223 0022 F1E7     		b	.L26
- 224              	.L29:
- 225              		.align	2
- 226              	.L28:
- 227 0024 00000000 		.word	.LANCHOR3
- 228 0028 00000000 		.word	.LC0
- 229 002c 00000000 		.word	.LANCHOR4
- 231              		.section	.text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE,"ax",%progbits
- 232              		.align	1
- 233              		.p2align 2,,3
- 234              		.syntax unified
- 235              		.thumb
- 236              		.thumb_func
- 237              		.fpu fpv5-d16
- 239              	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE:
- 240              		@ args = 0, pretend = 0, frame = 0
- 241              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 5
+ 185 002a 2046     		mov	r0, r4
+ 186 002c 0449     		ldr	r1, .L23+8
+ 187 002e BDE83840 		pop	{r3, r4, r5, lr}
+ 188 0032 FFF7FEBF 		b	_ZN5daisy9UsbHandle18SetReceiveCallbackEPFvPhPmE
+ 189              	.L24:
+ 190 0036 00BF     		.align	2
+ 191              	.L23:
+ 192 0038 00000000 		.word	.LANCHOR1
+ 193 003c 00000000 		.word	.LANCHOR2
+ 194 0040 00000000 		.word	_ZN8PrintOut11UsbCallbackEPhPm
+ 196              		.section	.rodata.main.str1.4,"aMS",%progbits,1
+ 197              		.align	2
+ 198              	.LC0:
+ 199 0000 436F756E 		.ascii	"Counter:%6d  ||  TimeStamp:%6u\015\012\000"
+ 199      7465723A 
+ 199      25366420 
+ 199      207C7C20 
+ 199      2054696D 
+ 200              		.section	.text.startup.main,"ax",%progbits
+ 201              		.align	1
+ 202              		.p2align 2,,3
+ 203              		.global	main
+ 204              		.syntax unified
+ 205              		.thumb
+ 206              		.thumb_func
+ 207              		.fpu fpv5-d16
+ 209              	main:
+ 210              		@ args = 0, pretend = 0, frame = 0
+ 211              		@ frame_needed = 0, uses_anonymous_args = 0
+ 212 0000 38B5     		push	{r3, r4, r5, lr}
+ 213 0002 084C     		ldr	r4, .L28
+ 214 0004 FFF7FEFF 		bl	_Z5setupv
+ 215              	.L26:
+ 216 0008 FFF7FEFF 		bl	dsy_tim_get_ms
+ 217 000c 2268     		ldr	r2, [r4]
+ 218 000e 0346     		mov	r3, r0
+ 219 0010 0549     		ldr	r1, .L28+4
+ 220 0012 551C     		adds	r5, r2, #1
+ 221 0014 0548     		ldr	r0, .L28+8
+ 222 0016 2560     		str	r5, [r4]
+ 223 0018 FFF7FEFF 		bl	_ZN8PrintOut7Printer3outEPKcz
+ 224 001c FA20     		movs	r0, #250
+ 225 001e FFF7FEFF 		bl	dsy_tim_delay_ms
+ 226 0022 F1E7     		b	.L26
+ 227              	.L29:
+ 228              		.align	2
+ 229              	.L28:
+ 230 0024 00000000 		.word	.LANCHOR3
+ 231 0028 00000000 		.word	.LC0
+ 232 002c 00000000 		.word	.LANCHOR4
+ 234              		.section	.text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE,"ax",%progbits
+ 235              		.align	1
+ 236              		.p2align 2,,3
+ 237              		.syntax unified
+ 238              		.thumb
+ 239              		.thumb_func
+ 240              		.fpu fpv5-d16
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 5
 
 
- 242 0000 10B5     		push	{r4, lr}
- 243 0002 0E4A     		ldr	r2, .L32
- 244 0004 0E4C     		ldr	r4, .L32+4
- 245 0006 0F49     		ldr	r1, .L32+8
- 246 0008 0F48     		ldr	r0, .L32+12
- 247 000a FFF7FEFF 		bl	__aeabi_atexit
- 248 000e 0B4A     		ldr	r2, .L32
- 249 0010 0E49     		ldr	r1, .L32+16
- 250 0012 0F48     		ldr	r0, .L32+20
- 251 0014 FFF7FEFF 		bl	__aeabi_atexit
- 252 0018 2146     		mov	r1, r4
- 253 001a 084A     		ldr	r2, .L32
- 254 001c 0D48     		ldr	r0, .L32+24
- 255 001e FFF7FEFF 		bl	__aeabi_atexit
- 256 0022 2146     		mov	r1, r4
- 257 0024 054A     		ldr	r2, .L32
- 258 0026 0C48     		ldr	r0, .L32+28
- 259 0028 FFF7FEFF 		bl	__aeabi_atexit
- 260 002c 034A     		ldr	r2, .L32
- 261 002e 0B49     		ldr	r1, .L32+32
- 262 0030 0B48     		ldr	r0, .L32+36
- 263 0032 BDE81040 		pop	{r4, lr}
- 264 0036 FFF7FEBF 		b	__aeabi_atexit
- 265              	.L33:
- 266 003a 00BF     		.align	2
- 267              	.L32:
- 268 003c 00000000 		.word	__dso_handle
- 269 0040 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
- 270 0044 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
- 271 0048 00000000 		.word	.LANCHOR1
- 272 004c 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
- 273 0050 00000000 		.word	.LANCHOR2
- 274 0054 00000000 		.word	.LANCHOR5
- 275 0058 00000000 		.word	.LANCHOR6
- 276 005c 00000000 		.word	_ZN8PrintOut7PrinterD1Ev
- 277 0060 00000000 		.word	.LANCHOR4
- 279              		.section	.init_array,"aw",%init_array
- 280              		.align	2
- 281 0000 00000000 		.word	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE(target1)
- 282              		.global	counter
- 283              		.global	timer
- 284              		.global	print
- 285              		.global	osc2
- 286              		.global	osc1
- 287              		.global	pod
- 288              		.global	seed
- 289              		.global	_ZN8PrintOut7sumbuffE
- 290              		.section	.bss._ZN8PrintOut7sumbuffE,"aw",%nobits
- 291              		.align	2
- 292              		.set	.LANCHOR0,. + 0
- 295              	_ZN8PrintOut7sumbuffE:
- 296 0000 00000000 		.space	1024
- 296      00000000 
- 296      00000000 
- 296      00000000 
- 296      00000000 
- 297              		.section	.bss.counter,"aw",%nobits
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 6
+ 242              	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE:
+ 243              		@ args = 0, pretend = 0, frame = 0
+ 244              		@ frame_needed = 0, uses_anonymous_args = 0
+ 245 0000 10B5     		push	{r4, lr}
+ 246 0002 0E4A     		ldr	r2, .L32
+ 247 0004 0E4C     		ldr	r4, .L32+4
+ 248 0006 0F49     		ldr	r1, .L32+8
+ 249 0008 0F48     		ldr	r0, .L32+12
+ 250 000a FFF7FEFF 		bl	__aeabi_atexit
+ 251 000e 0B4A     		ldr	r2, .L32
+ 252 0010 0E49     		ldr	r1, .L32+16
+ 253 0012 0F48     		ldr	r0, .L32+20
+ 254 0014 FFF7FEFF 		bl	__aeabi_atexit
+ 255 0018 2146     		mov	r1, r4
+ 256 001a 084A     		ldr	r2, .L32
+ 257 001c 0D48     		ldr	r0, .L32+24
+ 258 001e FFF7FEFF 		bl	__aeabi_atexit
+ 259 0022 2146     		mov	r1, r4
+ 260 0024 054A     		ldr	r2, .L32
+ 261 0026 0C48     		ldr	r0, .L32+28
+ 262 0028 FFF7FEFF 		bl	__aeabi_atexit
+ 263 002c 034A     		ldr	r2, .L32
+ 264 002e 0B49     		ldr	r1, .L32+32
+ 265 0030 0B48     		ldr	r0, .L32+36
+ 266 0032 BDE81040 		pop	{r4, lr}
+ 267 0036 FFF7FEBF 		b	__aeabi_atexit
+ 268              	.L33:
+ 269 003a 00BF     		.align	2
+ 270              	.L32:
+ 271 003c 00000000 		.word	__dso_handle
+ 272 0040 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
+ 273 0044 00000000 		.word	_ZN5daisy9DaisySeedD1Ev
+ 274 0048 00000000 		.word	.LANCHOR1
+ 275 004c 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 276 0050 00000000 		.word	.LANCHOR2
+ 277 0054 00000000 		.word	.LANCHOR5
+ 278 0058 00000000 		.word	.LANCHOR6
+ 279 005c 00000000 		.word	_ZN8PrintOut7PrinterD1Ev
+ 280 0060 00000000 		.word	.LANCHOR4
+ 282              		.section	.init_array,"aw",%init_array
+ 283              		.align	2
+ 284 0000 00000000 		.word	_GLOBAL__sub_I__ZN8PrintOut7sumbuffE(target1)
+ 285              		.global	counter
+ 286              		.global	timer
+ 287              		.global	print
+ 288              		.global	osc2
+ 289              		.global	osc1
+ 290              		.global	pod
+ 291              		.global	seed
+ 292              		.global	_ZN8PrintOut7sumbuffE
+ 293              		.section	.bss._ZN8PrintOut7sumbuffE,"aw",%nobits
+ 294              		.align	2
+ 295              		.set	.LANCHOR0,. + 0
+ 298              	_ZN8PrintOut7sumbuffE:
+ 299 0000 00000000 		.space	1024
+ 299      00000000 
+ 299      00000000 
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 6
 
 
- 298              		.align	2
- 299              		.set	.LANCHOR3,. + 0
- 302              	counter:
- 303 0000 00000000 		.space	4
- 304              		.section	.bss.osc1,"aw",%nobits
- 305              		.align	2
- 306              		.set	.LANCHOR5,. + 0
- 309              	osc1:
- 310 0000 00000000 		.space	36
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 310      00000000 
- 311              		.section	.bss.osc2,"aw",%nobits
- 312              		.align	2
- 313              		.set	.LANCHOR6,. + 0
- 316              	osc2:
- 317 0000 00000000 		.space	36
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 317      00000000 
- 318              		.section	.bss.pod,"aw",%nobits
- 319              		.align	2
- 320              		.set	.LANCHOR2,. + 0
- 323              	pod:
- 324 0000 00000000 		.space	424
- 324      00000000 
- 324      00000000 
- 324      00000000 
- 324      00000000 
- 325              		.section	.bss.print,"aw",%nobits
- 326              		.align	2
- 327              		.set	.LANCHOR4,. + 0
- 330              	print:
- 331 0000 00000000 		.space	728
- 331      00000000 
- 331      00000000 
- 331      00000000 
- 331      00000000 
- 332              		.section	.bss.seed,"aw",%nobits
- 333              		.align	2
- 334              		.set	.LANCHOR1,. + 0
- 337              	seed:
- 338 0000 00000000 		.space	108
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 338      00000000 
- 339              		.section	.bss.timer,"aw",%nobits
- 340              		.align	2
- 343              	timer:
- 344 0000 00000000 		.space	8
- 344      00000000 
- 345              		.hidden	__dso_handle
- 346              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 7
+ 299      00000000 
+ 299      00000000 
+ 300              		.section	.bss.counter,"aw",%nobits
+ 301              		.align	2
+ 302              		.set	.LANCHOR3,. + 0
+ 305              	counter:
+ 306 0000 00000000 		.space	4
+ 307              		.section	.bss.osc1,"aw",%nobits
+ 308              		.align	2
+ 309              		.set	.LANCHOR5,. + 0
+ 312              	osc1:
+ 313 0000 00000000 		.space	36
+ 313      00000000 
+ 313      00000000 
+ 313      00000000 
+ 313      00000000 
+ 314              		.section	.bss.osc2,"aw",%nobits
+ 315              		.align	2
+ 316              		.set	.LANCHOR6,. + 0
+ 319              	osc2:
+ 320 0000 00000000 		.space	36
+ 320      00000000 
+ 320      00000000 
+ 320      00000000 
+ 320      00000000 
+ 321              		.section	.bss.pod,"aw",%nobits
+ 322              		.align	2
+ 323              		.set	.LANCHOR2,. + 0
+ 326              	pod:
+ 327 0000 00000000 		.space	424
+ 327      00000000 
+ 327      00000000 
+ 327      00000000 
+ 327      00000000 
+ 328              		.section	.bss.print,"aw",%nobits
+ 329              		.align	2
+ 330              		.set	.LANCHOR4,. + 0
+ 333              	print:
+ 334 0000 00000000 		.space	728
+ 334      00000000 
+ 334      00000000 
+ 334      00000000 
+ 334      00000000 
+ 335              		.section	.bss.seed,"aw",%nobits
+ 336              		.align	2
+ 337              		.set	.LANCHOR1,. + 0
+ 340              	seed:
+ 341 0000 00000000 		.space	108
+ 341      00000000 
+ 341      00000000 
+ 341      00000000 
+ 341      00000000 
+ 342              		.section	.bss.timer,"aw",%nobits
+ 343              		.align	2
+ 346              	timer:
+ 347 0000 00000000 		.space	8
+ 347      00000000 
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 7
+
+
+ 348              		.hidden	__dso_handle
+ 349              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 8
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 musicSynth.cpp
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:15     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:33     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:50     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:67     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:75     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 _ZN8PrintOut11UsbCallbackEPhPm
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:100    .text._ZN8PrintOut11UsbCallbackEPhPm:00000024 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:103    .text._ZN8PrintOut7PrinterD2Ev:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD2Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD1Ev
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:120    .text._ZN8PrintOut7Printer3outEPKcz:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:128    .text._ZN8PrintOut7Printer3outEPKcz:00000000 _ZN8PrintOut7Printer3outEPKcz
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:160    .text._Z5setupv:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:168    .text._Z5setupv:00000000 _Z5setupv
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:189    .text._Z5setupv:00000030 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:194    .rodata.main.str1.4:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:198    .text.startup.main:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:206    .text.startup.main:00000000 main
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:227    .text.startup.main:00000024 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:232    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 $t
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:239    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 _GLOBAL__sub_I__ZN8PrintOut7sumbuffE
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:268    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:0000003c $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:280    .init_array:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:302    .bss.counter:00000000 counter
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:343    .bss.timer:00000000 timer
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:330    .bss.print:00000000 print
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:316    .bss.osc2:00000000 osc2
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:309    .bss.osc1:00000000 osc1
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:323    .bss.pod:00000000 pod
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:337    .bss.seed:00000000 seed
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:295    .bss._ZN8PrintOut7sumbuffE:00000000 _ZN8PrintOut7sumbuffE
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:291    .bss._ZN8PrintOut7sumbuffE:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:298    .bss.counter:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:305    .bss.osc1:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:312    .bss.osc2:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:319    .bss.pod:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:326    .bss.print:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:333    .bss.seed:00000000 $d
-C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s:340    .bss.timer:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:15     .text._ZN5daisy9DaisySeedD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD2Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:24     .text._ZN5daisy9DaisySeedD2Ev:00000000 _ZN5daisy9DaisySeedD1Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:33     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:50     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:67     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:75     .text._ZN8PrintOut11UsbCallbackEPhPm:00000000 _ZN8PrintOut11UsbCallbackEPhPm
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:100    .text._ZN8PrintOut11UsbCallbackEPhPm:00000024 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:103    .text._ZN8PrintOut7PrinterD2Ev:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD2Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:111    .text._ZN8PrintOut7PrinterD2Ev:00000000 _ZN8PrintOut7PrinterD1Ev
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:120    .text._ZN8PrintOut7Printer3outEPKcz:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:128    .text._ZN8PrintOut7Printer3outEPKcz:00000000 _ZN8PrintOut7Printer3outEPKcz
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:160    .text._Z5setupv:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:168    .text._Z5setupv:00000000 _Z5setupv
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:192    .text._Z5setupv:00000038 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:197    .rodata.main.str1.4:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:201    .text.startup.main:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:209    .text.startup.main:00000000 main
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:230    .text.startup.main:00000024 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:235    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 $t
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:242    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:00000000 _GLOBAL__sub_I__ZN8PrintOut7sumbuffE
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:271    .text.startup._GLOBAL__sub_I__ZN8PrintOut7sumbuffE:0000003c $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:283    .init_array:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:305    .bss.counter:00000000 counter
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:346    .bss.timer:00000000 timer
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:333    .bss.print:00000000 print
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:319    .bss.osc2:00000000 osc2
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:312    .bss.osc1:00000000 osc1
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:326    .bss.pod:00000000 pod
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:340    .bss.seed:00000000 seed
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:298    .bss._ZN8PrintOut7sumbuffE:00000000 _ZN8PrintOut7sumbuffE
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:294    .bss._ZN8PrintOut7sumbuffE:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:301    .bss.counter:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:308    .bss.osc1:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:315    .bss.osc2:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:322    .bss.pod:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:329    .bss.print:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:336    .bss.seed:00000000 $d
+C:\Users\geoff\AppData\Local\Temp\cclkElYS.s:343    .bss.timer:00000000 $d
                            .group:00000000 _ZN5daisy9DaisySeedD5Ev
                            .group:00000000 _ZN5daisy8DaisyPodD5Ev
                            .group:00000000 _ZN7daisysp10OscillatorD5Ev
@@ -417,10 +423,11 @@ vsprintf
 strlen
 _ZN5daisy9UsbHandle16TransmitInternalEPhj
 _ZN5daisy9DaisySeed9ConfigureEv
-ARM GAS  C:\Users\geoff\AppData\Local\Temp\ccLrmjw0.s 			page 8
+ARM GAS  C:\Users\geoff\AppData\Local\Temp\cclkElYS.s 			page 9
 
 
 _ZN5daisy8DaisyPod4InitEv
+_ZN5daisy8DaisyPod15AudioSampleRateEv
 dsy_tim_init
 dsy_tim_start
 _ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
