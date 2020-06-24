@@ -8,3 +8,8 @@ DaisyExamples
 **/**.vcxproj
 **/**.vcxproj.filters
 **/**.vcxproj.user
+musicSynthPlusFX/build
+musicSynthPlusFX/.vs
+musicSynthPlusFX/x64
+musicSynthPlusFX/Debug
+musicSynthPlusFX/CppProperties.json

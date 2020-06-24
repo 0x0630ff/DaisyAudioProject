@@ -1,0 +1,494 @@
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 1
+
+
+   1              		.cpu cortex-m7
+   2              		.eabi_attribute 28, 1
+   3              		.eabi_attribute 20, 1
+   4              		.eabi_attribute 21, 1
+   5              		.eabi_attribute 23, 3
+   6              		.eabi_attribute 24, 1
+   7              		.eabi_attribute 25, 1
+   8              		.eabi_attribute 26, 1
+   9              		.eabi_attribute 30, 2
+  10              		.eabi_attribute 34, 1
+  11              		.eabi_attribute 18, 4
+  12              		.file	"PodMidi.cpp"
+  13              		.text
+  14              		.section	.text._ZN5daisy11MidiHandlerD2Ev,"axG",%progbits,_ZN5daisy11MidiHandlerD5Ev,comdat
+  15              		.align	1
+  16              		.p2align 2,,3
+  17              		.weak	_ZN5daisy11MidiHandlerD2Ev
+  18              		.arch armv7e-m
+  19              		.syntax unified
+  20              		.thumb
+  21              		.thumb_func
+  22              		.fpu fpv5-d16
+  24              	_ZN5daisy11MidiHandlerD2Ev:
+  25              		@ args = 0, pretend = 0, frame = 0
+  26              		@ frame_needed = 0, uses_anonymous_args = 0
+  27              		@ link register save eliminated.
+  28 0000 7047     		bx	lr
+  30              		.weak	_ZN5daisy11MidiHandlerD1Ev
+  31              		.thumb_set _ZN5daisy11MidiHandlerD1Ev,_ZN5daisy11MidiHandlerD2Ev
+  32 0002 00BF     		.section	.text._ZN5daisy8DaisyPodD2Ev,"axG",%progbits,_ZN5daisy8DaisyPodD5Ev,comdat
+  33              		.align	1
+  34              		.p2align 2,,3
+  35              		.weak	_ZN5daisy8DaisyPodD2Ev
+  36              		.syntax unified
+  37              		.thumb
+  38              		.thumb_func
+  39              		.fpu fpv5-d16
+  41              	_ZN5daisy8DaisyPodD2Ev:
+  42              		@ args = 0, pretend = 0, frame = 0
+  43              		@ frame_needed = 0, uses_anonymous_args = 0
+  44              		@ link register save eliminated.
+  45 0000 7047     		bx	lr
+  47              		.weak	_ZN5daisy8DaisyPodD1Ev
+  48              		.thumb_set _ZN5daisy8DaisyPodD1Ev,_ZN5daisy8DaisyPodD2Ev
+  49 0002 00BF     		.section	.text._ZN7daisysp10OscillatorD2Ev,"axG",%progbits,_ZN7daisysp10OscillatorD5Ev,comdat
+  50              		.align	1
+  51              		.p2align 2,,3
+  52              		.weak	_ZN7daisysp10OscillatorD2Ev
+  53              		.syntax unified
+  54              		.thumb
+  55              		.thumb_func
+  56              		.fpu fpv5-d16
+  58              	_ZN7daisysp10OscillatorD2Ev:
+  59              		@ args = 0, pretend = 0, frame = 0
+  60              		@ frame_needed = 0, uses_anonymous_args = 0
+  61              		@ link register save eliminated.
+  62 0000 7047     		bx	lr
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 2
+
+
+  64              		.weak	_ZN7daisysp10OscillatorD1Ev
+  65              		.thumb_set _ZN7daisysp10OscillatorD1Ev,_ZN7daisysp10OscillatorD2Ev
+  66 0002 00BF     		.section	.text._ZN7daisysp3SvfD2Ev,"axG",%progbits,_ZN7daisysp3SvfD5Ev,comdat
+  67              		.align	1
+  68              		.p2align 2,,3
+  69              		.weak	_ZN7daisysp3SvfD2Ev
+  70              		.syntax unified
+  71              		.thumb
+  72              		.thumb_func
+  73              		.fpu fpv5-d16
+  75              	_ZN7daisysp3SvfD2Ev:
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              		@ link register save eliminated.
+  79 0000 7047     		bx	lr
+  81              		.weak	_ZN7daisysp3SvfD1Ev
+  82              		.thumb_set _ZN7daisysp3SvfD1Ev,_ZN7daisysp3SvfD2Ev
+  83 0002 00BF     		.section	.text._Z13AudioCallbackPfS_j,"ax",%progbits
+  84              		.align	1
+  85              		.p2align 2,,3
+  86              		.global	_Z13AudioCallbackPfS_j
+  87              		.syntax unified
+  88              		.thumb
+  89              		.thumb_func
+  90              		.fpu fpv5-d16
+  92              	_Z13AudioCallbackPfS_j:
+  93              		@ args = 0, pretend = 0, frame = 0
+  94              		@ frame_needed = 0, uses_anonymous_args = 0
+  95 0000 AAB1     		cbz	r2, .L14
+  96 0002 013A     		subs	r2, r2, #1
+  97 0004 F8B5     		push	{r3, r4, r5, r6, r7, lr}
+  98 0006 0C46     		mov	r4, r1
+  99 0008 0025     		movs	r5, #0
+ 100 000a 094F     		ldr	r7, .L17
+ 101 000c 22F00106 		bic	r6, r2, #1
+ 102              	.L8:
+ 103 0010 0848     		ldr	r0, .L17+4
+ 104 0012 FFF7FEFF 		bl	_ZN7daisysp10Oscillator7ProcessEv
+ 105 0016 0648     		ldr	r0, .L17
+ 106 0018 FFF7FEFF 		bl	_ZN7daisysp3Svf7ProcessEf
+ 107 001c 3A6B     		ldr	r2, [r7, #48]	@ float
+ 108 001e B542     		cmp	r5, r6
+ 109 0020 05F10205 		add	r5, r5, #2
+ 110 0024 6260     		str	r2, [r4, #4]	@ float
+ 111 0026 44F8082B 		str	r2, [r4], #8	@ float
+ 112 002a F1D1     		bne	.L8
+ 113 002c F8BD     		pop	{r3, r4, r5, r6, r7, pc}
+ 114              	.L14:
+ 115 002e 7047     		bx	lr
+ 116              	.L18:
+ 117              		.align	2
+ 118              	.L17:
+ 119 0030 00000000 		.word	.LANCHOR1
+ 120 0034 00000000 		.word	.LANCHOR0
+ 122              		.section	.rodata._Z17HandleMidiMessageN5daisy9MidiEventE.str1.4,"aMS",%progbits,1
+ 123              		.align	2
+ 124              	.LC0:
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 3
+
+
+ 125 0000 4E6F7465 		.ascii	"Note Received:\011%d\011%d\011%d\015\012\000"
+ 125      20526563 
+ 125      65697665 
+ 125      643A0925 
+ 125      64092564 
+ 126              		.section	.text._Z17HandleMidiMessageN5daisy9MidiEventE,"ax",%progbits
+ 127              		.align	1
+ 128              		.p2align 2,,3
+ 129              		.global	_Z17HandleMidiMessageN5daisy9MidiEventE
+ 130              		.syntax unified
+ 131              		.thumb
+ 132              		.thumb_func
+ 133              		.fpu fpv5-d16
+ 135              	_Z17HandleMidiMessageN5daisy9MidiEventE:
+ 136              		@ args = 0, pretend = 0, frame = 528
+ 137              		@ frame_needed = 0, uses_anonymous_args = 0
+ 138 0000 30B5     		push	{r4, r5, lr}
+ 139 0002 ADF5077D 		sub	sp, sp, #540
+ 140 0006 03AC     		add	r4, sp, #12
+ 141 0008 84E80700 		stm	r4, {r0, r1, r2}
+ 142 000c 2278     		ldrb	r2, [r4]	@ zero_extendqisi2
+ 143 000e 257A     		ldrb	r5, [r4, #8]	@ zero_extendqisi2
+ 144 0010 012A     		cmp	r2, #1
+ 145 0012 647A     		ldrb	r4, [r4, #9]	@ zero_extendqisi2
+ 146 0014 08D0     		beq	.L20
+ 147 0016 032A     		cmp	r2, #3
+ 148 0018 03D1     		bne	.L19
+ 149 001a 012D     		cmp	r5, #1
+ 150 001c 4CD0     		beq	.L24
+ 151 001e 022D     		cmp	r5, #2
+ 152 0020 3CD0     		beq	.L25
+ 153              	.L19:
+ 154 0022 0DF5077D 		add	sp, sp, #540
+ 155              		@ sp needed
+ 156 0026 30BD     		pop	{r4, r5, pc}
+ 157              	.L20:
+ 158 0028 0A46     		mov	r2, r1
+ 159 002a 2B46     		mov	r3, r5
+ 160 002c 2F49     		ldr	r1, .L30
+ 161 002e 06A8     		add	r0, sp, #24
+ 162 0030 0094     		str	r4, [sp]
+ 163 0032 FFF7FEFF 		bl	sprintf
+ 164 0036 06A8     		add	r0, sp, #24
+ 165 0038 FFF7FEFF 		bl	strlen
+ 166 003c 06A9     		add	r1, sp, #24
+ 167 003e 0246     		mov	r2, r0
+ 168 0040 2B48     		ldr	r0, .L30+4
+ 169 0042 FFF7FEFF 		bl	_ZN5daisy9UsbHandle16TransmitInternalEPhj
+ 170 0046 002C     		cmp	r4, #0
+ 171 0048 EBD0     		beq	.L19
+ 172 004a 07EE905A 		vmov	s15, r5	@ int
+ 173 004e 9FED297A 		vldr.32	s14, .L30+8
+ 174 0052 F2EE080A 		vmov.f32	s1, #1.2e+1
+ 175 0056 284D     		ldr	r5, .L30+12
+ 176 0058 F8EE677A 		vcvt.f32.u32	s15, s15
+ 177 005c B0EE000A 		vmov.f32	s0, #2.0e+0
+ 178 0060 77EEC77A 		vsub.f32	s15, s15, s14
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 4
+
+
+ 179 0064 C7EEA00A 		vdiv.f32	s1, s15, s1
+ 180 0068 FFF7FEFF 		bl	powf
+ 181 006c DFED237A 		vldr.32	s15, .L30+16
+ 182 0070 2846     		mov	r0, r5
+ 183 0072 20EE270A 		vmul.f32	s0, s0, s15
+ 184 0076 85ED020A 		vstr.32	s0, [r5, #8]
+ 185 007a FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 186 007e 07EE904A 		vmov	s15, r4	@ int
+ 187 0082 DFED1F6A 		vldr.32	s13, .L30+20
+ 188 0086 85ED060A 		vstr.32	s0, [r5, #24]
+ 189 008a F8EEE77A 		vcvt.f32.s32	s15, s15
+ 190 008e 87EEA67A 		vdiv.f32	s14, s15, s13
+ 191 0092 85ED017A 		vstr.32	s14, [r5, #4]
+ 192 0096 0DF5077D 		add	sp, sp, #540
+ 193              		@ sp needed
+ 194 009a 30BD     		pop	{r4, r5, pc}
+ 195              	.L25:
+ 196 009c 07EE904A 		vmov	s15, r4	@ int
+ 197 00a0 9FED170A 		vldr.32	s0, .L30+20
+ 198 00a4 1748     		ldr	r0, .L30+24
+ 199 00a6 F8EE677A 		vcvt.f32.u32	s15, s15
+ 200 00aa 87EE800A 		vdiv.f32	s0, s15, s0
+ 201 00ae FFF7FEFF 		bl	_ZN7daisysp3Svf6SetResEf
+ 202 00b2 0DF5077D 		add	sp, sp, #540
+ 203              		@ sp needed
+ 204 00b6 30BD     		pop	{r4, r5, pc}
+ 205              	.L24:
+ 206 00b8 07EE904A 		vmov	s15, r4	@ int
+ 207 00bc 9FED0D7A 		vldr.32	s14, .L30+8
+ 208 00c0 F2EE080A 		vmov.f32	s1, #1.2e+1
+ 209 00c4 F8EE677A 		vcvt.f32.u32	s15, s15
+ 210 00c8 B0EE000A 		vmov.f32	s0, #2.0e+0
+ 211 00cc 77EEC77A 		vsub.f32	s15, s15, s14
+ 212 00d0 C7EEA00A 		vdiv.f32	s1, s15, s1
+ 213 00d4 FFF7FEFF 		bl	powf
+ 214 00d8 DFED087A 		vldr.32	s15, .L30+16
+ 215 00dc 0948     		ldr	r0, .L30+24
+ 216 00de 20EE270A 		vmul.f32	s0, s0, s15
+ 217 00e2 FFF7FEFF 		bl	_ZN7daisysp3Svf7SetFreqEf
+ 218 00e6 0DF5077D 		add	sp, sp, #540
+ 219              		@ sp needed
+ 220 00ea 30BD     		pop	{r4, r5, pc}
+ 221              	.L31:
+ 222              		.align	2
+ 223              	.L30:
+ 224 00ec 00000000 		.word	.LC0
+ 225 00f0 62000000 		.word	.LANCHOR2+98
+ 226 00f4 00008A42 		.word	1116340224
+ 227 00f8 00000000 		.word	.LANCHOR0
+ 228 00fc 0000DC43 		.word	1138491392
+ 229 0100 0000FE42 		.word	1123942400
+ 230 0104 00000000 		.word	.LANCHOR1
+ 232              		.section	.text.startup.main,"ax",%progbits
+ 233              		.align	1
+ 234              		.p2align 2,,3
+ 235              		.global	main
+ 236              		.syntax unified
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 5
+
+
+ 237              		.thumb
+ 238              		.thumb_func
+ 239              		.fpu fpv5-d16
+ 241              	main:
+ 242              		@ args = 0, pretend = 0, frame = 16
+ 243              		@ frame_needed = 0, uses_anonymous_args = 0
+ 244 0000 70B5     		push	{r4, r5, r6, lr}
+ 245 0002 3048     		ldr	r0, .L43
+ 246 0004 304E     		ldr	r6, .L43+4
+ 247 0006 314C     		ldr	r4, .L43+8
+ 248 0008 2DED028B 		vpush.64	{d8}
+ 249 000c 84B0     		sub	sp, sp, #16
+ 250 000e FFF7FEFF 		bl	_ZN5daisy8DaisyPod4InitEv
+ 251 0012 0021     		movs	r1, #0
+ 252 0014 2E48     		ldr	r0, .L43+12
+ 253 0016 01AD     		add	r5, sp, #4
+ 254 0018 FFF7FEFF 		bl	_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
+ 255 001c FA20     		movs	r0, #250
+ 256 001e FFF7FEFF 		bl	dsy_system_delay
+ 257 0022 0121     		movs	r1, #1
+ 258 0024 0022     		movs	r2, #0
+ 259 0026 2948     		ldr	r0, .L43+8
+ 260 0028 FFF7FEFF 		bl	_ZN5daisy11MidiHandler4InitENS0_13MidiInputModeENS0_14MidiOutputModeE
+ 261 002c 2548     		ldr	r0, .L43
+ 262 002e FFF7FEFF 		bl	_ZN5daisy8DaisyPod15AudioSampleRateEv
+ 263 0032 B7EE007A 		vmov.f32	s14, #1.0e+0
+ 264 0036 B0EE408A 		vmov.f32	s16, s0
+ 265 003a 4FF07C52 		mov	r2, #1056964608
+ 266 003e 0023     		movs	r3, #0
+ 267 0040 9FED240A 		vldr.32	s0, .L43+16
+ 268 0044 3046     		mov	r0, r6
+ 269 0046 7260     		str	r2, [r6, #4]	@ float
+ 270 0048 C7EE087A 		vdiv.f32	s15, s14, s16
+ 271 004c 7361     		str	r3, [r6, #20]	@ float
+ 272 004e 86ED038A 		vstr.32	s16, [r6, #12]
+ 273 0052 86ED020A 		vstr.32	s0, [r6, #8]
+ 274 0056 C6ED047A 		vstr.32	s15, [r6, #16]
+ 275 005a FFF7FEFF 		bl	_ZN7daisysp10Oscillator12CalcPhaseIncEf
+ 276 005e F0EE407A 		vmov.f32	s15, s0
+ 277 0062 0623     		movs	r3, #6
+ 278 0064 B0EE480A 		vmov.f32	s0, s16
+ 279 0068 1B48     		ldr	r0, .L43+20
+ 280 006a 3370     		strb	r3, [r6]
+ 281 006c C6ED067A 		vstr.32	s15, [r6, #24]
+ 282 0070 FFF7FEFF 		bl	_ZN7daisysp3Svf4InitEf
+ 283 0074 1348     		ldr	r0, .L43
+ 284 0076 FFF7FEFF 		bl	_ZN5daisy8DaisyPod8StartAdcEv
+ 285 007a 1248     		ldr	r0, .L43
+ 286 007c 1749     		ldr	r1, .L43+24
+ 287 007e FFF7FEFF 		bl	_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+ 288 0082 2046     		mov	r0, r4
+ 289 0084 FFF7FEFF 		bl	_ZN5daisy11MidiHandler12StartReceiveEv
+ 290              	.L34:
+ 291 0088 1048     		ldr	r0, .L43+8
+ 292 008a FFF7FEFF 		bl	_ZN5daisy11MidiHandler6ListenEv
+ 293              	.L42:
+ 294 008e 636F     		ldr	r3, [r4, #116]
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 6
+
+
+ 295 0090 226F     		ldr	r2, [r4, #112]
+ 296 0092 9B1A     		subs	r3, r3, r2
+ 297 0094 5A07     		lsls	r2, r3, #29
+ 298 0096 F7D0     		beq	.L34
+ 299              	.L35:
+ 300 0098 636F     		ldr	r3, [r4, #116]
+ 301 009a 226F     		ldr	r2, [r4, #112]
+ 302 009c 9B1A     		subs	r3, r3, r2
+ 303 009e 5B07     		lsls	r3, r3, #29
+ 304 00a0 FAD0     		beq	.L35
+ 305 00a2 226F     		ldr	r2, [r4, #112]
+ 306 00a4 02EB4203 		add	r3, r2, r2, lsl #1
+ 307 00a8 0132     		adds	r2, r2, #1
+ 308 00aa 04EB8303 		add	r3, r4, r3, lsl #2
+ 309 00ae 02F00702 		and	r2, r2, #7
+ 310 00b2 1033     		adds	r3, r3, #16
+ 311 00b4 2267     		str	r2, [r4, #112]
+ 312 00b6 93E80700 		ldm	r3, {r0, r1, r2}
+ 313 00ba 85E80700 		stm	r5, {r0, r1, r2}
+ 314 00be FFF7FEFF 		bl	_Z17HandleMidiMessageN5daisy9MidiEventE
+ 315 00c2 E4E7     		b	.L42
+ 316              	.L44:
+ 317              		.align	2
+ 318              	.L43:
+ 319 00c4 00000000 		.word	.LANCHOR2
+ 320 00c8 00000000 		.word	.LANCHOR0
+ 321 00cc 00000000 		.word	.LANCHOR3
+ 322 00d0 62000000 		.word	.LANCHOR2+98
+ 323 00d4 0000C842 		.word	1120403456
+ 324 00d8 00000000 		.word	.LANCHOR1
+ 325 00dc 00000000 		.word	_Z13AudioCallbackPfS_j
+ 327              		.section	.text.startup._GLOBAL__sub_I_hw,"ax",%progbits
+ 328              		.align	1
+ 329              		.p2align 2,,3
+ 330              		.syntax unified
+ 331              		.thumb
+ 332              		.thumb_func
+ 333              		.fpu fpv5-d16
+ 335              	_GLOBAL__sub_I_hw:
+ 336              		@ args = 0, pretend = 0, frame = 0
+ 337              		@ frame_needed = 0, uses_anonymous_args = 0
+ 338 0000 08B5     		push	{r3, lr}
+ 339 0002 0B4A     		ldr	r2, .L47
+ 340 0004 0B49     		ldr	r1, .L47+4
+ 341 0006 0C48     		ldr	r0, .L47+8
+ 342 0008 FFF7FEFF 		bl	__aeabi_atexit
+ 343 000c 084A     		ldr	r2, .L47
+ 344 000e 0B49     		ldr	r1, .L47+12
+ 345 0010 0B48     		ldr	r0, .L47+16
+ 346 0012 FFF7FEFF 		bl	__aeabi_atexit
+ 347 0016 064A     		ldr	r2, .L47
+ 348 0018 0A49     		ldr	r1, .L47+20
+ 349 001a 0B48     		ldr	r0, .L47+24
+ 350 001c FFF7FEFF 		bl	__aeabi_atexit
+ 351 0020 034A     		ldr	r2, .L47
+ 352 0022 0A49     		ldr	r1, .L47+28
+ 353 0024 0A48     		ldr	r0, .L47+32
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 7
+
+
+ 354 0026 BDE80840 		pop	{r3, lr}
+ 355 002a FFF7FEBF 		b	__aeabi_atexit
+ 356              	.L48:
+ 357 002e 00BF     		.align	2
+ 358              	.L47:
+ 359 0030 00000000 		.word	__dso_handle
+ 360 0034 00000000 		.word	_ZN5daisy8DaisyPodD1Ev
+ 361 0038 00000000 		.word	.LANCHOR2
+ 362 003c 00000000 		.word	_ZN5daisy11MidiHandlerD1Ev
+ 363 0040 00000000 		.word	.LANCHOR3
+ 364 0044 00000000 		.word	_ZN7daisysp10OscillatorD1Ev
+ 365 0048 00000000 		.word	.LANCHOR0
+ 366 004c 00000000 		.word	_ZN7daisysp3SvfD1Ev
+ 367 0050 00000000 		.word	.LANCHOR1
+ 369              		.section	.init_array,"aw",%init_array
+ 370              		.align	2
+ 371 0000 00000000 		.word	_GLOBAL__sub_I_hw(target1)
+ 372              		.global	filt
+ 373              		.global	osc
+ 374              		.global	midi
+ 375              		.global	hw
+ 376              		.section	.bss.filt,"aw",%nobits
+ 377              		.align	2
+ 378              		.set	.LANCHOR1,. + 0
+ 381              	filt:
+ 382 0000 00000000 		.space	68
+ 382      00000000 
+ 382      00000000 
+ 382      00000000 
+ 382      00000000 
+ 383              		.section	.bss.hw,"aw",%nobits
+ 384              		.align	2
+ 385              		.set	.LANCHOR2,. + 0
+ 388              	hw:
+ 389 0000 00000000 		.space	424
+ 389      00000000 
+ 389      00000000 
+ 389      00000000 
+ 389      00000000 
+ 390              		.section	.bss.midi,"aw",%nobits
+ 391              		.align	2
+ 392              		.set	.LANCHOR3,. + 0
+ 395              	midi:
+ 396 0000 00000000 		.space	120
+ 396      00000000 
+ 396      00000000 
+ 396      00000000 
+ 396      00000000 
+ 397              		.section	.bss.osc,"aw",%nobits
+ 398              		.align	2
+ 399              		.set	.LANCHOR0,. + 0
+ 402              	osc:
+ 403 0000 00000000 		.space	36
+ 403      00000000 
+ 403      00000000 
+ 403      00000000 
+ 403      00000000 
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 8
+
+
+ 404              		.hidden	__dso_handle
+ 405              		.ident	"GCC: (GNU Arm Embedded Toolchain 9-2020-q2-update) 9.3.1 20200408 (release)"
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 PodMidi.cpp
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:15     .text._ZN5daisy11MidiHandlerD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:24     .text._ZN5daisy11MidiHandlerD2Ev:00000000 _ZN5daisy11MidiHandlerD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:24     .text._ZN5daisy11MidiHandlerD2Ev:00000000 _ZN5daisy11MidiHandlerD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:33     .text._ZN5daisy8DaisyPodD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:41     .text._ZN5daisy8DaisyPodD2Ev:00000000 _ZN5daisy8DaisyPodD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:50     .text._ZN7daisysp10OscillatorD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:58     .text._ZN7daisysp10OscillatorD2Ev:00000000 _ZN7daisysp10OscillatorD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:67     .text._ZN7daisysp3SvfD2Ev:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:75     .text._ZN7daisysp3SvfD2Ev:00000000 _ZN7daisysp3SvfD2Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:75     .text._ZN7daisysp3SvfD2Ev:00000000 _ZN7daisysp3SvfD1Ev
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:84     .text._Z13AudioCallbackPfS_j:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:92     .text._Z13AudioCallbackPfS_j:00000000 _Z13AudioCallbackPfS_j
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:119    .text._Z13AudioCallbackPfS_j:00000030 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:123    .rodata._Z17HandleMidiMessageN5daisy9MidiEventE.str1.4:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:127    .text._Z17HandleMidiMessageN5daisy9MidiEventE:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:135    .text._Z17HandleMidiMessageN5daisy9MidiEventE:00000000 _Z17HandleMidiMessageN5daisy9MidiEventE
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:224    .text._Z17HandleMidiMessageN5daisy9MidiEventE:000000ec $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:233    .text.startup.main:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:241    .text.startup.main:00000000 main
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:319    .text.startup.main:000000c4 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:328    .text.startup._GLOBAL__sub_I_hw:00000000 $t
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:335    .text.startup._GLOBAL__sub_I_hw:00000000 _GLOBAL__sub_I_hw
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:359    .text.startup._GLOBAL__sub_I_hw:00000030 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:370    .init_array:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:381    .bss.filt:00000000 filt
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:402    .bss.osc:00000000 osc
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:395    .bss.midi:00000000 midi
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:388    .bss.hw:00000000 hw
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:377    .bss.filt:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:384    .bss.hw:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:391    .bss.midi:00000000 $d
+C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s:398    .bss.osc:00000000 $d
+                           .group:00000000 _ZN5daisy11MidiHandlerD5Ev
+                           .group:00000000 _ZN5daisy8DaisyPodD5Ev
+                           .group:00000000 _ZN7daisysp10OscillatorD5Ev
+                           .group:00000000 _ZN7daisysp3SvfD5Ev
+
+UNDEFINED SYMBOLS
+_ZN7daisysp10Oscillator7ProcessEv
+_ZN7daisysp3Svf7ProcessEf
+sprintf
+strlen
+_ZN5daisy9UsbHandle16TransmitInternalEPhj
+powf
+_ZN7daisysp10Oscillator12CalcPhaseIncEf
+_ZN7daisysp3Svf6SetResEf
+_ZN7daisysp3Svf7SetFreqEf
+_ZN5daisy8DaisyPod4InitEv
+_ZN5daisy9UsbHandle4InitENS0_9UsbPeriphE
+dsy_system_delay
+_ZN5daisy11MidiHandler4InitENS0_13MidiInputModeENS0_14MidiOutputModeE
+_ZN5daisy8DaisyPod15AudioSampleRateEv
+_ZN7daisysp3Svf4InitEf
+ARM GAS  C:\Users\VIDIIA~1\AppData\Local\Temp\ccFoN9c7.s 			page 10
+
+
+_ZN5daisy8DaisyPod8StartAdcEv
+_ZN5daisy8DaisyPod10StartAudioEPFvPfS1_jE
+_ZN5daisy11MidiHandler12StartReceiveEv
+_ZN5daisy11MidiHandler6ListenEv
+__aeabi_atexit
+__dso_handle
